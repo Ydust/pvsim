@@ -1,0 +1,16 @@
+metric,value,unit,source_or_method,source_url
+validation_status,partial national aggregate check,status,"This is independent measured national evidence, but not a location-resolved external validation layer",
+nbs_solar_generation,839.040000,TWh,National Bureau of Statistics 2024 Statistical Communique,https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html
+nbs_year_end_solar_capacity,886.660000,GW,National Bureau of Statistics 2024 Statistical Communique,https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html
+nbs_capacity_growth,45.200000,percent,National Bureau of Statistics 2024 Statistical Communique,https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html
+model_capacity,886.599000,GW,Scaled provincial capacity table,
+model_minus_nbs_capacity,-0.061000,GW,Difference between scaled model capacity and official year-end capacity,https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html
+inferred_start_capacity,610.647383,GW,Year-end capacity divided by one plus the official growth rate,
+simple_average_capacity,748.653691,GW,Average of inferred start-year and official year-end capacity,
+observed_specific_yield_end_capacity,946.292829,kWh per kW,Official generation divided by official year-end capacity,
+observed_specific_yield_average_capacity,1120.731801,kWh per kW,Official generation divided by simple average capacity,
+clean_model_csi_yield,1493.588712,kWh per kWp,Capacity-weighted 31-province clean-physics c-Si yield,
+mean_system_loss,15.277860,percent,Mean loss inferred from provincial fleet-hour anchor,
+loss_corrected_model_csi_yield,1265.400322,kWh per kWp,Clean model yield after uniform fleet-hour loss correction,
+bias_vs_average_capacity,144.668521,kWh per kWp,Loss-corrected model minus average-capacity observed specific yield,
+bias_vs_average_capacity_pct,12.908398,percent,Bias divided by average-capacity observed specific yield,

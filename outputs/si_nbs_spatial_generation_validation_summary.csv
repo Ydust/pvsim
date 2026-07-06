@@ -1,0 +1,2 @@
+check,province_rows,national_reference_100million_kwh,province_sum_100million_kwh,province_sum_minus_national_100million_kwh,largest_province,largest_province_100million_kwh,median_province_100million_kwh,source_url,source_doc,pv_specific
+NBS provincial total electricity generation layer,31,100868.81,100868.83,0.02,Inner Mongolia,8344.0,2602.85,https://www.stats.gov.cn/sj/ndsj/2025/html/C09-19.jpg,China Statistical Yearbook 2025 Table 9-19,False

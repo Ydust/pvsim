@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.venv
+venv/
+env/
+
+# Build artefacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Generated outputs (kept out of git; reproducible by scripts)
+outputs/anim_frames/
+outputs/animations/*.gif
+outputs/figures/*.png
+outputs/*.log
+data/tmy_cache/
+data/power_cache/
+data/era5_cache/
+data/era5_test*
+
+# Unity
+unity/PvCompare/Library/
+unity/PvCompare/Logs/
+unity/PvCompare/Temp/
+unity/PvCompare/UserSettings/
+unity/PvCompare/MemoryCaptures/
+unity/PvCompare/Build/
+unity/PvCompare/Builds/
+unity/_verify/bin/
+unity/_verify/obj/
+unity/*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local secrets / private notes
+*.local
+.env

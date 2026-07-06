@@ -1,0 +1,39 @@
+{
+  "title": "Perovskite field advantage and deployment geography in China",
+  "description": "A physics-resolved photovoltaic digital-twin workflow for comparing modern silicon, single-junction perovskite and perovskite-silicon tandem technologies across China, including geographic inversion, mechanism decomposition, economic timing, deployment mismatch, source-audit gates and release checksums.",
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "keywords": [
+    "photovoltaics",
+    "single-diode model",
+    "perovskite",
+    "crystalline silicon",
+    "perovskite-silicon tandem",
+    "LCOE",
+    "digital twin",
+    "China",
+    "geographic inversion",
+    "source provenance",
+    "open science"
+  ],
+  "creators": [
+    {
+      "name": "<Lead Author>",
+      "affiliation": "<Affiliation>",
+      "orcid": "<placeholder>"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/<your-org>/pvsim",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "open-energy"
+    }
+  ]
+}

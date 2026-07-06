@@ -1,0 +1,6 @@
+﻿check,x,y,controls,raw_correlation,partial_correlation,expected_direction,direction_preserved
+Thermal component versus cell temperature,thermal,tcell,ghi_kwh_m2; airmass,0.9407503457283257,0.9567312463814437,positive,True
+Spectral component versus air mass,spectral,airmass,ghi_kwh_m2; tcell,-0.9438550417788177,-0.9314865557438679,negative,True
+Full advantage versus irradiance,full,ghi_kwh_m2,tcell; airmass,-0.5398482516745036,-0.8425973259060793,negative,True
+Full advantage versus cell temperature,full,tcell,ghi_kwh_m2; airmass,0.9112669870701521,0.9345085866840953,positive,True
+Full advantage versus air mass,full,airmass,ghi_kwh_m2; tcell,-0.8498790636420707,-0.754970700642962,negative,True

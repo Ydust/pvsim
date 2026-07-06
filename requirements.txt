@@ -1,0 +1,11 @@
+# pvsim — Python dependencies (pip-installable; keep entire stack from PyPI to avoid Windows BLAS conflicts)
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+matplotlib>=3.7
+pvlib>=0.10
+pillow>=10.0
+pypdf>=4.0          # only for reading literature PDFs (validate_against_pvlib helper)
+
+# Development
+pytest>=7.0

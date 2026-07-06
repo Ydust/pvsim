@@ -1,0 +1,2 @@
+﻿check,n,best_k,r,r2,bias_pct_points,mae_pct_points,rmse_pct_points,grid_cells,grid_r_ghi_vs_adv,grid_adv_p10,grid_adv_p50,grid_adv_p90
+ERA5 reduced-order advantage vs full 8760h provincial anchors,31,155.0,0.6338309419860021,0.37676352960363213,-0.18632358482283862,0.8178126169965894,0.9620437240685488,94998,-0.5136288514351159,0.0742163422294717,2.0835662975790097,3.655191225549362

@@ -1,0 +1,3 @@
+table,file,row_count,missing_provenance_count,row_level_complete_count,pending_row_level_count,unique_source_urls,retrieved_dates,submission_ready
+Provincial PV capacity 2024,data\source_tables\provincial_pv_capacity_2024.csv,31,0,31,0,1,2026-07-01,True
+NEA provincial PV utilization rate 2024,data\source_tables\nea_pv_utilization_rate_2024.csv,31,0,31,0,1,2026-07-01,True

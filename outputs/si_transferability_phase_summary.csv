@@ -1,0 +1,10 @@
+﻿case,value,unit
+zero advantage at air mass 1.4,11.30133677194852,cell temperature C
+zero advantage at air mass 1.8,15.090015060510757,cell temperature C
+zero advantage at air mass 2.2,18.878693349072996,cell temperature C
+zero advantage at air mass 2.6,22.66737163763523,cell temperature C
+China anchor tcell min,21.447506631772608,cell temperature C
+China anchor tcell max,38.498787366548335,cell temperature C
+China anchor air mass min,1.5546774336852744,air mass
+China anchor air mass max,2.277360450729775,air mass
+Phase-plane positive share,0.7672116048814184,fraction

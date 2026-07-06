@@ -1,0 +1,2 @@
+﻿check,years,softmax_T_cents_kwh,rmse_share_pct_points,r2,max_abs_residual_pct_points
+historical multi-to-mono softmax calibration,2015-2023,0.15000000000000002,11.873001014757213,0.828911890907844,22.098782762805108

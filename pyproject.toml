@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pvsim"
+version = "1.0.0"
+description = "Physics-validated PV digital twin (Python + Unity) for c-Si / perovskite / tandem comparison"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "pvsim contributors" }
+]
+keywords = ["photovoltaics", "perovskite", "silicon", "tandem", "lcoe", "lca", "portfolio", "digital twin"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "pvlib>=0.10",
+    "pillow>=10.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pypdf>=4.0"]
+
+[project.urls]
+Homepage = "https://github.com/<your-org>/pvsim"
+Repository = "https://github.com/<your-org>/pvsim"
+Issues = "https://github.com/<your-org>/pvsim/issues"
+
+[tool.setuptools.packages.find]
+include = ["pvsim*"]
+exclude = ["tests*", "scripts*", "outputs*", "unity*", "data*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-v --tb=short -p no:cacheprovider"
