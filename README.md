@@ -5,7 +5,7 @@ The current manuscript branch uses a Python physics core to study field-yield ge
 mechanisms, economic timing and land-based deployment in China. The legacy Unity twin is
 kept for visualization and regression context.
 
-[![tests](https://img.shields.io/badge/tests-41%2F41%20passing-brightgreen)]()
+[![tests](https://img.shields.io/badge/tests-63%2F63%20passing-brightgreen)]()
 [![pvlib agreement](https://img.shields.io/badge/pvlib%20agreement-0.0007%25-brightgreen)]()
 [![license](https://img.shields.io/badge/license-MIT-blue)]()
 [![python](https://img.shields.io/badge/python-3.12-blue)]()
@@ -28,7 +28,7 @@ provides:
 3. **Versioned China inputs**: PVGIS TMY provincial anchors, ERA5-Land 0.1 degree grid
    layer with 94,998 land cells, GEM operating PV plant context, national PV capacity
    closure to 886.6 GW and provincial fleet-hour anchoring.
-4. **Reproducibility gates**: 41 tests, pvlib benchmark, Crossref reference audit,
+4. **Reproducibility gates**: 63 tests, pvlib benchmark, Crossref reference audit,
    source-data audit gate and generated manuscript review HTML.
 
 ---
@@ -67,7 +67,7 @@ cd pvsim
 conda create -n pvsim -c conda-forge --override-channels -y python=3.12 pip
 conda activate pvsim
 pip install -r requirements.txt
-pytest tests/ -v               # 41 tests, expect all passing
+pytest tests/ -v               # 63 tests, expect all passing
 ```
 
 > On Windows mixed conda + PyPI numpy/scipy can break BLAS — keep the whole
@@ -113,7 +113,7 @@ python -m scripts.export_unity_data           # writes Assets/StreamingAssets/pv
 |---|---|---|
 | Physics core vs `pvlib.calcparams_desoto` + `singlediode` | **0.0007 %** worst-case deviation across 32 (tech × condition × metric) cases | `scripts/validate_against_pvlib.py` |
 | Python → C# digital twin | **0.0000 %** deviation on STC Pmp/Voc/Isc/FF/η | `unity/_verify/Program.cs` + `Assets/Editor/PvSelfTest.cs` |
-| Unit tests | **58 / 58 passing** | `tests/` |
+| Unit tests | **63 / 63 passing** | `tests/` |
 | Source-data audit gate | **0 missing provenance fields, 62 row-level official records complete** | `scripts/source_audit_gate.py` |
 | External validation audit | **NEA spatial PV operation layer and CTGR spatial PV absolute generation sample available** | `scripts/external_validation_audit.py` |
 | Release manifest | **complete file-level SHA256 manifest** | `scripts/release_manifest.py` |
