@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/oaitohtml.xslt"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+    <responseDate>2026-09-10T03:24:39Z</responseDate>
+    <request identifier="oai:data.helmholtz-berlin.de:inv/8750" metadataPrefix="oai_datacite" verb="GetRecord">https://data.helmholtz-berlin.de/oaipmh/request</request>
+    <GetRecord>
+        <record>
+            <header>
+                <identifier>oai:data.helmholtz-berlin.de:inv/8750</identifier>
+                <datestamp>2025-12-17T09:38:10Z</datestamp>
+            </header>
+            <metadata>
+                <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.1/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.1/ https://schema.datacite.org/oai/oai-1.1/oai.xsd">
+                    <schemaVersion>4.5</schemaVersion>
+                    <datacentreSymbol>HZB</datacentreSymbol>
+                    <payload>
+                        <resource xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4.5/metadata.xsd">
+                            <identifier identifierType="Handle">:unav</identifier>
+                            <creators>
+                                <creator>
+                                    <creatorName>:unav</creatorName>
+                                </creator>
+                            </creators>
+                            <titles>
+                                <title>Bridging Indoor and Outdoor Perovskite Degradation Using Physics Modeling and Bayesian Analysis</title>
+                            </titles>
+                            <publisher>Helmholtz-Zentrum Berlin für Materialien und Energie</publisher>
+                            <publicationYear>2025</publicationYear>
+                            <contributors>
+                                <contributor contributorType="Creator">
+                                    <contributorName nameType="Personal">Puel, Jean-Baptiste</contributorName>
+                                    <givenName>Jean-Baptiste</givenName>
+                                    <familyName>Puel</familyName>
+                                </contributor>
+                                <contributor contributorType="Creator">
+                                    <contributorName nameType="Personal">Chakar, Joseph</contributorName>
+                                    <givenName>Joseph</givenName>
+                                    <familyName>Chakar</familyName>
+                                </contributor>
+                                <contributor contributorType="Creator">
+                                    <contributorName nameType="Personal">Bonnassieux, Yvan</contributorName>
+                                    <givenName>Yvan</givenName>
+                                    <familyName>Bonnassieux</familyName>
+                                </contributor>
+                                <contributor contributorType="Creator">
+                                    <contributorName nameType="Personal">Burgaud, Antoine</contributorName>
+                                    <givenName>Antoine</givenName>
+                                    <familyName>Burgaud</familyName>
+                                </contributor>
+                                <contributor contributorType="Creator">
+                                    <contributorName nameType="Personal">Remec, Marko</contributorName>
+                                    <givenName>Marko</givenName>
+                                    <familyName>Remec</familyName>
+                                    <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">0000-0002-4246-364X</nameIdentifier>
+                                </contributor>
+                                <contributor contributorType="Creator">
+                                    <contributorName nameType="Personal">Erdil, Ulas</contributorName>
+                                    <givenName>Ulas</givenName>
+                                    <familyName>Erdil</familyName>
+                                    <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">0009-0008-1727-9008</nameIdentifier>
+                                </contributor>
+                                <contributor contributorType="Creator">
+                                    <contributorName nameType="Personal">Schlatmann, Rutger</contributorName>
+                                    <givenName>Rutger</givenName>
+                                    <familyName>Schlatmann</familyName>
+                                    <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">0000-0002-5951-9435</nameIdentifier>
+                                </contributor>
+                                <contributor contributorType="Creator">
+                                    <contributorName nameType="Personal">Abate, Antonio</contributorName>
+                                    <givenName>Antonio</givenName>
+                                    <familyName>Abate</familyName>
+                                    <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">0000-0002-3012-3541</nameIdentifier>
+                                </contributor>
+                                <contributor contributorType="Creator">
+                                    <contributorName nameType="Personal">Khenkin, Mark</contributorName>
+                                    <givenName>Mark</givenName>
+                                    <familyName>Khenkin</familyName>
+                                    <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">0000-0001-9201-0238</nameIdentifier>
+                                </contributor>
+                                <contributor contributorType="Creator">
+                                    <contributorName nameType="Personal">Ulbrich, Carolin</contributorName>
+                                    <givenName>Carolin</givenName>
+                                    <familyName>Ulbrich</familyName>
+                                    <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">0000-0002-5513-4474</nameIdentifier>
+                                </contributor>
+                                <contributor contributorType="HostingInstitution">
+                                    <contributorName nameType="Organizational">Helmholtz-Zentrum Berlin für Materialien und Energie</contributorName>
+                                    <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org/">02aj13c28</nameIdentifier>
+                                </contributor>
+                            </contributors>
+                            <dates>
+                                <date dateType="Available">2025-12-16T23:00:00Z</date>
+                            </dates>
+                            <resourceType resourceTypeGeneral="Collection">Investigation</resourceType>
+                            <sizes>
+                                <size>286.99 MiB</size>
+                            </sizes>
+                            <rightsList>
+                                <rights rightsIdentifier="CC0-1.0" rightsIdentifierScheme="SPDX" rightsURI="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero v1.0 Universal</rights>
+                            </rightsList>
+                            <descriptions>
+                                <description descriptionType="Abstract">In this work, we use physics-based modelling with a probabilistic Bayesian framework, relying solely on current-density-voltage (J-V) curves recorded throughout aging in both indoor and outdoor degradation tests. We investigate whether the same degradation mechanisms occur in both outdoor tests and indoor accelerated aging tests — an important step toward identifying the dominant degradation mechanisms from commonly available data and establishing the validity of accelerated aging tests. The data provided here includes these J-V curves as well as the outdoor maximum power point tracking (MPPT) data with corresponding irradiance and cell temperature recordings. For the indoor accelerated tests, the J-V curves were recorded during the aging process and therefore under the same aging conditions of the cells: ~1.3 suns and fixed temperature levels (25, 45, 65 and 85 °C). The aging setup and measurement routine were detailed in previous (Köbler 2022). The indoor_jvs.csv file includes the following information: cell_id: such as D1_P1, represents substrate 1 (D1), cell 1 (P1), where each substrate contains six electrically isolated perovskite solar cells. Note that the naming of substrates restarts at each temperature; temp: the aging temperature in °C; meas_time: the time in hours since the start of aging; scan: scan direction of J-V (FOR: forward; REV: reverse); v and j: the raw voltage and current density data (as lists). For the outdoor tests, J-V curves were recorded under a sun simulator at standard test conditions (1 sun, 25 °C). The outdoor_jvs.csv file follows the same structure as the indoor data, with two exceptions: the temp column is omitted, and meas_time is given as a date. The outdoor MPPT data (outdoor_mpp_) is provided separately for three cells and includes voltage, current, and power at MPP as a timeseries. Irradiance and cell temperature data are provided in a separate merged file (irradiance_and_cell_temp.csv).</description>
+                            </descriptions>
+                        </resource>
+                    </payload>
+                </oai_datacite>
+            </metadata>
+        </record>
+    </GetRecord>
+</OAI-PMH>

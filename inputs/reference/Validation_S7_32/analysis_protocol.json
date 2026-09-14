@@ -1,0 +1,81 @@
+{
+  "raw_integrity": [
+    {
+      "filename": "Datos_Atmos_01_2018.csv",
+      "exists": true,
+      "bytes": 484969,
+      "sha256_expected": "c0c7e84aaa8c877acb26bdfd9a07f3ecdab409845c491c86b6422037700ebbb1",
+      "sha256_actual": "c0c7e84aaa8c877acb26bdfd9a07f3ecdab409845c491c86b6422037700ebbb1",
+      "sha256_ok": true
+    },
+    {
+      "filename": "Datos_Atmos_02_2018.csv",
+      "exists": true,
+      "bytes": 588697,
+      "sha256_expected": "6d459dd742cb2deb34572a1ad88520c07a0e142d5a43e396cd3272b44ecfa887",
+      "sha256_actual": "6d459dd742cb2deb34572a1ad88520c07a0e142d5a43e396cd3272b44ecfa887",
+      "sha256_ok": true
+    },
+    {
+      "filename": "Datos_Atmos_03_2018.csv",
+      "exists": true,
+      "bytes": 917746,
+      "sha256_expected": "f4b777a7759ddd28d59ab886ed5a4bdd4c1dbd5f1c2f68ffbfdc4ee02c70771e",
+      "sha256_actual": "f4b777a7759ddd28d59ab886ed5a4bdd4c1dbd5f1c2f68ffbfdc4ee02c70771e",
+      "sha256_ok": true
+    },
+    {
+      "filename": "Datos_Atmos_04_2018.csv",
+      "exists": true,
+      "bytes": 2190727,
+      "sha256_expected": "a49b9d81c96e4f3c183333272d81334c25be9d31ab29aa86ed0b6527d6d4d1ab",
+      "sha256_actual": "a49b9d81c96e4f3c183333272d81334c25be9d31ab29aa86ed0b6527d6d4d1ab",
+      "sha256_ok": true
+    },
+    {
+      "filename": "PSM17_I-V_data.xls",
+      "exists": true,
+      "bytes": 3121664,
+      "sha256_expected": "fb4a0da6dd2d0d07de67cfccaa73193b23f29a9b6d9e8c2c4bf792a6b97a9945",
+      "sha256_actual": "fb4a0da6dd2d0d07de67cfccaa73193b23f29a9b6d9e8c2c4bf792a6b97a9945",
+      "sha256_ok": true
+    },
+    {
+      "filename": "PSM50_IV.csv",
+      "exists": true,
+      "bytes": 2710962,
+      "sha256_expected": "54a04096dde12f107d88987c1b0316564f27a5001a933d511af18379b4473040",
+      "sha256_actual": "54a04096dde12f107d88987c1b0316564f27a5001a933d511af18379b4473040",
+      "sha256_ok": true
+    },
+    {
+      "filename": "Sharp_I-V_data.xls",
+      "exists": true,
+      "bytes": 7678976,
+      "sha256_expected": "0f89206965754494c40d7a51dcc349c02e447a78dc70e8ba79835e5df649ba45",
+      "sha256_actual": "0f89206965754494c40d7a51dcc349c02e447a78dc70e8ba79835e5df649ba45",
+      "sha256_ok": true
+    },
+    {
+      "filename": "Supporting information_28_09_2018.docx",
+      "exists": true,
+      "bytes": 4178321,
+      "sha256_expected": "9b6de985e5d1c585904319452db128e8e15cea8d2ec31fdf61715f107de16ac7",
+      "sha256_actual": "9b6de985e5d1c585904319452db128e8e15cea8d2ec31fdf61715f107de16ac7",
+      "sha256_ok": true
+    }
+  ],
+  "paired_rows": 4205,
+  "paired_days": 15,
+  "single_junction_devices": 2,
+  "single_junction_sites": 1,
+  "tandem_rows": 377,
+  "tandem_day_clusters": 9,
+  "tandem_sites": 1,
+  "national_city_anchors": 337,
+  "night_exclusion": "POA <20 W/m2",
+  "overlap_weight": "incident POA irradiation, not generated electricity",
+  "holdout": "Chronological first floor(n_days/2) training days; remaining days test. Leave-one-day-out sensitivity. High-reference normalization only in training, 900\u20131100 W/m2. No national parameters fitted.",
+  "uncertainty": "2000 day resamples within each device, seed 20260910; conditional temporal dispersion, not between-device/site uncertainty. No intervals with <3 days.",
+  "limitations": "Power ratio normalized to training high-irradiance reference is not STC specific yield or annual technology preference. Broadband transfer diagnostic lacks measured spectra and incidence angle. Domain overlap does not establish prediction accuracy, nationwide ranks or long-term durability."
+}

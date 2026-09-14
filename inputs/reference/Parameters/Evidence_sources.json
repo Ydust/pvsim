@@ -1,0 +1,72 @@
+[
+  {
+    "id": "E01",
+    "title": "Faiman model pvlib documentation",
+    "url": "https://pvlib-python.readthedocs.io/en/stable/reference/generated/pvlib.temperature.faiman.html",
+    "locator": "Parameters u0/u1",
+    "support_limit": "25与6.84对应开放支架硅组件经验系数；用于三技术是共同安装条件假设。"
+  },
+  {
+    "id": "E02",
+    "title": "2024 Annual Technology Baseline Utility Scale PV",
+    "url": "https://atb.nrel.gov/electricity/2024/utility-scale_pv",
+    "locator": "Technology assumptions and O&M",
+    "support_limit": "基准逆变效率96%、反照率0.2可作数值参照；美国跟踪系统容量比1.34不同于本研究1.2，AC成本口径不可直接对比DC。"
+  },
+  {
+    "id": "E03",
+    "title": "IRENA Renewable Power Generation Costs in 2024",
+    "url": "https://www.irena.org/Digital-Report/Renewable-Power-Generation-Costs-in-2024",
+    "locator": "Table 3.1",
+    "support_limit": "2024中国加权平均安装成本591 USD/kW，全球691；成本不是电价，报告价格基年不自动等于模型美元基年。"
+  },
+  {
+    "id": "E04",
+    "title": "Technoeconomic analysis of perovskite/silicon tandem solar modules",
+    "url": "https://www.osti.gov/servlets/purl/2481281",
+    "locator": "Accepted manuscript p.1 summary",
+    "support_limit": "0.428 USD/WDC是25%效率、美国3 GW/年工厂的2T组件最低可持续价格，非电池片成本或中国系统投资；未核验0.70 USD/W的BOS加项。"
+  },
+  {
+    "id": "E05",
+    "title": "Photovoltaic Degradation Rates An Analytical Review",
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/pip.1182",
+    "locator": "Abstract",
+    "support_limit": "近2000条文献退化率的中位值0.5%/年；用于晶硅基准有经验参照，不代表任何项目保证值。"
+  },
+  {
+    "id": "E06",
+    "title": "Consensus statement for stability assessment and reporting for perovskite photovoltaics based on ISOS procedures",
+    "url": "https://www.nature.com/articles/s41560-019-0529-5",
+    "locator": "Stability procedures and reporting",
+    "support_limit": "支持按应力、条件和测量协议报告稳定性；不能据此指定18—25年户外寿命或固定年衰减。"
+  },
+  {
+    "id": "E07",
+    "title": "Interplay between temperature and bandgap energies on the outdoor performance of perovskite/silicon tandem solar cells",
+    "url": "https://www.nature.com/articles/s41560-020-00687-4",
+    "locator": "Abstract",
+    "support_limit": "户外结果支持温度和带隙影响电流匹配；支持扫描机制，不直接验证本研究所有扫描端点。"
+  },
+  {
+    "id": "E08",
+    "title": "北京市关于进一步支持光伏发电系统推广应用的通知 2023",
+    "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202305/t20230519_3108064.html",
+    "locator": "建设投资支持及适用条件",
+    "support_limit": "特定公共机构或园区投资支持上限20%；非全国普遍资格。"
+  },
+  {
+    "id": "E09",
+    "title": "北京市2026年新能源新技术示范应用项目征集通知",
+    "url": "https://fgw.beijing.gov.cn/fgwzwgk/2024zcwj/bwqtwj/202606/t20260604_4686154.htm",
+    "locator": "投资支持范围和申报要求",
+    "support_limit": "钙钛矿等新技术光伏项目最高30%系统建设投资支持；附项目规模、时限和遴选条件。"
+  },
+  {
+    "id": "E10",
+    "title": "IRENA Renewable power generation costs in 2024 full report",
+    "url": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2025/Jul/IRENA_TEC_RPGC_in_2024_2025.pdf",
+    "locator": "p99 footnote32; p100 footnote34; p101; p210 Table A4",
+    "support_limit": "太阳能安装成本按DC容量；中国2024调查样本运维均值3.2 USD/kW年；非OECD度电成本计算假设10.95（表A4四舍五入11）2024USD/kW年。调查样本与模型假设不同，不能作为新技术实测运维。"
+  }
+]

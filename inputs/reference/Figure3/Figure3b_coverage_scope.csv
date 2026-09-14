@@ -1,0 +1,4 @@
+coverage_fraction,cities_at_parity,any_response_density_multiplier,central_response_density_multiplier,all_responses_density_multiplier,robust_minus_central_density_pp,any_response_density_increase_pct,any_response_within_upper_scan_bound,central_response_density_increase_pct,central_response_within_upper_scan_bound,all_responses_density_increase_pct,all_responses_within_upper_scan_bound
+0.5,169,1.0964300535251907,1.10168391770313,1.111371370659199,0.9687452956068876,9.643005352519074,1,10.16839177031299,0,11.1371370659199,0
+0.9,304,1.1232726869155596,1.1239990032150902,1.1251095946979943,0.1110591482904155,12.32726869155596,0,12.399900321509016,0,12.510959469799431,0
+1.0,337,1.131145029664183,1.1355970262270307,1.1382596386970103,0.2662612469979786,13.114502966418296,0,13.559702622703075,0,13.825963869701031,0

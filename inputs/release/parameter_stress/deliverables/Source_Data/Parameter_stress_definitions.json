@@ -1,0 +1,83 @@
+{
+  "central_durability": [
+    {
+      "life": 25.0,
+      "deg": 0.005,
+      "burn": 0.01
+    },
+    {
+      "life": 21.5,
+      "deg": 0.01505,
+      "burn": 0.0675
+    },
+    {
+      "life": 25.0,
+      "deg": 0.012,
+      "burn": 0.04
+    }
+  ],
+  "specs": {
+    "Central": {},
+    "om=0.01": {
+      "om": 0.01
+    },
+    "om=0.02": {
+      "om": 0.02
+    },
+    "sj_deg=0.007": {
+      "sj_deg": 0.007
+    },
+    "sj_deg=0.03": {
+      "sj_deg": 0.03
+    },
+    "t_deg=0.005": {
+      "t_deg": 0.005
+    },
+    "t_deg=0.02": {
+      "t_deg": 0.02
+    },
+    "sj_burn=0": {
+      "sj_burn": 0
+    },
+    "sj_burn=0.1": {
+      "sj_burn": 0.1
+    },
+    "t_burn=0": {
+      "t_burn": 0
+    },
+    "t_burn=0.1": {
+      "t_burn": 0.1
+    },
+    "t_life=18.0": {
+      "t_life": 18.0
+    },
+    "t_life=21.5": {
+      "t_life": 21.5
+    },
+    "si_deg=0.007": {
+      "si_deg": 0.007
+    },
+    "si_deg=0.01": {
+      "si_deg": 0.01
+    },
+    "packing=0.5": {
+      "packing": 0.5
+    },
+    "packing=0.8": {
+      "packing": 0.8
+    },
+    "site=0.0": {
+      "site": 0.0
+    },
+    "site=50.0": {
+      "site": 50.0
+    }
+  },
+  "scope": "One-at-a-time deterministic accounting stress; fixed hourly yield; not a probability or independent device validation; O&M independent of replacement; lifetime perturbation does not change burn-in or annual degradation.",
+  "checks": {
+    "baseline_reproduced": true,
+    "gap_portfolios_reproduced": true,
+    "cases": 19,
+    "summary_rows": 456
+  }
+}

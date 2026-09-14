@@ -1,0 +1,65 @@
+context,strategy,share,before_choice,after_choice,n,change_type
+cap,General,0.2,0,0,123,Unchanged
+cap,General,0.2,0,1,0,Technology switches
+cap,General,0.2,0,2,0,Technology switches
+cap,General,0.2,0,-1,0,Technology switches
+cap,General,0.2,1,0,135,Technology switches
+cap,General,0.2,1,1,0,Unchanged
+cap,General,0.2,1,2,0,Technology switches
+cap,General,0.2,1,-1,0,Technology switches
+cap,General,0.2,2,0,0,Technology switches
+cap,General,0.2,2,1,0,Technology switches
+cap,General,0.2,2,2,0,Unchanged
+cap,General,0.2,2,-1,0,Technology switches
+cap,General,0.2,-1,0,55,New projects
+cap,General,0.2,-1,1,0,New projects
+cap,General,0.2,-1,2,0,New projects
+cap,General,0.2,-1,-1,24,Unchanged
+cap,New technology,0.2,0,0,0,Unchanged
+cap,New technology,0.2,0,1,123,Technology switches
+cap,New technology,0.2,0,2,0,Technology switches
+cap,New technology,0.2,0,-1,0,Technology switches
+cap,New technology,0.2,1,0,0,Technology switches
+cap,New technology,0.2,1,1,135,Unchanged
+cap,New technology,0.2,1,2,0,Technology switches
+cap,New technology,0.2,1,-1,0,Technology switches
+cap,New technology,0.2,2,0,0,Technology switches
+cap,New technology,0.2,2,1,0,Technology switches
+cap,New technology,0.2,2,2,0,Unchanged
+cap,New technology,0.2,2,-1,0,Technology switches
+cap,New technology,0.2,-1,0,0,New projects
+cap,New technology,0.2,-1,1,53,New projects
+cap,New technology,0.2,-1,2,0,New projects
+cap,New technology,0.2,-1,-1,26,Unchanged
+area,General,0.2,0,0,70,Unchanged
+area,General,0.2,0,1,0,Technology switches
+area,General,0.2,0,2,134,Technology switches
+area,General,0.2,0,-1,0,Technology switches
+area,General,0.2,1,0,0,Technology switches
+area,General,0.2,1,1,0,Unchanged
+area,General,0.2,1,2,0,Technology switches
+area,General,0.2,1,-1,0,Technology switches
+area,General,0.2,2,0,0,Technology switches
+area,General,0.2,2,1,0,Technology switches
+area,General,0.2,2,2,133,Unchanged
+area,General,0.2,2,-1,0,Technology switches
+area,General,0.2,-1,0,0,New projects
+area,General,0.2,-1,1,0,New projects
+area,General,0.2,-1,2,0,New projects
+area,General,0.2,-1,-1,0,Unchanged
+area,New technology,0.2,0,0,0,Unchanged
+area,New technology,0.2,0,1,0,Technology switches
+area,New technology,0.2,0,2,204,Technology switches
+area,New technology,0.2,0,-1,0,Technology switches
+area,New technology,0.2,1,0,0,Technology switches
+area,New technology,0.2,1,1,0,Unchanged
+area,New technology,0.2,1,2,0,Technology switches
+area,New technology,0.2,1,-1,0,Technology switches
+area,New technology,0.2,2,0,0,Technology switches
+area,New technology,0.2,2,1,0,Technology switches
+area,New technology,0.2,2,2,133,Unchanged
+area,New technology,0.2,2,-1,0,Technology switches
+area,New technology,0.2,-1,0,0,New projects
+area,New technology,0.2,-1,1,0,New projects
+area,New technology,0.2,-1,2,0,New projects
+area,New technology,0.2,-1,-1,0,Unchanged

@@ -1,0 +1,65 @@
+context,strategy,before_choice,after_choice,n
+cap,General,0,0,123
+cap,General,0,1,0
+cap,General,0,2,0
+cap,General,0,-1,0
+cap,General,1,0,135
+cap,General,1,1,0
+cap,General,1,2,0
+cap,General,1,-1,0
+cap,General,2,0,0
+cap,General,2,1,0
+cap,General,2,2,0
+cap,General,2,-1,0
+cap,General,-1,0,55
+cap,General,-1,1,0
+cap,General,-1,2,0
+cap,General,-1,-1,24
+area,General,0,0,70
+area,General,0,1,0
+area,General,0,2,134
+area,General,0,-1,0
+area,General,1,0,0
+area,General,1,1,0
+area,General,1,2,0
+area,General,1,-1,0
+area,General,2,0,0
+area,General,2,1,0
+area,General,2,2,133
+area,General,2,-1,0
+area,General,-1,0,0
+area,General,-1,1,0
+area,General,-1,2,0
+area,General,-1,-1,0
+cap,New technology,0,0,0
+cap,New technology,0,1,123
+cap,New technology,0,2,0
+cap,New technology,0,-1,0
+cap,New technology,1,0,0
+cap,New technology,1,1,135
+cap,New technology,1,2,0
+cap,New technology,1,-1,0
+cap,New technology,2,0,0
+cap,New technology,2,1,0
+cap,New technology,2,2,0
+cap,New technology,2,-1,0
+cap,New technology,-1,0,0
+cap,New technology,-1,1,53
+cap,New technology,-1,2,0
+cap,New technology,-1,-1,26
+area,New technology,0,0,0
+area,New technology,0,1,0
+area,New technology,0,2,204
+area,New technology,0,-1,0
+area,New technology,1,0,0
+area,New technology,1,1,0
+area,New technology,1,2,0
+area,New technology,1,-1,0
+area,New technology,2,0,0
+area,New technology,2,1,0
+area,New technology,2,2,133
+area,New technology,2,-1,0
+area,New technology,-1,0,0
+area,New technology,-1,1,0
+area,New technology,-1,2,0
+area,New technology,-1,-1,0

@@ -1,0 +1,145 @@
+[
+  {
+    "file": "irradiance_and_cell_temp.csv",
+    "bytes": 53077068,
+    "sha256": "76c30c67fe79a47f59021655238958e619c87b617211c603bcbe7982a050304f",
+    "rows": 1594440,
+    "columns": [
+      "Time",
+      "Irradiance",
+      "Tcell_back"
+    ],
+    "missing": {
+      "Time": 0,
+      "Irradiance": 0,
+      "Tcell_back": 1873
+    },
+    "time_column": "Time",
+    "start": "2022-02-10 05:00:00",
+    "end": "2023-04-13 21:59:53",
+    "invalid_time": 0,
+    "unique_dates": 420,
+    "duplicate_timestamps": 0,
+    "median_interval_seconds": 15.0,
+    "largest_gap_hours": 87.80916666666667,
+    "download_url": "https://data.helmholtz-berlin.de/pub/ND000013/irradiance_and_cell_temp.csv",
+    "dataset_doi": "10.5442/ND000013"
+  },
+  {
+    "file": "outdoor_jvs.csv",
+    "bytes": 82360,
+    "sha256": "54916d022e850828a280c6cb72f5e0e292bbcbf5b998603e8ccaa589cac9d4e8",
+    "rows": 35,
+    "columns": [
+      "cell_id",
+      "meas_time",
+      "scan",
+      "v",
+      "j"
+    ],
+    "missing": {
+      "cell_id": 0,
+      "meas_time": 0,
+      "scan": 0,
+      "v": 0,
+      "j": 0
+    },
+    "time_column": "meas_time",
+    "start": "2022-01-17 00:00:00",
+    "end": "2023-04-12 00:00:00",
+    "invalid_time": 0,
+    "unique_dates": 6,
+    "duplicate_timestamps": 29,
+    "download_url": "https://data.helmholtz-berlin.de/pub/ND000013/outdoor_jvs.csv",
+    "dataset_doi": "10.5442/ND000013",
+    "cells": [
+      "D1_P1",
+      "D1_P2",
+      "D1_P4"
+    ]
+  },
+  {
+    "file": "outdoor_mpp_d1_p1.csv",
+    "bytes": 75945644,
+    "sha256": "f1631f1442be4774a055eb70301cc89ed8a10b2562c24b3782e55b892c22bce5",
+    "rows": 1596556,
+    "columns": [
+      "Time",
+      "Vmax",
+      "Imax",
+      "Pmax"
+    ],
+    "missing": {
+      "Time": 0,
+      "Vmax": 0,
+      "Imax": 0,
+      "Pmax": 0
+    },
+    "time_column": "Time",
+    "start": "2022-02-09 13:37:01",
+    "end": "2023-04-13 21:59:53",
+    "invalid_time": 0,
+    "unique_dates": 421,
+    "duplicate_timestamps": 0,
+    "median_interval_seconds": 15.0,
+    "largest_gap_hours": 87.80916666666667,
+    "download_url": "https://data.helmholtz-berlin.de/pub/ND000013/outdoor_mpp_d1_p1.csv",
+    "dataset_doi": "10.5442/ND000013"
+  },
+  {
+    "file": "outdoor_mpp_d1_p2.csv",
+    "bytes": 75658970,
+    "sha256": "9061afbebfb6bda8db94526dcd1d828ef61d990111bf320215606667cfb9c076",
+    "rows": 1596555,
+    "columns": [
+      "Time",
+      "Vmax",
+      "Imax",
+      "Pmax"
+    ],
+    "missing": {
+      "Time": 0,
+      "Vmax": 0,
+      "Imax": 0,
+      "Pmax": 0
+    },
+    "time_column": "Time",
+    "start": "2022-02-09 13:37:01",
+    "end": "2023-04-13 21:59:53",
+    "invalid_time": 0,
+    "unique_dates": 421,
+    "duplicate_timestamps": 0,
+    "median_interval_seconds": 15.0,
+    "largest_gap_hours": 87.80916666666667,
+    "download_url": "https://data.helmholtz-berlin.de/pub/ND000013/outdoor_mpp_d1_p2.csv",
+    "dataset_doi": "10.5442/ND000013"
+  },
+  {
+    "file": "outdoor_mpp_d1_p4.csv",
+    "bytes": 75643027,
+    "sha256": "959dd8f7ce5c97d0e874c668727653517b9c994c26ede1d3a74546e2c0fcbc8d",
+    "rows": 1596554,
+    "columns": [
+      "Time",
+      "Vmax",
+      "Imax",
+      "Pmax"
+    ],
+    "missing": {
+      "Time": 0,
+      "Vmax": 0,
+      "Imax": 0,
+      "Pmax": 0
+    },
+    "time_column": "Time",
+    "start": "2022-02-09 13:37:01",
+    "end": "2023-04-13 21:59:53",
+    "invalid_time": 0,
+    "unique_dates": 421,
+    "duplicate_timestamps": 0,
+    "median_interval_seconds": 15.0,
+    "largest_gap_hours": 87.80916666666667,
+    "download_url": "https://data.helmholtz-berlin.de/pub/ND000013/outdoor_mpp_d1_p4.csv",
+    "dataset_doi": "10.5442/ND000013"
+  }
+]

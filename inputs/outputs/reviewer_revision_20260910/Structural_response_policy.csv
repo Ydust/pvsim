@@ -1,0 +1,17 @@
+﻿family,context,policy,viable,si,sj,t,public_usd,additional_discounted_mwh
+reference_matched,cap,No subsidy,258,123,135,0,0.0,0.0
+reference_matched,cap,General20,313,313,0,0,36725850.301130205,1059572.7812735206
+reference_matched,cap,New20,311,0,311,0,25144350.0,487290.34463292186
+reference_matched,cap,New30,330,0,330,0,40020750.0,728774.8526541429
+reference_matched,area,No subsidy,337,204,0,133,0.0,0.0
+reference_matched,area,General20,337,70,0,267,73277879.64123136,555708.8777161391
+reference_matched,area,New20,337,0,0,337,77664768.78220902,795501.041413649
+reference_matched,area,New30,337,0,0,337,116497153.17331353,795501.041413649
+unscaled_ratio,cap,No subsidy,258,123,135,0,0.0,0.0
+unscaled_ratio,cap,General20,313,313,0,0,36725850.301130205,1059572.7812735206
+unscaled_ratio,cap,New20,311,0,311,0,25144350.0,487290.34463292186
+unscaled_ratio,cap,New30,330,0,330,0,40020750.0,728774.8526541429
+unscaled_ratio,area,No subsidy,337,198,0,139,0.0,0.0
+unscaled_ratio,area,General20,337,66,0,271,73528559.0207158,546905.359175061
+unscaled_ratio,area,New20,337,0,0,337,77664768.78220902,772788.7366051064
+unscaled_ratio,area,New30,337,0,0,337,116497153.17331353,772788.7366051064

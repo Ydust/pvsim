@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+          "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Bridging Indoor and Outdoor Perovskite Degradation Using Physics Modeling and Bayesian Analysis</title>
+    <link rel="stylesheet" href="/pub.css" type="text/css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.css" type="text/css" />
+    <script type="text/javascript" src="/pub-download.js"></script>
+    <script type="text/javascript">
+      var request_url = "https://data.helmholtz-berlin.de/pub/ND000013";
+      var ids_url = "https://data.helmholtz-berlin.de/ids";
+      var fileinfos = [{"name": "indoor_jvs.csv", "text": "indoor_jvs.csv", "size": "19.57 MiB"}, {"name": "irradiance_and_cell_temp.csv", "text": "irradiance_and_cell_temp.csv", "size": "50.62 MiB"}, {"name": "outdoor_jvs.csv", "text": "outdoor_jvs.csv", "size": "80.43 KiB"}, {"name": "outdoor_mpp_d1_p1.csv", "text": "outdoor_mpp_d1_p1.csv", "size": "72.43 MiB"}, {"name": "outdoor_mpp_d1_p2.csv", "text": "outdoor_mpp_d1_p2.csv", "size": "72.15 MiB"}, {"name": "outdoor_mpp_d1_p4.csv", "text": "outdoor_mpp_d1_p4.csv", "size": "72.14 MiB"}, {"name": "_dataset", "text": "Full Dataset", "size": "286.99 MiB"}];
+      var poll = 10000
+    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "@id": "https://doi.org/10.5442/ND000013", "name": "Bridging Indoor and Outdoor Perovskite Degradation Using Physics Modeling and Bayesian Analysis", "description": "In this work, we use physics-based modelling with a probabilistic Bayesian framework, relying solely on current-density-voltage (J-V) curves recorded throughout aging in both indoor and outdoor degradation tests. We investigate whether the same degradation mechanisms occur in both outdoor tests and indoor accelerated aging tests \u2014 an important step toward identifying the dominant degradation mechanisms from commonly available data and establishing the validity of accelerated aging tests.\nThe data provided here includes these J-V curves as well as the outdoor maximum power point tracking (MPPT) data with corresponding irradiance and cell temperature recordings. For the indoor accelerated tests, the J-V curves were recorded during the aging process and therefore under the same aging conditions of the cells: ~1.3 suns and fixed temperature levels (25, 45, 65 and 85 \u00b0C). The aging setup and measurement routine were detailed in K\u00f6bler (2022).\nThe indoor_jvs.csv file includes the following information: cell_id: such as D1_P1, represents substrate 1 (D1), cell 1 (P1), where each substrate contains six electrically isolated perovskite solar cells. Note that the naming of substrates restarts at each temperature; temp: the aging temperature in \u00b0C; meas_time: the time in hours since the start of aging; scan: scan direction of J-V (FOR: forward; REV: reverse); v and j: the raw voltage and current density data (as lists).\nFor the outdoor tests, J-V curves were recorded under a sun simulator at standard test conditions (1 sun, 25 \u00b0C). The outdoor_jvs.csv file follows the same structure as the indoor data, with two exceptions: the temp column is omitted, and meas_time is given as a date.\nThe outdoor MPPT data (outdoor_mpp_) is provided separately for three cells and includes voltage, current, and power at MPP as a timeseries. Irradiance and cell temperature data are provided in a separate merged file (irradiance_and_cell_temp.csv).", "url": "https://data.helmholtz-berlin.de/pub/ND000013", "identifier": "https://doi.org/10.5442/ND000013", "isAccessibleForFree": true, "keywords": ["Perovskite solar cells", "Degradation", "Stability", "Characterization", "Modeling", "Bayesian analysis", "Machine learning", "Outdoor", "Accelerated aging"], "creator": [{"@type": "Person", "name": "Chakar, Joseph", "givenName": "Joseph", "familyName": "Chakar", "affiliation": [{"@type": "Organization", "sameAs": "https://ror.org/023f9y602", "name": "Laboratoire de Physique des Interfaces et des Couches Minces (LPICM), Centre National de la Recherche Scientifique (CNRS), \u00c9cole polytechnique, Institut Polytechnique de Paris (IP Paris), 91120 Palaiseau, France"}, {"@type": "Organization", "sameAs": "https://ror.org/052jxdr90", "name": "Institut Photovolta\u00efque d\u2019\u00cele-de-France (IPVF), 18 Boulevard Thomas Gobert, 91120 Palaiseau, France"}]}, {"@type": "Person", "name": "Erdil, Ulas", "givenName": "Ulas", "familyName": "Erdil", "sameAs": "https://orcid.org/0009-0008-1727-9008", "affiliation": [{"@type": "Organization", "sameAs": "https://ror.org/02aj13c28", "name": "Helmholtz-Zentrum Berlin f\u00fcr Materialien und Energie, Hahn-Meitner-Platz 1, 14109 Berlin, Germany"}, {"@type": "Organization", "sameAs": "https://ror.org/02hpadn98", "name": "Faculty of Chemistry, Bielefeld University, 33615 Bielefeld, Germany"}]}, {"@type": "Person", "name": "Burgaud, Antoine", "givenName": "Antoine", "familyName": "Burgaud", "affiliation": [{"@type": "Organization", "sameAs": "https://ror.org/023f9y602", "name": "Laboratoire de Physique des Interfaces et des Couches Minces (LPICM), Centre National de la Recherche Scientifique (CNRS), \u00c9cole polytechnique, Institut Polytechnique de Paris (IP Paris), 91120 Palaiseau, France"}, {"@type": "Organization", "sameAs": "https://ror.org/052jxdr90", "name": "Institut Photovolta\u00efque d\u2019\u00cele-de-France (IPVF), 18 Boulevard Thomas Gobert, 91120 Palaiseau, France"}]}, {"@type": "Person", "name": "Remec, Marko", "givenName": "Marko", "familyName": "Remec", "sameAs": "https://orcid.org/0000-0002-4246-364X", "affiliation": [{"@type": "Organization", "sameAs": "https://ror.org/02aj13c28", "name": "Helmholtz-Zentrum Berlin f\u00fcr Materialien und Energie, Hahn-Meitner-Platz 1, 14109 Berlin, Germany"}]}, {"@type": "Person", "name": "Abate, Antonio", "givenName": "Antonio", "familyName": "Abate", "sameAs": "https://orcid.org/0000-0002-3012-3541", "affiliation": [{"@type": "Organization", "sameAs": "https://ror.org/02aj13c28", "name": "Helmholtz-Zentrum Berlin f\u00fcr Materialien und Energie, Hahn-Meitner-Platz 1, 14109 Berlin, Germany"}, {"@type": "Organization", "sameAs": "https://ror.org/02hpadn98", "name": "Faculty of Chemistry, Bielefeld University, 33615 Bielefeld, Germany"}]}, {"@type": "Person", "name": "Ulbrich, Carolin", "givenName": "Carolin", "familyName": "Ulbrich", "sameAs": "https://orcid.org/0000-0002-5513-4474", "affiliation": [{"@type": "Organization", "sameAs": "https://ror.org/02aj13c28", "name": "Helmholtz-Zentrum Berlin f\u00fcr Materialien und Energie, Hahn-Meitner-Platz 1, 14109 Berlin, Germany"}]}, {"@type": "Person", "name": "Schlatmann, Rutger", "givenName": "Rutger", "familyName": "Schlatmann", "sameAs": "https://orcid.org/0000-0002-5951-9435", "affiliation": [{"@type": "Organization", "sameAs": "https://ror.org/02aj13c28", "name": "Helmholtz-Zentrum Berlin f\u00fcr Materialien und Energie, Hahn-Meitner-Platz 1, 14109 Berlin, Germany"}]}, {"@type": "Person", "name": "Bonnassieux, Yvan", "givenName": "Yvan", "familyName": "Bonnassieux", "affiliation": [{"@type": "Organization", "sameAs": "https://ror.org/023f9y602", "name": "Laboratoire de Physique des Interfaces et des Couches Minces (LPICM), Centre National de la Recherche Scientifique (CNRS), \u00c9cole polytechnique, Institut Polytechnique de Paris (IP Paris), 91120 Palaiseau, France"}, {"@type": "Organization", "sameAs": "https://ror.org/052jxdr90", "name": "Institut Photovolta\u00efque d\u2019\u00cele-de-France (IPVF), 18 Boulevard Thomas Gobert, 91120 Palaiseau, France"}]}, {"@type": "Person", "name": "Khenkin, Mark", "givenName": "Mark", "familyName": "Khenkin", "sameAs": "https://orcid.org/0000-0001-9201-0238", "affiliation": [{"@type": "Organization", "sameAs": "https://ror.org/02aj13c28", "name": "Helmholtz-Zentrum Berlin f\u00fcr Materialien und Energie, Hahn-Meitner-Platz 1, 14109 Berlin, Germany"}]}, {"@type": "Person", "name": "Puel, Jean-Baptiste", "givenName": "Jean-Baptiste", "familyName": "Puel", "affiliation": [{"@type": "Organization", "sameAs": "https://ror.org/052jxdr90", "name": "Institut Photovolta\u00efque d\u2019\u00cele-de-France (IPVF), 18 Boulevard Thomas Gobert, 91120 Palaiseau, France"}, {"@type": "Organization", "sameAs": "https://ror.org/03wb8xz10", "name": "EDF, R&D, 18 Boulevard Thomas Gobert, 91120 Palaiseau, France"}]}], "license": {"@type": "CreativeWork", "name": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication", "license": "https://creativecommons.org/publicdomain/zero/1.0/"}, "publisher": {"@id": "https://www.helmholtz-berlin.de/", "@type": "Organization", "legalName": "Helmholtz-Zentrum Berlin f\u00fcr Materialien und Energie GmbH", "name": "HZB Data Service", "url": "https://www.helmholtz-berlin.de/"}}</script>
+  </head>
+  <body>
+    <div id="header">
+      <p class="logo">
+        <a href="http://www.helmholtz-berlin.de/"><img src="/images/hzb-logo.svg" alt="Helmholtz-Zentrum Berlin für Materialien und Energie" style="height: 50px" /></a>
+      </p>
+      <h1>HZB Data Service</h1>
+    </div>
+    <div id="content">
+      <h2>Bridging Indoor and Outdoor Perovskite Degradation Using Physics Modeling and Bayesian Analysis</h2>
+      <div id="creators">
+        <ul>
+          <li>Chakar, Joseph<a href="mailto:joseph.chakar@centralesupelec.fr"><i class="fas fa-envelope" title="joseph.chakar@centralesupelec.fr"></i></a><sup>1,2</sup></li>
+          <li>Erdil, Ulas<a href="https://orcid.org/0009-0008-1727-9008"><i class="fab fa-orcid" title="0009-0008-1727-9008"></i></a><sup>3,4</sup></li>
+          <li>Burgaud, Antoine<sup>1,2</sup></li>
+          <li>Remec, Marko<a href="https://orcid.org/0000-0002-4246-364X"><i class="fab fa-orcid" title="0000-0002-4246-364X"></i></a><sup>3</sup></li>
+          <li>Abate, Antonio<a href="https://orcid.org/0000-0002-3012-3541"><i class="fab fa-orcid" title="0000-0002-3012-3541"></i></a><sup>3,4</sup></li>
+          <li>Ulbrich, Carolin<a href="https://orcid.org/0000-0002-5513-4474"><i class="fab fa-orcid" title="0000-0002-5513-4474"></i></a><sup>3</sup></li>
+          <li>Schlatmann, Rutger<a href="https://orcid.org/0000-0002-5951-9435"><i class="fab fa-orcid" title="0000-0002-5951-9435"></i></a><sup>3</sup></li>
+          <li>Bonnassieux, Yvan<sup>1,2</sup></li>
+          <li>Khenkin, Mark<a href="https://orcid.org/0000-0001-9201-0238"><i class="fab fa-orcid" title="0000-0001-9201-0238"></i></a><a href="mailto:mark.khenkin@helmholtz-berlin.de"><i class="fas fa-envelope" title="mark.khenkin@helmholtz-berlin.de"></i></a><sup>3</sup></li>
+          <li>Puel, Jean-Baptiste<sup>2,5</sup></li>
+        </ul>
+        <ol>
+          <li>Laboratoire de Physique des Interfaces et des Couches Minces (LPICM), Centre National de la Recherche Scientifique (CNRS), École polytechnique, Institut Polytechnique de Paris (IP Paris), 91120 Palaiseau, France</li>
+          <li>Institut Photovoltaïque d’Île-de-France (IPVF), 18 Boulevard Thomas Gobert, 91120 Palaiseau, France</li>
+          <li>Helmholtz-Zentrum Berlin für Materialien und Energie, Hahn-Meitner-Platz 1, 14109 Berlin, Germany</li>
+          <li>Faculty of Chemistry, Bielefeld University, 33615 Bielefeld, Germany</li>
+          <li>EDF, R&amp;D, 18 Boulevard Thomas Gobert, 91120 Palaiseau, France</li>
+        </ol>
+      </div>
+      <div id="cite">
+        <p>
+          Cite as: Chakar, Joseph et al (2025): 
+          Bridging Indoor and Outdoor Perovskite Degradation Using Physics Modeling and Bayesian Analysis.  HZB Data Service.  https://doi.org/10.5442/ND000013
+        </p>
+      </div>
+      <div id="row">
+        <div class="column left">
+          <div class="card topbarlime">
+            <div id="abstract">
+              <h3>Abstract</h3>
+              <p>In this work, we use physics-based modelling with a probabilistic Bayesian framework, relying solely on current-density-voltage (J-V) curves recorded throughout aging in both indoor and outdoor degradation tests. We investigate whether the same degradation mechanisms occur in both outdoor tests and indoor accelerated aging tests — an important step toward identifying the dominant degradation mechanisms from commonly available data and establishing the validity of accelerated aging tests.</p>
+              <p>The data provided here includes these J-V curves as well as the outdoor maximum power point tracking (MPPT) data with corresponding irradiance and cell temperature recordings. For the indoor accelerated tests, the J-V curves were recorded during the aging process and therefore under the same aging conditions of the cells: ~1.3 suns and fixed temperature levels (25, 45, 65 and 85 °C). The aging setup and measurement routine were detailed in Köbler (2022).</p>
+              <p>The indoor_jvs.csv file includes the following information: cell_id: such as D1_P1, represents substrate 1 (D1), cell 1 (P1), where each substrate contains six electrically isolated perovskite solar cells. Note that the naming of substrates restarts at each temperature; temp: the aging temperature in °C; meas_time: the time in hours since the start of aging; scan: scan direction of J-V (FOR: forward; REV: reverse); v and j: the raw voltage and current density data (as lists).</p>
+              <p>For the outdoor tests, J-V curves were recorded under a sun simulator at standard test conditions (1 sun, 25 °C). The outdoor_jvs.csv file follows the same structure as the indoor data, with two exceptions: the temp column is omitted, and meas_time is given as a date.</p>
+              <p>The outdoor MPPT data (outdoor_mpp_) is provided separately for three cells and includes voltage, current, and power at MPP as a timeseries. Irradiance and cell temperature data are provided in a separate merged file (irradiance_and_cell_temp.csv).</p>
+            </div>
+          </div>
+          <div class="card topbarblue">
+            <div id="files">
+              <h3>Datafiles</h3>
+              <div id="filelist">
+                <script type="text/javascript">
+                  window.onload = show_file_list();
+                </script>
+              </div>
+              <div id="download">
+                <button id="download_button" onclick="request_download()">Request Download</button>
+                <img id="wait" src="/images/wait.png" style="display:none" width="20" height="20" alt="waiting for download to be ready"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right">
+          <div class="card topbargreen">
+            <div id="keywords">
+              <h3>Keywords</h3>
+              <p>Perovskite solar cells, Degradation, Stability, Characterization, Modeling, Bayesian analysis, Machine learning, Outdoor, Accelerated aging</p>
+            </div>
+          </div>
+          <div class="card topbargreen">
+            <div id="metadata">
+              <h3>Metadata</h3>
+              <ul>
+                <li>
+                  <a href="https://data.helmholtz-berlin.de/pub/ND000013/_datacite.xml">DataCite XML</a>
+                </li>
+                <li>
+                  <a href="https://data.helmholtz-berlin.de/pub/ND000013/_schema_org.json">Schema.org JSON-LD</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card topbarblue">
+            <div id="descr_relations">
+              <h3>Data Description</h3>
+              <h4>Supplement to</h4>
+              <ul>
+                <li><a href="https://doi.org/10.1002/solr.202500716">J. Chakar et al. (2025). Bridging Accelerated Indoor Aging and Outdoor Stability of Perovskite Solar Cells Using a Bayesian Modeling Framework. Solar RRL 9, e202500716. https://doi.org/10.1002/solr.202500716</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card topbargreen">
+            <div id="other_relations">
+              <h3>Related Work</h3>
+              <h4>Cites</h4>
+              <ul>
+                <li><a href="https://doi.org/10.1002/ente.202200234">H. Köbler et al. (2022). High-Throughput Aging System for Parallel Maximum Power Point Tracking of Perovskite Solar Cells. Energy Technology 10(6), 2200234. https://doi.org/10.1002/ente.202200234</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card topbargreen">
+            <div id="dates">
+              <h3>Dates</h3>
+              <ul>
+                <li>Submitted on 21 Jul 2025</li>
+              </ul>
+            </div>
+          </div>
+          <div id="license">
+            <h3>License</h3>
+            <p>
+              <a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">
+                <img src="https://licensebuttons.net/p/zero/1.0/88x31.png" alt="CC0" />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <ul>
+        <li><a href="https://www.helmholtz-berlin.de/">HZB Home</a></li>
+        <li><a href="https://www.hz-b.de/datapolicy">HZB Data Policy</a></li>
+        <li><a href="https://www.helmholtz-berlin.de/impressum_en.html">Imprint</a></li>
+        <li><a href="https://www.helmholtz-berlin.de/datenschutzerklaerung_en.html">Data protection</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

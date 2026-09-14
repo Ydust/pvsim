@@ -1,0 +1,7 @@
+{
+  "prior_counterexample_reconciled": true,
+  "zero_support_identity": true,
+  "energy_decomposition_checked_every_case": true,
+  "common_yield_ratio_invariance": true,
+  "certified_choices_checked_all_box_vertices": true
+}

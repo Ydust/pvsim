@@ -1,0 +1,16 @@
+{
+  "n_modules": 20,
+  "dc_ac_ratio": 1.2,
+  "inverter_eta_nom": 0.96,
+  "dc_loss": 0.05,
+  "mismatch_loss": 0.02,
+  "apply_spectral": true,
+  "apply_temperature": true,
+  "apply_iam": true,
+  "apply_bifacial": true,
+  "albedo": 0.2,
+  "rear_view_factor": 0.4,
+  "thermal_u0": 25.0,
+  "thermal_u1": 6.84,
+  "bifaciality_override": null
+}

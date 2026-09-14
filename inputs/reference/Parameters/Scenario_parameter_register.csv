@@ -1,0 +1,55 @@
+﻿parameter_id,group,parameter,value,unit,evidence_class,source_ids,code_location,interpretation,sensitivity
+P001,物理归一,标准辐照度 / 温度,1000 / 25,W/m² / °C,标准定义,原正文ASTM与IEC引用,pvsim/materials.py,STC参考条件，不等于全年运行条件。,
+P002,物理归一,Si / SJ / T效率,22.00 / 19.29 / 28.31,%,校准输出,,outputs/unified_method_20260906/city_results.csv,由模型STC容量密度推导；不声明三款商用组件的实测效率。,候选密度乘0.9/1/1.1
+P003,物理归一,电池面积 / 串联电池数,243.36 / 60,cm² / 个,归一化设定,,pvsim/materials.py,共同面积及串联缩放，不是三技术实际生产规格。,
+P004,物理模型,单二极管参数组,见Device_parameter_snapshot.csv,逐字段,联合校准,,pvsim/materials.py,IL、I0、n、Rs、Rsh与Ea共同定义代表器件；不能给每个参数虚构独立测量来源。,
+P005,温度,Si / SJ / T功率温度目标,−0.32 / −0.15 / −0.30,%/°C,文献启发的校准目标,E07；原正文37—39逐项引用,pvsim/materials.py,数值用于校准有效饱和电流活化能；Ea不应解释为实测缺陷能级。,SJ −0.25/−0.15/−0.10；T −0.40/−0.30/−0.20
+P006,温度,Faiman u0 / u1,25 / 6.84,W m⁻² K⁻¹ / W m⁻² K⁻¹ (m s⁻¹)⁻¹,默认值直接支持；跨技术转用假设,E01,pvsim/system.py:SystemConfig,默认源于硅组件开放支架；本研究三技术共享散热条件，非钙钛矿实测。,既有安装方式敏感性
+P007,光谱,顶/底带隙,1.68 / 1.121,eV,代表器件设定,E07,pvsim/spectral.py,叠层取短板子电池归一化电流；不能以总EQE替代电流匹配。,顶带隙1.60/1.68/1.75
+P008,光谱,顶/底带隙温度斜率,0.0003 / −0.0002677,eV/K,模型设定，方向有依据,E07,pvsim/spectral.py,相反温度趋势有户外依据，精确斜率为代表输入；电学等效dEgdT字段与显式光谱顶电池字段不同。,
+P009,光谱,EQE平台/边缘/蓝端参数,见器件快照和代码,无量纲 / nm,解析形状假设,,pvsim/spectral.py; pvsim/materials.py,合成响应函数，不是逐波长实测EQE。,SJ采用1+s(SF−1)，s=0.7/1/1.3
+P010,光谱,大气压力,101325,Pa,固定大气情景,,pvsim/spectral.py:generate_spectrum,SPECTRL2晴空代理固定输入，非逐城逐时观测；实际宽带气象变化不等于实测光谱变化。,
+P011,光谱,可降水量,1.4,cm,固定大气情景,,pvsim/spectral.py:generate_spectrum,SPECTRL2晴空代理固定输入，非逐城逐时观测；实际宽带气象变化不等于实测光谱变化。,
+P012,光谱,臭氧,0.3,atm-cm,固定大气情景,,pvsim/spectral.py:generate_spectrum,SPECTRL2晴空代理固定输入，非逐城逐时观测；实际宽带气象变化不等于实测光谱变化。,
+P013,光谱,500 nm气溶胶光学厚度,0.1,无量纲,固定大气情景,,pvsim/spectral.py:generate_spectrum,SPECTRL2晴空代理固定输入，非逐城逐时观测；实际宽带气象变化不等于实测光谱变化。,
+P014,光谱,参考年内日,172,日序,固定大气情景,,pvsim/spectral.py:generate_spectrum,SPECTRL2晴空代理固定输入，非逐城逐时观测；实际宽带气象变化不等于实测光谱变化。,
+P015,光谱,参考光谱面倾角,0,度,固定大气情景,,pvsim/spectral.py:generate_spectrum,SPECTRL2晴空代理固定输入，非逐城逐时观测；实际宽带气象变化不等于实测光谱变化。,
+P016,光谱,查表天顶角 / 叠层温度,0—88共13点 / −10—80共10点,度 / °C,数值网格,,pvsim/spectral.py,数值分辨率而非样本量；超出表域的实现需按代码解释。,
+P017,系统,直交流容量比,1.2,kWDC/kWAC,共同工程情景,E02,pvsim/system.py,ATB同类指标为1.34；本研究1.2没有被ATB直接验证。,既有容量比敏感性
+P018,系统,逆变器标称效率,96,%,同类基准支持,E02,pvsim/system.py,PVWatts效率曲线及削顶单独处理。,
+P019,系统,直流损失 / 失配,5 / 2,%,作者设定,,pvsim/system.py,顺序相乘合计6.9%；不含单独建模的IAM和逆变器损失，不能与ATB总损失重复叠加。,
+P020,系统,散射光IAM,0.95,无量纲,近似设定,,pvsim/optics.py,恒定近似，不是每城天空辐射的角度积分观测。,
+P021,系统,双面率 / 反照率 / 后侧视角,0 / 0.2 / 0.4,无量纲,基准单面设定,E02,pvsim/system.py; pvsim/materials.py,基准双面率为0，后侧视角不产生增益；光谱模型反照率仍参与晴空光谱。,
+P022,空间,主域城市数,337,个,数据域定义,,data/source_tables/china_prefecture_city_anchors.csv,模型城市机会及行政域，非实地抽样项目。,
+P023,空间,趋势 / 残差邻点数,GHI+纬度+经度 / 8,变量 / 个,估计器设定,,scripts/deepen_figures234_analysis.py；原正文Methods,先重建每技术发电量再求比值；行政中心气象与面积平均有区别。,
+P024,空间,距离经度缩放 / 最小距离,cos(35°) / 0.02°,无量纲 / 度,数值设定,,原正文Methods；统一空间重建代码,IDW平方反比残差插值，非经验最优参数。,
+P025,物理扫描,SJ / T参数组合,27 / 27,组,确定性网格,,outputs/figures234_submission_20260907/Figure3_parameter_city_results.csv,每技术3温度×3光谱×3密度，全部54组入图4；不是54个测量样品或置信区间。,
+P026,经济,投运年 / 评价期,2035 / 25,年,比较情景,,scripts/analyse_regional_policy.py,所有技术同25年项目期；旧服役寿命LCOE与固定期限NPV分别标识。,
+P027,经济,实际折现率,5,%/年,作者设定,,pvsim/economics.py; scripts/analyse_regional_policy.py,税前无杠杆，DCF方法支持框架，不直接支持5%为中国项目WACC。,已有3/5/8%
+P028,经济,年运维费率,1.5,%初始投资/年,作者设定；同类方法参照,E02；E10,pvsim/economics.py; scripts/analyse_regional_policy.py:lifecycle,不是与美国美元/kWAC年的直接等价。当前2035相当于Si8.38/SJ5.78/T8.95 USD/kWDC年。 IRENA中国调查均值3.2与非OECD模型假设10.95分别使用，不视为同类样本上下置信界。,本轮独立1/1.5/2%；新增共同3.2与10.95 USD/kWDC年对照
+P029,经济,容量 / 场地电力价值,0.04 / 0.08,USD/kWh,作者设定,,scripts/analyse_regional_policy.py:evaluate,恒定实际收益价值，非中国分省上网价；IRENA LCOE不应当作售电价依据。,已有0.03—0.05 / 0.06—0.10；等价电价交叉检验
+P030,经济,额外场地成本,25,USD/m²可用场地,作者设定,,scripts/analyse_regional_policy.py:evaluate,一次性共同成本；与旧LCOE的25 USD/m²孔径面积是不同分母。,0/25/50
+P031,经济,孔径/可用场地面积比,0.65,m²/m²,作者设定,,scripts/analyse_regional_policy.py:evaluate,未做逐城屋顶布局；不是所有倾角下的实测地面覆盖率。,0.5/0.65/0.8
+P032,成本,2025 Si / SJ / T初始投资,0.65 / 0.95 / 1.13,USD/WDC系统,情景锚点；部分外部参照,E03；E04,pvsim/economic_priors.py,Si接近2024中国安装成本0.591；SJ无银行可融资部署样本校准；T不能声称1.13整体来自Cordell。,原有系统±15%；单技术±20%；新增Si 591 USD/kWDC冻结历史锚点
+P033,成本,叠层成本来源拆分,0.428 + 约0.70 ≈ 1.13,USD/WDC,组件外部参照 + 未验证系统加项,E04,pvsim/materials.py原注释,0.428为组件MSP且美国25%效率3GW/年；0.70按作者系统加项处理，不冒充论文报价。,
+P034,成本,2035 Si / SJ / T成本,0.558738 / 0.385 / 0.596337,USD/WDC系统,学习模型输出,,scripts/fig_substitution_validation.py:capex_and_lcoe,不是2035实测或厂商报价；取决于种子容量、外生新增轨迹和底价。,
+P035,成本,美元价格基年,2024年不变美元,USD,作者计价约定,,当前经济模型,本轮将情景货币输入定义于2024年价格水平；保留原数字并非声称旧来源已完成通胀换算。Cordell美国组件MSP仅作背景，未当作换算后的中国报价。,
+P036,学习,Si / SJ / T学习率,18 / 27 / 30,%每累计容量翻倍,作者先验,,pvsim/economic_priors.py,光伏学习文献支持形式，不直接验证新技术27%或30%。,正态SD4个百分点，截限8—45%
+P037,学习,Si / SJ / T成本底价,0.35—0.45 / 0.32—0.45 / 0.42—0.58,USD/WDC系统,作者均匀先验,,pvsim/economic_priors.py,组件价格不是系统成本底价；中央值0.4/0.385/0.5。,
+P038,学习,Si / SJ / T初始学习容量,1500 / 12 / 4,GW,有效学习种子设定,,pvsim/economic_priors.py,尤其12与4不可标为2025实际累计装机；影响成本下降速度。,
+P039,学习,外生新增容量轨迹,见Learning_schedule.csv,GW/年,作者设定,,scripts/fig_substitution_validation.py:global_new_schedule,函数返回值再乘1.4更新累计量；不宣称IEA预测；避免把ROW重复解释为另一真实数据序列。,
+P040,学习,年度最大降本,12,%,作者约束,,scripts/fig_substitution_validation.py:capex_and_lcoe,限制模型成本年降幅，不是经验定律。,
+P041,耐久性,Si寿命 / 年衰减 / 初始损失,25 / 0.5 / 1,年 / % / %,寿命与初损设定；衰减有经验参照,E05,pvsim/economics.py,晶硅0.5%/年为文献中位参照，其他数值不由该文自动支持。,本轮年衰减0.5/0.7/1%
+P042,耐久性,SJ 2025寿命 / 年衰减 / 初损,15 / 3 / 10,年 / % / %,前瞻情景,,pvsim/economics.py,不能声称已验证15年商业运行；初损在每次更换后重置。,
+P043,耐久性,SJ 2035寿命 / 年衰减 / 初损,21.5 / 1.505 / 6.75,年 / % / %,联动公式输出,,pvsim/economics.py:perovskite_durability,寿命、衰减和初损联动是建模假设；不是同一器件长期观测。,本轮固定寿命分别改变衰减0.7/3%及初损0/10%
+P044,耐久性,SJ完全目标寿命 / 衰减 / 初损,25 / 0.7 / 5,年 / % / %,目标设定,,pvsim/economics.py,18—25年终点范围与2028—2042终点年份均为先验，不是ISOS预测。,
+P045,耐久性,T寿命 / 年衰减 / 初损,25 / 1.2 / 4,年 / % / %,前瞻情景,E06仅限定证据边界,pvsim/economics.py,未以商业叠层25年队列验证。,本轮寿命18/21.5/25；衰减0.5/1.2/2%；初损0/4/10%
+P046,耐久性,更换成本 / 残值 / 停机 / 退役,100 / 0 / 0 / 0,%投运年系统实际成本 / USD / 日 / USD,核算假设,,scripts/analyse_regional_policy.py:lifecycle,寿命不足评价期则在精确寿命时点全系统更换；不随未来学习价替换。,已有50%更换、期末残值
+P047,政策,省级交付系数,2024省级光伏利用率,比例,官方区域代理,原正文50,data/source_tables/nea_pv_utilization_rate_2024.csv,内蒙古较低值为基准、较高值为对照；不是2035城市预测，也不是容量因子。,较高值/不弃光对照
+P048,政策,建设补贴强度,0—30，锚点10/20/30,%初始光伏系统投资,地方上限参照 + 反事实共同资格,E08；E09,figure5_subsidy_revision_20260908/analyse.py,不含场地运维更换；一次初始支付；不得直接外推全国法定补贴。,
+P049,政策,支持对象,通用三技术 / 新技术SJ和T,技术类别,比较设计,E08；E09,figure5_subsidy_revision_20260908/analyse.py,政策参照非逐城资格映射；两方案相同比例隔离对象作用。,
+P050,政策,管理费,5,%实际转移支付,作者设定,,figure5_subsidy_revision_20260908/sensitivity.py,实际实施成本缺少项目核算，不能用财政补贴文件证明5%。,已有0/5/10%
+P051,政策,缺口接受增量,1,USD/项目,理想化择优设定,,figure5_subsidy_revision_20260908/analyse.py,打破无差异；不是已验证参与激励，不含风险补偿。,
+P052,政策,标准机会,1 / 1,MWp / ha每城,归一化设定,,figure5_subsidy_revision_20260908/analyse.py,分别组成容量/场地组合，不是实际储备项目数量。,
+P053,数值,MC次数 / 随机种子,10000 / 42,次 / 整数,数值设定,,pvsim/economic_priors.py,独立先验抽样不是经验概率，确定性参数扫描无统计重复含义。,
+P054,历史扩展,Softmax温度、爬坡上限与存量退役,见代码，不参与当前NPV择优,混合,历史扩展假设,,scripts/fig_substitution_validation.py:forward,历史新建份额模型单独归档；不可与图5确定性净现值规则混为一套政策参数。,

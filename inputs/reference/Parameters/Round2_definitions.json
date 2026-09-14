@@ -1,0 +1,13 @@
+{
+  "baseline_boundary_identity": true,
+  "root_residual_tolerance_usd_per_unit": 1e-08,
+  "no_extrapolated_boundary_for_censored_cases": true,
+  "boundary_rows": 4044,
+  "cost_boundary_rows": 28308,
+  "anchored_cases": 6,
+  "joint_cases": 9,
+  "currency": "All new scenario monetary inputs explicitly defined as constant 2024 USD. Existing numerical values are assigned this author convention, not presented as inflation-converted historical quotes. Cordell MSP remains an external context reference, not a converted input.",
+  "OM_sources": "IRENA 2024 report p100 footnote34:10.95 non-OECD LCOE modelling assumption; p101:China surveyed all-in average3.2. Neither is observed perovskite/tandem O&M. Common rates isolate capex-linked cost scaling.",
+  "Si_anchor": "591 USD/kWDC observed2024China benchmark frozen into2035 comparison, NOT future forecast or learning calibration.",
+  "boundary_scope": "Each candidate varies alone against fixed other two technology NPVs and zero; fixed lifetime, burn-in, discount, electricity values and baseline proportional O&M; not simultaneous joint optimization."
+}

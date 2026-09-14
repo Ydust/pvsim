@@ -1,0 +1,35 @@
+{
+  "Central": {},
+  "Discount3%": {
+    "r": 0.03
+  },
+  "Discount8%": {
+    "r": 0.08
+  },
+  "Investment85%": {
+    "cap_multiplier": 0.85
+  },
+  "Investment115%": {
+    "cap_multiplier": 1.15
+  },
+  "SingleLife18": {
+    "single_life": 18.0
+  },
+  "SingleLife25": {
+    "single_life": 25.0
+  },
+  "HalfReplacement": {
+    "replacement_factor": 0.5
+  },
+  "ResidualValue": {
+    "salvage": true
+  },
+  "LowElectricity": {
+    "price_cap": 0.03,
+    "price_area": 0.06
+  },
+  "HighElectricity": {
+    "price_cap": 0.05,
+    "price_area": 0.1
+  }
+}

@@ -1,0 +1,6 @@
+class_id,fixed_capacity,fixed_site_area,cities,color
+0,c-Si,c-Si,13,#0072b2
+1,SJ,c-Si,112,#e69f00
+2,c-Si,T,110,#9547a3
+3,SJ,T,23,#009e73
+4,No build,c-Si,79,#b8b8b8

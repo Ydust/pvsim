@@ -1,0 +1,22 @@
+{
+  "cities": 337,
+  "contexts": 2,
+  "technologies": 3,
+  "shares": [
+    0,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "baseline_regression_pass": true,
+  "all_602_general_portfolios_reproduced_by_gap_transfers": true,
+  "construction_denominator": "initial PV system investment, excludes site cost, O&M and future replacements",
+  "transfer_timing": "initial investment time; single payment",
+  "programme_scope": "counterfactual common eligibility across 337 standardized opportunities; no claim of actual city-level entitlement or future policy",
+  "general": "all three technologies",
+  "new_technology": "single-junction perovskite and tandem; Si receives zero under this scenario",
+  "matched_gap": "exact general-programme city and technology choices; minimum necessary transfers assuming known NPVs and acceptance just above indifference",
+  "admin_fraction": 0.05,
+  "currency": "same model USD price basis as Figure 4; no RMB/USD conversion is needed for dimensionless investment shares",
+  "policy_basis": "Beijing 2023 public/park projects up to20% construction; Beijing2026 perovskite/new technologies up to30%; 10% intermediate sensitivity, common20% benchmark isolates eligibility; no universal actual entitlement"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "path": "outputs/unified_method_20260906/city_results.csv",
+    "sha256": "0d9083271bb34cc771eba83d6daec6ce61066ebb8991026e1c325bb457a10de7",
+    "bytes": 231522,
+    "role": "Existing processed source input; provenance fields retained"
+  },
+  {
+    "path": "outputs/prefecture_area_weighted_physics_summary.csv",
+    "sha256": "a05dd5d92fb98f13dc3170e82efc32aa9ae55d79d2b843f20dc01178e698553d",
+    "bytes": 157241,
+    "role": "Existing processed source input; provenance fields retained"
+  },
+  {
+    "path": "outputs/city_mechanism_attribution.csv",
+    "sha256": "3e0c9d5bfb42b0e2b491363a2f61f891aa90ccb3e7d9b04898bcd1079a7c2185",
+    "bytes": 265180,
+    "role": "Existing processed source input; provenance fields retained"
+  },
+  {
+    "path": "data/source_tables/nea_pv_utilization_rate_2024.csv",
+    "sha256": "f68d7e869ffd8ea7a7f359175bd585d706e0b23c9a88a56707f0836a3dae590c",
+    "bytes": 10598,
+    "role": "Existing processed source input; provenance fields retained"
+  },
+  {
+    "path": "data/source_tables/china_prefecture_city_anchors.csv",
+    "sha256": "5547e1d592ce0798a6f251f333cc11757620a8fd3af267def8698651a6c25749",
+    "bytes": 79209,
+    "role": "Existing processed source input; provenance fields retained"
+  },
+  {
+    "path": ".work/figures234_submission_20260907/spatial_operator.npy",
+    "sha256": "1680615cb7cfe731c52816d55326876ef43d802a7d2714f5eec4f6f826ea94ad",
+    "bytes": 908680,
+    "role": "Unchanged primary 337 \u00d7 337 spatial operator"
+  },
+  {
+    "path": "inputs/electrical_hourly_inputs.npz",
+    "sha256": "9c0548b3a4bf6ecc651d4de5a7f45d3d58689f02da4006f053b1a4c59ffd2c3b",
+    "bytes": 49390114,
+    "role": "Derived hourly conditions: poa/tcell/csi_eff/single_eff; 337 anchors \u00d7 8760 hours"
+  }
+]

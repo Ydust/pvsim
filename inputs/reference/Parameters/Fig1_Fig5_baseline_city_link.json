@@ -1,0 +1,11 @@
+{
+  "nonviable": {
+    "n": 79,
+    "mean_single_capacity_gain_pct": 4.576105637578645
+  },
+  "viable": {
+    "n": 258,
+    "mean_single_capacity_gain_pct": 2.9911820470950663
+  },
+  "interpretation": "Descriptive grouping under the baseline capacity scenario; not a causal effect of relative yield gain on viability."
+}
