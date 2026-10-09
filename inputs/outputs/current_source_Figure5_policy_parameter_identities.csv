@@ -1,0 +1,8 @@
+﻿parameter,value,unit,identity,numeric_locator
+support_rate,0.2,fraction,Inherited author scenario,"sources/policy/inherited_cell_15.py and inherited_policy_summary.csv, share=0.2"
+administration_fraction,0.05,fraction,Inherited author allowance,"sources/policy/inherited_cell_15.py, admin_usd=0.05*direct_support_usd"
+General eligibility,"1,1,1","cSi,SJ,T",Policy scenario,"sources/policy/inherited_cell_13.py, policy_result"
+New technology eligibility,"0,1,1","cSi,SJ,T",Policy scenario,"sources/policy/inherited_cell_13.py, grant[0]=0"
+capacity_scale,1000,kWp/opportunity,Inherited standardized opportunity,"sources/policy/inherited_cell_11.py, scale=1000"
+site_scale,10000,m2/opportunity,Inherited standardized opportunity,"sources/policy/inherited_cell_11.py, site=25*10000 and scale=density*packing*10"
+rate_scan,"0..0.3,301 states",fraction,Inherited author scan,"sources/policy/inherited_cell_15.py, np.linspace(0,0.3,301)"

@@ -1,0 +1,9 @@
+{
+  "rows": 369,
+  "counts": {
+    "EXACT_SOURCE_COORDINATES": 369
+  },
+  "municipality_actual_json_is_national_table": 4,
+  "original_catalogue_modified": false,
+  "derived_coordinate_accuracy_not_certified_by_this_numeric_check": true
+}

@@ -1,0 +1,172 @@
+{
+  "version": 56,
+  "backend": "Python",
+  "regions": 369,
+  "excluded_regions": 0,
+  "figures": {
+    "1": {
+      "dimensions_mm": [
+        183.0,
+        130.0
+      ],
+      "layout_notes": [
+        "Two descriptive association markers per scatter; layout, data, palette and fitted lines unchanged. Compact two-row layout; technology-only map titles; comparison contexts retained in axis labels and unchanged caption. Scatter headings removed. Original map aspect fixes the common rendered plot height; colorbars are ancillary axes. Quartile distributions retained in companion SI."
+      ],
+      "n": 369,
+      "quartile_counts": {
+        "Q1": 93,
+        "Q2": 92,
+        "Q3": 92,
+        "Q4": 92
+      },
+      "correlations": {
+        "single_capacity_pct": {
+          "pearson": -0.4425139175036663,
+          "spearman": -0.41211367783478065
+        },
+        "tandem_area_pct": {
+          "pearson": -0.3462415034305215,
+          "spearman": -0.3258717625366618
+        }
+      },
+      "panel_order": [
+        "SJ map",
+        "SJ GHI association",
+        "Tandem map",
+        "Tandem GHI association"
+      ],
+      "supplementary_distributions": "Figure_S_Fig1_distributions",
+      "scatter_marker_area_pt2": 5
+    }
+  },
+  "map_template": [
+    {
+      "panel": "a",
+      "regions": 369,
+      "visible_region_polygons": 369,
+      "main_region_centres": 368,
+      "inset_only_region_codes": [
+        "460300"
+      ],
+      "main_extent": [
+        73,
+        135,
+        17,
+        54
+      ],
+      "main_projection": "LambertConformal 105/35; 25/47",
+      "main_projected_limits": [
+        -3459830.603756417,
+        3250793.540837769,
+        -1966393.2618681302,
+        2486823.8929423047
+      ],
+      "inset_projection": "PlateCarree",
+      "inset_extent": [
+        105,
+        125,
+        3,
+        25
+      ],
+      "inset_axes_fraction": [
+        0.785,
+        0.006,
+        0.212,
+        0.37
+      ],
+      "main_frame": false,
+      "province_overlay_layers": 0,
+      "graticule_layers": 0,
+      "river_layers": 0,
+      "coordinate_edits": false,
+      "value_edits": false,
+      "aspect": "equal",
+      "city_boundary_color": "white",
+      "city_boundary_width_pt": 0.1,
+      "inset_boundary_width_pt": 0.06,
+      "width_figure_fraction": 0.35000000000000003,
+      "quantitative_colormap_and_norm": "Unchanged from preview v3"
+    },
+    {
+      "panel": "c",
+      "regions": 369,
+      "visible_region_polygons": 369,
+      "main_region_centres": 368,
+      "inset_only_region_codes": [
+        "460300"
+      ],
+      "main_extent": [
+        73,
+        135,
+        17,
+        54
+      ],
+      "main_projection": "LambertConformal 105/35; 25/47",
+      "main_projected_limits": [
+        -3459830.603756417,
+        3250793.540837769,
+        -1966393.2618681302,
+        2486823.8929423047
+      ],
+      "inset_projection": "PlateCarree",
+      "inset_extent": [
+        105,
+        125,
+        3,
+        25
+      ],
+      "inset_axes_fraction": [
+        0.785,
+        0.006,
+        0.212,
+        0.37
+      ],
+      "main_frame": false,
+      "province_overlay_layers": 0,
+      "graticule_layers": 0,
+      "river_layers": 0,
+      "coordinate_edits": false,
+      "value_edits": false,
+      "aspect": "equal",
+      "city_boundary_color": "white",
+      "city_boundary_width_pt": 0.1,
+      "inset_boundary_width_pt": 0.06,
+      "width_figure_fraction": 0.35000000000000003,
+      "quantitative_colormap_and_norm": "Unchanged from preview v3"
+    }
+  ],
+  "association_markers": [
+    {
+      "panel": "b",
+      "yield_field": "single_capacity_pct",
+      "regions": 369,
+      "excluded_regions": 0,
+      "pearson_r": -0.4425139175036663,
+      "spearman_rho": -0.41211367783478065,
+      "x_field": "ghi_kwh_m2",
+      "scope": "Descriptive spatial associations, no significance test or causal attribution",
+      "display_decimals": 3,
+      "annotation_count": 2,
+      "anchor_axes_fraction": [
+        0.975,
+        0.965
+      ]
+    },
+    {
+      "panel": "d",
+      "yield_field": "tandem_area_pct",
+      "regions": 369,
+      "excluded_regions": 0,
+      "pearson_r": -0.3462415034305215,
+      "spearman_rho": -0.3258717625366618,
+      "x_field": "ghi_kwh_m2",
+      "scope": "Descriptive spatial associations, no significance test or causal attribution",
+      "display_decimals": 3,
+      "annotation_count": 2,
+      "anchor_axes_fraction": [
+        0.975,
+        0.965
+      ]
+    }
+  ]
+}

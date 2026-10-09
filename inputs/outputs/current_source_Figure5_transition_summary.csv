@@ -1,0 +1,5 @@
+﻿candidate,context,retained,new,lost,remaining_gap,baseline_competitive,target_competitive,declining_margin_regions,improving_margin_regions,display_main
+single_junction,capacity,163,11,0,195,163,174,35,334,True
+single_junction,site_area,0,0,0,369,0,0,35,334,False
+tandem,capacity,0,0,0,369,0,0,8,361,False
+tandem,site_area,169,80,0,120,169,249,8,361,True

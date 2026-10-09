@@ -1,0 +1,7 @@
+{
+  "checked": "2026-10-04",
+  "rows": 369,
+  "max_abs_coordinate_transcription_error": 0.0,
+  "all_source_SHA256_match": true,
+  "scope": "original source center fields only; model representative overrides and coordinate conversion are separately declared"
+}

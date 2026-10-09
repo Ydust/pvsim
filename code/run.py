@@ -12,6 +12,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main() -> int:
+    if "--archived" not in sys.argv:
+        if "--current-figures" in sys.argv: sys.argv.remove("--current-figures")
+        from run_current_figures import main as current_main
+        return current_main()
+    sys.argv.remove("--archived")
     workspace = prepare_runtime(ROOT)
     environment = {
         **os.environ,

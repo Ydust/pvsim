@@ -1,0 +1,215 @@
+pvlib 0.15.2
+Original file C:\new\xuni_fangzhen\.venv\Lib\site-packages\pvlib\pvsystem.py
+1554: def calcparams_desoto(effective_irradiance, temp_cell,
+1555:                       alpha_sc, a_ref, I_L_ref, I_o_ref, R_sh_ref, R_s,
+1556:                       EgRef=1.121, dEgdT=-0.0002677,
+1557:                       irrad_ref=1000, temp_ref=25):
+1558:     '''
+1559:     Calculates five parameter values for the single diode equation at
+1560:     effective irradiance and cell temperature using the De Soto et al.
+1561:     model. The five values returned by ``calcparams_desoto`` can be used by
+1562:     singlediode to calculate an IV curve.
+1563: 
+1564:     The model is described in [1]_.
+1565: 
+1566:     Parameters
+1567:     ----------
+1568:     effective_irradiance : numeric
+1569:         The irradiance (W/m2) that is converted to photocurrent.
+1570: 
+1571:     temp_cell : numeric
+1572:         The average cell temperature of cells within a module in C.
+1573: 
+1574:     alpha_sc : float
+1575:         The short-circuit current temperature coefficient of the
+1576:         module in units of A/C.
+1577: 
+1578:     a_ref : float
+1579:         The product of the usual diode ideality factor (n, unitless),
+1580:         number of cells in series (Ns), and cell thermal voltage at reference
+1581:         conditions, in units of V.
+1582: 
+1583:     I_L_ref : float
+1584:         The light-generated current (or photocurrent) at reference conditions,
+1585:         in amperes.
+1586: 
+1587:     I_o_ref : float
+1588:         The dark or diode reverse saturation current at reference conditions,
+1589:         in amperes.
+1590: 
+1591:     R_sh_ref : float
+1592:         The shunt resistance at reference conditions, in ohms.
+1593: 
+1594:     R_s : float
+1595:         The series resistance at reference conditions, in ohms.
+1596: 
+1597:     EgRef : float
+1598:         The energy bandgap at reference temperature in units of eV.
+1599:         1.121 eV for crystalline silicon. EgRef must be >0.  For parameters
+1600:         from the SAM CEC module database, EgRef=1.121 is implicit for all
+1601:         cell types in the parameter estimation algorithm used by NLR.
+1602: 
+1603:     dEgdT : float
+1604:         The temperature dependence of the energy bandgap at reference
+1605:         conditions in units of 1/K. May be either a scalar value
+1606:         (e.g. -0.0002677 as in [1]_) or a DataFrame (this may be useful if
+1607:         dEgdT is a modeled as a function of temperature). For parameters from
+1608:         the SAM CEC module database, dEgdT=-0.0002677 is implicit for all cell
+1609:         types in the parameter estimation algorithm used by NLR.
+1610: 
+1611:     irrad_ref : float, default 1000
+1612:         Reference irradiance in W/m^2.
+1613: 
+1614:     temp_ref : float, default 25
+1615:         Reference cell temperature in C.
+1616: 
+1617:     Returns
+1618:     -------
+1619:     Tuple of the following results:
+1620: 
+1621:     photocurrent : numeric
+1622:         Light-generated current in amperes
+1623: 
+1624:     saturation_current : numeric
+1625:         Diode saturation current in amperes
+1626: 
+1627:     resistance_series : numeric
+1628:         Series resistance in ohms
+1629: 
+1630:     resistance_shunt : numeric
+1631:         Shunt resistance in ohms
+1632: 
+1633:     nNsVth : numeric
+1634:         The product of the usual diode ideality factor (n, unitless),
+1635:         number of cells in series (Ns), and cell thermal voltage at
+1636:         specified effective irradiance and cell temperature.
+1637: 
+1638:     References
+1639:     ----------
+1640:     .. [1] W. De Soto et al., "Improvement and validation of a model for
+1641:        photovoltaic array performance", Solar Energy, vol 80, pp. 78-88,
+1642:        2006.
+1643: 
+1644:     .. [2] System Advisor Model web page. https://sam.nlr.gov.
+1645: 
+1646:     .. [3] A. Dobos, "An Improved Coefficient Calculator for the California
+1647:        Energy Commission 6 Parameter Photovoltaic Module Model", Journal of
+1648:        Solar Energy Engineering, vol 134, 2012.
+1649: 
+1650:     .. [4] O. Madelung, "Semiconductors: Data Handbook, 3rd ed." ISBN
+1651:        3-540-40488-0
+1652: 
+1653:     See Also
+1654:     --------
+1655:     singlediode
+1656:     retrieve_sam
+1657: 
+1658:     Notes
+1659:     -----
+1660:     If the reference parameters in the ModuleParameters struct are read
+1661:     from a database or library of parameters (e.g. System Advisor
+1662:     Model), it is important to use the same EgRef and dEgdT values that
+1663:     were used to generate the reference parameters, regardless of the
+1664:     actual bandgap characteristics of the semiconductor. For example, in
+1665:     the case of the System Advisor Model library, created as described
+1666:     in [3], EgRef and dEgdT for all modules were 1.121 and -0.0002677,
+1667:     respectively.
+1668: 
+1669:     This table of reference bandgap energies (EgRef), bandgap energy
+1670:     temperature dependence (dEgdT), and "typical" airmass response (M)
+1671:     is provided purely as reference to those who may generate their own
+1672:     reference module parameters (a_ref, IL_ref, I0_ref, etc.) based upon
+1673:     the various PV semiconductors. Again, we stress the importance of
+1674:     using identical EgRef and dEgdT when generation reference parameters
+1675:     and modifying the reference parameters (for irradiance, temperature,
+1676:     and airmass) per DeSoto's equations.
+1677: 
+1678:      Crystalline Silicon (Si):
+1679:          * EgRef = 1.121
+1680:          * dEgdT = -0.0002677
+1681: 
+1682:          >>> M = np.polyval([-1.26E-4, 2.816E-3, -0.024459, 0.086257, 0.9181],
+1683:          ...                AMa) # doctest: +SKIP
+1684: 
+1685:          Source: [1]
+1686: 
+1687:      Cadmium Telluride (CdTe):
+1688:          * EgRef = 1.475
+1689:          * dEgdT = -0.0003
+1690: 
+1691:          >>> M = np.polyval([-2.46E-5, 9.607E-4, -0.0134, 0.0716, 0.9196],
+1692:          ...                AMa) # doctest: +SKIP
+1693: 
+1694:          Source: [4]
+1695: 
+1696:      Copper Indium diSelenide (CIS):
+1697:          * EgRef = 1.010
+1698:          * dEgdT = -0.00011
+1699: 
+1700:          >>> M = np.polyval([-3.74E-5, 0.00125, -0.01462, 0.0718, 0.9210],
+1701:          ...                AMa) # doctest: +SKIP
+1702: 
+1703:          Source: [4]
+1704: 
+1705:      Copper Indium Gallium diSelenide (CIGS):
+1706:          * EgRef = 1.15
+1707:          * dEgdT = ????
+1708: 
+1709:          >>> M = np.polyval([-9.07E-5, 0.0022, -0.0202, 0.0652, 0.9417],
+1710:          ...                AMa) # doctest: +SKIP
+1711: 
+1712:          Source: Wikipedia
+1713: 
+1714:      Gallium Arsenide (GaAs):
+1715:          * EgRef = 1.424
+1716:          * dEgdT = -0.000433
+1717:          * M = unknown
+1718: 
+1719:          Source: [4]
+1720:     '''
+1721: 
+1722:     # Boltzmann constant in eV/K, 8.617332478e-05
+1723:     k = constants.value('Boltzmann constant in eV/K')
+1724: 
+1725:     # reference temperature
+1726:     Tref_K = temp_ref + 273.15
+1727:     Tcell_K = temp_cell + 273.15
+1728: 
+1729:     E_g = EgRef * (1 + dEgdT*(Tcell_K - Tref_K))
+1730: 
+1731:     nNsVth = a_ref * (Tcell_K / Tref_K)
+1732: 
+1733:     # In the equation for IL, the single factor effective_irradiance is
+1734:     # used, in place of the product S*M in [1]. effective_irradiance is
+1735:     # equivalent to the product of S (irradiance reaching a module's cells) *
+1736:     # M (spectral adjustment factor) as described in [1].
+1737:     IL = effective_irradiance / irrad_ref * \
+1738:         (I_L_ref + alpha_sc * (Tcell_K - Tref_K))
+1739:     I0 = (I_o_ref * ((Tcell_K / Tref_K) ** 3) *
+1740:           (np.exp(EgRef / (k*(Tref_K)) - (E_g / (k*(Tcell_K))))))
+1741:     # Note that the equation for Rsh differs from [1]. In [1] Rsh is given as
+1742:     # Rsh = Rsh_ref * (S_ref / S) where S is broadband irradiance reaching
+1743:     # the module's cells. If desired this model behavior can be duplicated
+1744:     # by applying reflection and soiling losses to broadband plane of array
+1745:     # irradiance and not applying a spectral loss modifier, i.e.,
+1746:     # spectral_modifier = 1.0.
+1747:     # use errstate to silence divide by warning
+1748:     with np.errstate(divide='ignore'):
+1749:         Rsh = R_sh_ref * (irrad_ref / effective_irradiance)
+1750: 
+1751:     Rs = R_s
+1752: 
+1753:     numeric_args = (effective_irradiance, temp_cell)
+1754:     # IL: photocurrent, I0: saturation_current, Rs: resistance_series,
+1755:     # Rsh: resistance_shunt
+1756:     out = (IL, I0, Rs, Rsh, nNsVth)
+1757: 
+1758:     if all(map(np.isscalar, numeric_args)):
+1759:         return out
+1760: 
+1761:     index = tools.get_pandas_index(*numeric_args)
+1762: 
+1763:     if index is None:
+1764:         return np.broadcast_arrays(*out)
+1765: 
+1766:     return tuple(pd.Series(a, index=index).rename(None) for a in out)

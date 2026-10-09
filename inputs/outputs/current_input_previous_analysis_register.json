@@ -1,0 +1,474 @@
+{
+  "date": "2026-10-04",
+  "regions": 369,
+  "source_case": "joint_all_ERA5; corrected 369-city time alignment",
+  "upstream_hashes": {
+    "outputs\\results\\joint_all_ERA5\\primary_city_results.csv": "8289ccbe77701a28e85fb1447e47079aade6aff37bcc550827ac13f6ec7a76e3",
+    "scripts\\restored_inputs.py": "5de1e9c5257761efe0d30efc443fb610983f2cc53923dcb664d14af9ef5f9057",
+    "scripts\\finance.py": "a131597ff793d16c7e0a81aac053fd3af811cb76607d223298060e0af72251fa",
+    "scripts\\cost_paths.py": "1fd1cec070ae5ef99593e54620b301f6328a4edfd8c89ab26b1abf78c07484de",
+    "pvsim\\economics.py": "fd8dcd10a59ed2d9bf381bd9320b152fedf6e99ee06c3667b3b58e359be2369d"
+  },
+  "system_capex_usd_kwp": [
+    558.7380237506496,
+    385.0,
+    596.337065984
+  ],
+  "capacity_density_w_m2_aperture": [
+    220.0004997436446,
+    192.88354612041329,
+    283.1194442640904
+  ],
+  "baseline_lifetime_years": [
+    25.0,
+    21.5,
+    25.0
+  ],
+  "baseline_degradation_rate": [
+    0.005,
+    0.01505,
+    0.012
+  ],
+  "baseline_burn_in_loss": [
+    0.01,
+    0.0675,
+    0.04
+  ],
+  "capacity_price": 0.04,
+  "site_price": 0.08,
+  "site_cost_usd_m2": 25.0,
+  "packing": 0.65,
+  "discount_rate": 0.05,
+  "project_horizon_years": 25,
+  "life_grid": [
+    15.0,
+    15.25,
+    15.5,
+    15.75,
+    16.0,
+    16.25,
+    16.5,
+    16.75,
+    17.0,
+    17.25,
+    17.5,
+    17.75,
+    18.0,
+    18.25,
+    18.5,
+    18.75,
+    19.0,
+    19.25,
+    19.5,
+    19.75,
+    20.0,
+    20.25,
+    20.5,
+    20.75,
+    21.0,
+    21.25,
+    21.5,
+    21.75,
+    22.0,
+    22.25,
+    22.5,
+    22.75,
+    23.0,
+    23.25,
+    23.5,
+    23.75,
+    24.0,
+    24.25,
+    24.5,
+    24.75,
+    25.0
+  ],
+  "cost_grid_usd_wp": [
+    0.05,
+    0.060000000000000005,
+    0.07,
+    0.08000000000000002,
+    0.09000000000000001,
+    0.1,
+    0.11000000000000001,
+    0.12000000000000001,
+    0.13,
+    0.14,
+    0.15000000000000002,
+    0.16000000000000003,
+    0.17000000000000004,
+    0.18000000000000005,
+    0.19,
+    0.2,
+    0.21000000000000002,
+    0.22000000000000003,
+    0.23000000000000004,
+    0.24000000000000005,
+    0.25000000000000006,
+    0.26000000000000006,
+    0.27,
+    0.28,
+    0.29000000000000004,
+    0.30000000000000004,
+    0.31000000000000005,
+    0.32000000000000006,
+    0.33,
+    0.34,
+    0.35000000000000003,
+    0.36000000000000004,
+    0.37000000000000005,
+    0.38000000000000006,
+    0.39000000000000007,
+    0.4000000000000001,
+    0.4100000000000001,
+    0.42000000000000004,
+    0.43000000000000005,
+    0.44000000000000006,
+    0.45000000000000007,
+    0.4600000000000001,
+    0.4700000000000001,
+    0.4800000000000001,
+    0.49000000000000005,
+    0.5000000000000001,
+    0.5100000000000001,
+    0.5200000000000001,
+    0.5300000000000001,
+    0.5400000000000001,
+    0.5500000000000002,
+    0.5600000000000002,
+    0.5700000000000002,
+    0.5800000000000002,
+    0.5900000000000002,
+    0.6000000000000002,
+    0.6100000000000001,
+    0.6200000000000001,
+    0.6300000000000001,
+    0.6400000000000001,
+    0.6500000000000001,
+    0.6600000000000001,
+    0.6700000000000002,
+    0.6800000000000002,
+    0.6900000000000002,
+    0.7000000000000002,
+    0.7100000000000002,
+    0.7200000000000002,
+    0.7300000000000002,
+    0.7400000000000002,
+    0.7500000000000002,
+    0.7600000000000002,
+    0.7700000000000002,
+    0.7800000000000001,
+    0.7900000000000001,
+    0.8000000000000002,
+    0.8100000000000002,
+    0.8200000000000002,
+    0.8300000000000002,
+    0.8400000000000002,
+    0.8500000000000002,
+    0.8600000000000002,
+    0.8700000000000002,
+    0.8800000000000002,
+    0.8900000000000002,
+    0.9000000000000002,
+    0.9100000000000003,
+    0.9200000000000003,
+    0.9300000000000002,
+    0.9400000000000002,
+    0.9500000000000002,
+    0.9600000000000002,
+    0.9700000000000002,
+    0.9800000000000002,
+    0.9900000000000002,
+    1.0000000000000002
+  ],
+  "baseline_counts": [
+    {
+      "no_build": 68,
+      "csi": 138,
+      "single_junction": 163,
+      "tandem": 0
+    },
+    {
+      "no_build": 0,
+      "csi": 200,
+      "single_junction": 0,
+      "tandem": 169
+    }
+  ],
+  "profile_counts": [
+    {
+      "capacity_choice": "csi",
+      "site_area_choice": "csi",
+      "conditional_profile": "csi / csi",
+      "regions": 6
+    },
+    {
+      "capacity_choice": "csi",
+      "site_area_choice": "tandem",
+      "conditional_profile": "csi / tandem",
+      "regions": 132
+    },
+    {
+      "capacity_choice": "no_build",
+      "site_area_choice": "csi",
+      "conditional_profile": "no_build / csi",
+      "regions": 68
+    },
+    {
+      "capacity_choice": "single_junction",
+      "site_area_choice": "csi",
+      "conditional_profile": "single_junction / csi",
+      "regions": 126
+    },
+    {
+      "capacity_choice": "single_junction",
+      "site_area_choice": "tandem",
+      "conditional_profile": "single_junction / tandem",
+      "regions": 37
+    }
+  ],
+  "gap_summary": [
+    {
+      "context": "capacity",
+      "candidate": "single_junction",
+      "baseline_winners": 163,
+      "losing_candidates": 206,
+      "median_upfront_cut_losers_pct": 3.959886102693181,
+      "max_upfront_cut_pct": 43.319009308466185,
+      "above100_cut": 0,
+      "life_only_new_parity_regions": 202,
+      "linked_SJ_life_new_parity_regions": 205,
+      "life_endpoint_new_regions": 180,
+      "median_density_increase_losers_pct": null,
+      "median_yield_increase_losers_pct": 2.0015510554471896
+    },
+    {
+      "context": "site_area",
+      "candidate": "single_junction",
+      "baseline_winners": 0,
+      "losing_candidates": 369,
+      "median_upfront_cut_losers_pct": 46.18754709650067,
+      "max_upfront_cut_pct": 102.25288091386997,
+      "above100_cut": 2,
+      "life_only_new_parity_regions": 50,
+      "linked_SJ_life_new_parity_regions": 251,
+      "life_endpoint_new_regions": 50,
+      "median_density_increase_losers_pct": 22.71366010945095,
+      "median_yield_increase_losers_pct": 12.79322711778231
+    },
+    {
+      "context": "capacity",
+      "candidate": "tandem",
+      "baseline_winners": 0,
+      "losing_candidates": 369,
+      "median_upfront_cut_losers_pct": 22.015662364948387,
+      "max_upfront_cut_pct": 49.67283143141016,
+      "above100_cut": 0,
+      "life_only_new_parity_regions": 0,
+      "linked_SJ_life_new_parity_regions": null,
+      "life_endpoint_new_regions": 0,
+      "median_density_increase_losers_pct": null,
+      "median_yield_increase_losers_pct": 18.688834423341458
+    },
+    {
+      "context": "site_area",
+      "candidate": "tandem",
+      "baseline_winners": 169,
+      "losing_candidates": 200,
+      "median_upfront_cut_losers_pct": 3.8674963154204876,
+      "max_upfront_cut_pct": 12.859122487109097,
+      "above100_cut": 0,
+      "life_only_new_parity_regions": 0,
+      "linked_SJ_life_new_parity_regions": null,
+      "life_endpoint_new_regions": 0,
+      "median_density_increase_losers_pct": 4.588855629613997,
+      "median_yield_increase_losers_pct": 1.8916703116215765
+    }
+  ],
+  "matched_price_controls": [
+    {
+      "scenario": "matched_price_control",
+      "context": "capacity",
+      "electricity_value_usd_kwh": 0.04,
+      "site_cost_usd_m2": 0,
+      "no_build": 68,
+      "csi": 138,
+      "single_junction": 163,
+      "tandem": 0
+    },
+    {
+      "scenario": "matched_price_control",
+      "context": "site_area",
+      "electricity_value_usd_kwh": 0.04,
+      "site_cost_usd_m2": 0.0,
+      "no_build": 68,
+      "csi": 193,
+      "single_junction": 108,
+      "tandem": 0
+    },
+    {
+      "scenario": "matched_price_control",
+      "context": "capacity",
+      "electricity_value_usd_kwh": 0.04,
+      "site_cost_usd_m2": 0,
+      "no_build": 68,
+      "csi": 138,
+      "single_junction": 163,
+      "tandem": 0
+    },
+    {
+      "scenario": "matched_price_control",
+      "context": "site_area",
+      "electricity_value_usd_kwh": 0.04,
+      "site_cost_usd_m2": 25.0,
+      "no_build": 290,
+      "csi": 79,
+      "single_junction": 0,
+      "tandem": 0
+    },
+    {
+      "scenario": "matched_price_control",
+      "context": "capacity",
+      "electricity_value_usd_kwh": 0.08,
+      "site_cost_usd_m2": 0,
+      "no_build": 0,
+      "csi": 365,
+      "single_junction": 4,
+      "tandem": 0
+    },
+    {
+      "scenario": "matched_price_control",
+      "context": "site_area",
+      "electricity_value_usd_kwh": 0.08,
+      "site_cost_usd_m2": 0.0,
+      "no_build": 0,
+      "csi": 200,
+      "single_junction": 0,
+      "tandem": 169
+    },
+    {
+      "scenario": "matched_price_control",
+      "context": "capacity",
+      "electricity_value_usd_kwh": 0.08,
+      "site_cost_usd_m2": 0,
+      "no_build": 0,
+      "csi": 365,
+      "single_junction": 4,
+      "tandem": 0
+    },
+    {
+      "scenario": "matched_price_control",
+      "context": "site_area",
+      "electricity_value_usd_kwh": 0.08,
+      "site_cost_usd_m2": 25.0,
+      "no_build": 0,
+      "csi": 200,
+      "single_junction": 0,
+      "tandem": 169
+    }
+  ],
+  "near_transition_sensitivity": [
+    {
+      "context": "capacity",
+      "candidate": "single_junction",
+      "cost_cut_threshold_pct": 1,
+      "losing_candidates_within_threshold": 18
+    },
+    {
+      "context": "capacity",
+      "candidate": "single_junction",
+      "cost_cut_threshold_pct": 5,
+      "losing_candidates_within_threshold": 135
+    },
+    {
+      "context": "capacity",
+      "candidate": "single_junction",
+      "cost_cut_threshold_pct": 10,
+      "losing_candidates_within_threshold": 167
+    },
+    {
+      "context": "site_area",
+      "candidate": "single_junction",
+      "cost_cut_threshold_pct": 1,
+      "losing_candidates_within_threshold": 0
+    },
+    {
+      "context": "site_area",
+      "candidate": "single_junction",
+      "cost_cut_threshold_pct": 5,
+      "losing_candidates_within_threshold": 0
+    },
+    {
+      "context": "site_area",
+      "candidate": "single_junction",
+      "cost_cut_threshold_pct": 10,
+      "losing_candidates_within_threshold": 2
+    },
+    {
+      "context": "capacity",
+      "candidate": "tandem",
+      "cost_cut_threshold_pct": 1,
+      "losing_candidates_within_threshold": 0
+    },
+    {
+      "context": "capacity",
+      "candidate": "tandem",
+      "cost_cut_threshold_pct": 5,
+      "losing_candidates_within_threshold": 0
+    },
+    {
+      "context": "capacity",
+      "candidate": "tandem",
+      "cost_cut_threshold_pct": 10,
+      "losing_candidates_within_threshold": 0
+    },
+    {
+      "context": "site_area",
+      "candidate": "tandem",
+      "cost_cut_threshold_pct": 1,
+      "losing_candidates_within_threshold": 26
+    },
+    {
+      "context": "site_area",
+      "candidate": "tandem",
+      "cost_cut_threshold_pct": 5,
+      "losing_candidates_within_threshold": 135
+    },
+    {
+      "context": "site_area",
+      "candidate": "tandem",
+      "cost_cut_threshold_pct": 10,
+      "losing_candidates_within_threshold": 191
+    }
+  ],
+  "robust_choice_regions_2pct": [
+    58,
+    35
+  ],
+  "baseline_source_max_residual_usd": [
+    5.238689482212067e-10,
+    1.3969838619232178e-09
+  ],
+  "isolated_baseline_residual": [
+    0.0,
+    4.263256414560601e-14,
+    0.0,
+    5.684341886080802e-14
+  ],
+  "representative_city": {
+    "index": 102,
+    "adcode": "340600",
+    "city": "淮北",
+    "selection": "nearest to national median cSi specific yield; stable input order resolves ties"
+  },
+  "assumptions": [
+    "Initial system cost scanned independently; ongoing and replacement expenditures held at baseline in primary scan.",
+    "Competing technologies held at baseline; max NPV includes no build. Parity does not prove strict dominance.",
+    "Linked-cost and linked-SJ-durability scans are separate author scenarios, not empirical device development trajectories.",
+    "Life increase inversion only over baseline to 25 years. Exact 25-year endpoint can remove replacement at project end.",
+    "Density inversion fixes specific yield and packing; parameter requirement, not demonstrated device upgrade.",
+    "Conditional profiles use two different baseline electricity values. Matched-price controls separate revenue assumptions.",
+    "1/5/10 percent cost margins are descriptive author thresholds, not observed adoption thresholds.",
+    "Independent +/-2 percent yield corners are deterministic stress tests, not a statistical confidence interval."
+  ]
+}

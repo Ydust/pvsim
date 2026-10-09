@@ -1,0 +1,9 @@
+﻿panel,technology,mask,display_name,regions
+c,single,7,Full model,369
+c,single,6,Temperature off,369
+c,single,5,Spectrum off,369
+c,single,0,All three off,369
+d,tandem,7,Full model,369
+d,tandem,6,Temperature off,369
+d,tandem,5,Spectrum off,369
+d,tandem,0,All three off,369

@@ -1,0 +1,13 @@
+﻿context,policy,recipient,public_cost_million_usd,marker_area_pt2,marker_drawn
+capacity,General,entry,5.866749249381823,21.120297297774563,True
+capacity,General,switch,19.125602552984745,68.85216919074509,True
+capacity,General,paid_unchanged,16.19222792829383,58.29202054185778,True
+capacity,New technology,entry,3.8808,13.97088,True
+capacity,New technology,switch,11.1573,40.16628,True
+capacity,New technology,paid_unchanged,13.17855,47.44278,True
+site_area,General,entry,0.0,0.0,False
+site_area,General,switch,33.18613265471246,119.47007755696485,True
+site_area,General,paid_unchanged,48.343820960206074,174.03775545674188,True
+site_area,New technology,entry,0.0,0.0,False
+site_area,New technology,switch,46.09185090932286,165.9306632735623,True
+site_area,New technology,paid_unchanged,38.94761401837782,140.21141046616015,True

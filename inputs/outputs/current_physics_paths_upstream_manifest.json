@@ -1,0 +1,86 @@
+[
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/pvsim/cell.py",
+    "sha256": "4ebbcd1e9dc29bc2c86dab8e255bb441626994684f64b41a7c89389a173f5c77"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/pvsim/city_catalog.py",
+    "sha256": "f0483d56e7043758e7f966b1e8e6e781b635f60116fd55f45578ddcdd880811c"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/pvsim/economics.py",
+    "sha256": "fd8dcd10a59ed2d9bf381bd9320b152fedf6e99ee06c3667b3b58e359be2369d"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/pvsim/economic_priors.py",
+    "sha256": "ce9809931ce3beaaaa60758e0970100a036b2bb08582b89790b8af471e75cdd5"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/pvsim/materials.py",
+    "sha256": "f9cb074dbdfdab364fdcc6c2a2b17d495402d3f4fe2653563c22f40fe3d32d1a"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/pvsim/module.py",
+    "sha256": "09d5de3bf1c2ab9caf188af258334d606ffba17e51425625be0df8629eacbc80"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/pvsim/optics.py",
+    "sha256": "acca022b2562aae658333dc5927671a7f6548d30fe502705714cc94fb842d22e"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/pvsim/spectral.py",
+    "sha256": "86c94e6d060978b3320a849d7af650dda3a982a481856fb5eb8d41b304cb90a9"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/pvsim/system.py",
+    "sha256": "4d3098b62a430623f132d32cbaeb1c9cd91bad09e0c80632bb6894676804cb62"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/pvsim/temperature.py",
+    "sha256": "b670d4b6b7185c9d3042c10e1d96c41a91e199492f4f5ccd4945333cbd0082bd"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/pvsim/weather.py",
+    "sha256": "0e1c2035741448d5d48e7f176a08930d3d4a3783c47c6122c4bb09df1b9d5bf5"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/pvsim/__init__.py",
+    "sha256": "3e678197f1e7704acfe6acb79d71c71286517565c29ca9a31839b5107271f1a9"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/scripts/run_physics.py",
+    "sha256": "497e8933bbc7471f0b4ae5ba0b7d38a12b404105e651b53087dba521a7ad302c"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/scripts/analyse_results.py",
+    "sha256": "47fdf89ebd5212130c3eec406fc785ff27c9f293003ef947ac59989773f537c2"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/scripts/device_scenarios.py",
+    "sha256": "a5b0ebd3026cfc1a0e9ca1e78626a4078cbacf05065546e19b294de43a6f7a91"
+  },
+  {
+    "path": "deliverables/Submission_20261004_regional_pathways/05_Reproducibility/scripts/exact_vector.py",
+    "sha256": "ec28a9d44e46fb93db5b2f38f6e40ed5cf780f92527688c24ec4fc33aeb6e7d8"
+  },
+  {
+    "path": "deliverables/Common_start_paths_20261008/inputs/active_parameter_numeric_provenance.csv",
+    "sha256": "b8f3bed5ea77283284051d4239d67d5fce6abc536ff8c3f803e4d039f566f591"
+  },
+  {
+    "path": "deliverables/Common_start_paths_20261008/inputs/anchor_metadata.csv",
+    "sha256": "a00f22e78da005dd5df1e0ce06a17a00aec66574c512bdcc4498a0cf9a2f84e1"
+  },
+  {
+    "path": "deliverables/Common_start_paths_20261008/inputs/ASTMG173_used.csv",
+    "sha256": "ccbbc6590e96365972b2610d1c7550b310200470f477a18f8bb780960924f0a4"
+  },
+  {
+    "path": "deliverables/Common_start_paths_20261008/inputs/original_city_metadata.csv",
+    "sha256": "d643ddf0e5b4d2e22185e8a9714983aee72bae13b4e9b406183cffd4d62d1a74"
+  },
+  {
+    "path": "deliverables/Common_start_paths_20261008/inputs/spatial_operator.npy",
+    "sha256": "642494b8049771286022138df90ffd375b9ae904236b182c23998b0f6713955a"
+  }
+]

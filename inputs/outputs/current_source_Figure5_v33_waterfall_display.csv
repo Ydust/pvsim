@@ -1,0 +1,15 @@
+﻿candidate,context,response_class,sign,plot_x,bottom_gwh,contribution_gwh,top_gwh
+single_junction,capacity,entry,positive,0,0.0,60.31486514795934,60.31486514795934
+single_junction,capacity,entry,negative,0,60.31486514795934,0.0,60.31486514795934
+single_junction,capacity,switch,positive,1,60.31486514795934,0.0,60.31486514795934
+single_junction,capacity,switch,negative,1,60.31486514795934,-13.09910199862931,47.21576314933003
+single_junction,capacity,unchanged,positive,2,47.21576314933003,13.530391999048645,60.746155148378676
+single_junction,capacity,unchanged,negative,2,60.746155148378676,-0.0024478988023456188,60.74370724957633
+single_junction,capacity,net,total,3,0.0,60.74370724957633,60.74370724957633
+tandem,site_area,entry,positive,0,0.0,0.0,0.0
+tandem,site_area,entry,negative,0,0.0,0.0,0.0
+tandem,site_area,switch,positive,1,0.0,379.1948793483925,379.1948793483925
+tandem,site_area,switch,negative,1,379.1948793483925,0.0,379.1948793483925
+tandem,site_area,unchanged,positive,2,379.1948793483925,41.267096989425035,420.46197633781753
+tandem,site_area,unchanged,negative,2,420.46197633781753,-0.09880850454178453,420.3631678332757
+tandem,site_area,net,total,3,0.0,420.36316783327567,420.36316783327567

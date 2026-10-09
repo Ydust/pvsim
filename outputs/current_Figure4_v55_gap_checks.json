@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "regions_per_context": 369,
+  "regional_gap_records": 738,
+  "candidate_gap_records": 1476,
+  "unchanged_Figure6_gap_values_and_classes": true,
+  "independent_forward_inverse_check": true,
+  "no_policy_in_gap_calculation": true,
+  "new_external_numeric_inputs": 0,
+  "cumulative_share_definition": "100*(sorted regional row + 1)/369; tied values stack.",
+  "threshold_pct": 5,
+  "inputs_sha256": {
+    "inputs/Figure1_region_values.csv": "f29dd87364f984d95bf276c028091a1376295741e8799dff87b42471485f2d5e",
+    "qa/Figure4_analysis_register.json": "35e6f17ffe25384786f022ac885ea42fa6451772973f4df6e387f03ab6cde5dd",
+    "Source_Data/Figure5_policy_baseline_all_technology_NPV.csv": "df70bf518b953ee85be9332223ed98cdff9ab6ccd788c7cd3c234473568759e6",
+    "Source_Data/Figure6_regional_classification.csv": "4f55112236f1fa9abd498acf582ffe6f4159d1dbe27e615ac9127f82ec34427a"
+  }
+}

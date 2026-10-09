@@ -1,0 +1,18 @@
+[
+  {
+    "coverage_pct": 50,
+    "baseline_pct": 10.196816564576473,
+    "target_pct": 9.791068523283196,
+    "change_pp": -0.40574804129327724,
+    "controller_baseline": "南京",
+    "controller_target": "南京"
+  },
+  {
+    "coverage_pct": 100,
+    "baseline_pct": 13.49692207426516,
+    "target_pct": 13.71669915127136,
+    "change_pp": 0.2197770770061993,
+    "controller_baseline": "大兴安岭",
+    "controller_target": "大兴安岭"
+  }
+]

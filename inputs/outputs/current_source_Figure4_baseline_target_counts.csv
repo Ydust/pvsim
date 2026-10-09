@@ -1,0 +1,9 @@
+﻿candidate,context,response_state,regions,coverage_pct,initial_cost_usd_wp,lifetime_years,max_coverage_at_zero_initial_cost_pct
+single_junction,capacity,baseline,163,44.173441734417345,0.385,21.5,100.0
+single_junction,capacity,target,174,47.15447154471545,0.385,21.5,100.0
+single_junction,site_area,baseline,0,0.0,0.385,21.5,99.45799457994579
+single_junction,site_area,target,0,0.0,0.385,21.5,99.45799457994579
+tandem,capacity,baseline,0,0.0,0.5963370659839999,25.0,100.0
+tandem,capacity,target,0,0.0,0.5963370659839999,25.0,100.0
+tandem,site_area,baseline,169,45.799457994579946,0.5963370659839999,25.0,100.0
+tandem,site_area,target,249,67.47967479674797,0.5963370659839999,25.0,100.0

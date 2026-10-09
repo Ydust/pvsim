@@ -1,0 +1,33 @@
+{
+  "version": 15,
+  "backend": "Python",
+  "regions": 369,
+  "excluded_regions": 0,
+  "figures": {
+    "2": {
+      "dimensions_mm": [
+        183.0,
+        145.0
+      ],
+      "layout_notes": [
+        "Four complementary panels: matched specific-yield attribution, exact density/operation identity, and both technology controls. All raw displayed regional values retained; common lower-panel axis ranges. IAM inset is ancillary and its square physical geometry is checked separately."
+      ],
+      "n": 369,
+      "technologies": 2,
+      "factorial_states_per_technology": 8,
+      "baseline_reconciliation_max_pp": {
+        "single": 2.2648549702353193e-14,
+        "tandem": 2.220446049250313e-14
+      },
+      "spatial_summary": "Mean and spatial P10–P90; no experimental CI",
+      "same_switch_reference": true,
+      "density_is_not_climate_effect": true,
+      "displayed_raw_values": 2952
+    }
+  },
+  "input_sha256": {
+    "inputs\\geography\\prefecture_boundaries.geojson": "e5959d6c4091889a0169b5c69c01144521b8c070a9bb69d3ba4b4fd4deb55951",
+    "inputs\\geography\\map_context.geojson": "3b1a0462deba0fbfcbe4708af9a91b50ed807429b49320b7d8a37640f9543c94"
+  },
+  "scope": "Figure2 readability revision only; all existing numerical Source Data retained"
+}

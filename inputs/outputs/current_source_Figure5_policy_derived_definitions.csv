@@ -1,0 +1,9 @@
+﻿quantity,definition,scope
+entry,before=no_build and after is a built technology,"Choice effect, not observed adoption"
+switch,both built and technology differs,Choice effect under a fixed baseline
+paid_unchanged,same built choice; positive selected grant,A transfer with no change in the modelled discrete choice; no claim about all real behavioural effects
+unfunded_unchanged,"same choice; zero selected grant, including no build",Retained in all369 totals; not a funded unchanged project
+grant,rate*initial system CAPEX*eligibility of selected technology,"Site fee, O&M, replacement are excluded"
+public_cost,direct grant*(1+0.05),"Administration is an inherited author allowance, not an observed programme cost"
+tie_rule,"maximum over no_build,csi,single_junction,tandem; first occurrence wins",No build at NPV=0; near ties separately flagged
+sample,369 standardized opportunities separately per context,"No exclusions, sampling uncertainty or national siting inventory"

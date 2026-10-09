@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "regions_per_case": 369,
+  "all_case_rows": 1476,
+  "displayed_pairs": 738,
+  "maximum_Figure4_NPV_residual": 7.105427357601002e-14,
+  "maximum_boundary_margin_identity_error_pp": 1.4210854715202004e-13,
+  "near_ties": 0,
+  "all_competitive_regions_match_unique_joint_choice": true,
+  "no_new_external_inputs": true,
+  "baseline_and_target_finance_identical": true,
+  "summary": [
+    {
+      "candidate": "single_junction",
+      "context": "capacity",
+      "retained": 163,
+      "new": 11,
+      "lost": 0,
+      "remaining_gap": 195,
+      "baseline_competitive": 163,
+      "target_competitive": 174,
+      "declining_margin_regions": 35,
+      "improving_margin_regions": 334,
+      "display_main": true
+    },
+    {
+      "candidate": "single_junction",
+      "context": "site_area",
+      "retained": 0,
+      "new": 0,
+      "lost": 0,
+      "remaining_gap": 369,
+      "baseline_competitive": 0,
+      "target_competitive": 0,
+      "declining_margin_regions": 35,
+      "improving_margin_regions": 334,
+      "display_main": false
+    },
+    {
+      "candidate": "tandem",
+      "context": "capacity",
+      "retained": 0,
+      "new": 0,
+      "lost": 0,
+      "remaining_gap": 369,
+      "baseline_competitive": 0,
+      "target_competitive": 0,
+      "declining_margin_regions": 8,
+      "improving_margin_regions": 361,
+      "display_main": false
+    },
+    {
+      "candidate": "tandem",
+      "context": "site_area",
+      "retained": 169,
+      "new": 80,
+      "lost": 0,
+      "remaining_gap": 120,
+      "baseline_competitive": 169,
+      "target_competitive": 249,
+      "declining_margin_regions": 8,
+      "improving_margin_regions": 361,
+      "display_main": true
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+﻿candidate,context,regions,baseline_built,endpoint_built,baseline_parity,endpoint_parity,candidate_npv_decrease,net_discounted_generation_kwh,positive_generation_change_kwh,negative_generation_change_kwh,entry,entry_discounted_generation_kwh,switch,switch_discounted_generation_kwh,unchanged,unchanged_discounted_generation_kwh,exit,exit_discounted_generation_kwh
+single_junction,capacity,369,301,305,163,174,35,60743707.24957633,73845257.14700799,-13101549.897431655,4,60314865.14795934,7,-13099101.99862931,358,13527944.100246299,0,0.0
+single_junction,site_area,369,369,369,0,0,35,0.0,0.0,0.0,0,0.0,0,0.0,369,0.0,0,0.0
+tandem,capacity,369,301,301,0,0,8,0.0,0.0,0.0,0,0.0,0,0.0,369,0.0,0,0.0
+tandem,site_area,369,369,369,169,249,8,420363167.83327574,420461976.33781755,-98808.50454178452,0,0.0,80,379194879.3483925,289,41168288.48488324,0,0.0

@@ -1,0 +1,79 @@
+pvlib 0.15.2
+Original file C:\new\xuni_fangzhen\.venv\Lib\site-packages\pvlib\inverter.py
+336: def pvwatts(pdc, pdc0, eta_inv_nom=0.96, eta_inv_ref=0.9637):
+337:     r"""
+338:     NLR's PVWatts inverter model.
+339: 
+340:     The PVWatts inverter model [1]_ calculates inverter efficiency :math:`\eta`
+341:     as a function of input DC power :math:`P_{dc}`
+342: 
+343:     .. math::
+344: 
+345:         \eta = \frac{\eta_{nom}}{\eta_{ref}} (-0.0162\zeta - \frac{0.0059}
+346:         {\zeta} + 0.9858)
+347: 
+348:     where :math:`\zeta=P_{dc}/P_{dc0}` and :math:`P_{dc0}=P_{ac0}/\eta_{nom}`.
+349: 
+350:     Output AC power is then given by
+351: 
+352:     .. math::
+353: 
+354:         P_{ac} = \min(\eta P_{dc}, P_{ac0})
+355: 
+356:     Parameters
+357:     ----------
+358:     pdc : numeric
+359:         DC power. Same unit as ``pdc0``.
+360:     pdc0: numeric
+361:         DC input limit of the inverter.  Same unit as ``pdc``.
+362:     eta_inv_nom: numeric, default 0.96
+363:         Nominal inverter efficiency. [unitless]
+364:     eta_inv_ref: numeric, default 0.9637
+365:         Reference inverter efficiency. PVWatts defines it to be 0.9637
+366:         and is included here for flexibility. [unitless]
+367: 
+368:     Returns
+369:     -------
+370:     power_ac: numeric
+371:         AC power.  Same unit as ``pdc0``.
+372: 
+373:     Notes
+374:     -----
+375:     When sourcing ``pdc`` from pvlib functions
+376:     (e.g. :py:func:`pvlib.pvsystem.pvwatts_dc`) their DC power output is in W,
+377:     and ``pdc0`` should have the same unit (W).
+378: 
+379:     Note that ``pdc0`` is also used as a symbol in
+380:     :py:func:`pvlib.pvsystem.pvwatts_dc`. ``pdc0`` in this function refers to
+381:     the DC power input limit of the inverter. ``pdc0`` in
+382:     :py:func:`pvlib.pvsystem.pvwatts_dc` refers to the DC power of the modules
+383:     at reference conditions.
+384: 
+385:     See Also
+386:     --------
+387:     pvlib.inverter.pvwatts_multi
+388: 
+389:     References
+390:     ----------
+391:     .. [1] A. P. Dobos, "PVWatts Version 5 Manual", NREL, Golden, CO, USA,
+392:        Technical Report NREL/TP-6A20-62641, 2014, :doi:`10.2172/1158421`.
+393:     """
+394: 
+395:     pac0 = eta_inv_nom * pdc0
+396:     zeta = pdc / pdc0
+397: 
+398:     # arrays to help avoid divide by 0 for scalar and array
+399:     eta = np.zeros_like(pdc, dtype=float)
+400:     pdc_neq_0 = ~np.equal(pdc, 0)
+401: 
+402:     # eta < 0 if zeta < 0.006. power_ac is forced to be >= 0 below. GH 541
+403:     # In some published versions of [1] the parentheses are missing
+404:     eta = eta_inv_nom / eta_inv_ref * (
+405:         -0.0162 * zeta - np.divide(0.0059, zeta, out=eta, where=pdc_neq_0)
+406:         + 0.9858)  # noQA: W503
+407: 
+408:     power_ac = eta * pdc
+409:     power_ac = np.minimum(pac0, power_ac)
+410:     power_ac = np.maximum(0, power_ac)     # GH 541
+411: 
+412:     return power_ac

@@ -1,0 +1,9 @@
+﻿candidate,context,response_class,regions,plot_y
+single_junction,capacity,entry,4,3.16
+single_junction,capacity,switch,7,2.84
+single_junction,site_area,entry,0,2.16
+single_junction,site_area,switch,0,1.84
+tandem,capacity,entry,0,1.16
+tandem,capacity,switch,0,0.84
+tandem,site_area,entry,0,0.16
+tandem,site_area,switch,80,-0.16

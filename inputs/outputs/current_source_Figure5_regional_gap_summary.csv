@@ -1,0 +1,5 @@
+﻿context,candidate,regions,at_parity,small_gap,remaining_gap,median_cut_among_losing_pct,max_cut_pct,above100_count
+capacity,single_junction,369,163,135,71,3.9595245784811177,43.3163425141796,0
+capacity,tandem,369,0,0,369,22.01772139300324,49.67283143141016,0
+site_area,single_junction,369,0,0,369,46.18763115311986,102.24602602066186,2
+site_area,tandem,369,169,135,65,3.8699309399010815,12.861245216104052,0

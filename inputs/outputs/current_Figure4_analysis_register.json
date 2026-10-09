@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-08",
+  "capex2035_usd_kwp": [
+    558.7380237506496,
+    385.0,
+    596.337065984
+  ],
+  "density_W_m2": [
+    220.0004997436446,
+    192.88354612041329,
+    283.1194442640904
+  ],
+  "baseline_lifetime": [
+    25.0,
+    21.5,
+    25.0
+  ],
+  "degradation": [
+    0.005,
+    0.01505,
+    0.012
+  ],
+  "burn_in": [
+    0.01,
+    0.0675,
+    0.04
+  ],
+  "prices": [
+    0.04,
+    0.08
+  ],
+  "site_charge": 25.0,
+  "packing": 0.65,
+  "discount_rate": 0.05,
+  "horizon": 25,
+  "counts": [
+    {
+      "candidate": "single_junction",
+      "context": "capacity",
+      "response_state": "baseline",
+      "regions": 163,
+      "coverage_pct": 44.173441734417345,
+      "initial_cost_usd_wp": 0.385,
+      "lifetime_years": 21.5,
+      "max_coverage_at_zero_initial_cost_pct": 100.0
+    },
+    {
+      "candidate": "single_junction",
+      "context": "capacity",
+      "response_state": "target",
+      "regions": 174,
+      "coverage_pct": 47.15447154471545,
+      "initial_cost_usd_wp": 0.385,
+      "lifetime_years": 21.5,
+      "max_coverage_at_zero_initial_cost_pct": 100.0
+    },
+    {
+      "candidate": "single_junction",
+      "context": "site_area",
+      "response_state": "baseline",
+      "regions": 0,
+      "coverage_pct": 0.0,
+      "initial_cost_usd_wp": 0.385,
+      "lifetime_years": 21.5,
+      "max_coverage_at_zero_initial_cost_pct": 99.45799457994579
+    },
+    {
+      "candidate": "single_junction",
+      "context": "site_area",
+      "response_state": "target",
+      "regions": 0,
+      "coverage_pct": 0.0,
+      "initial_cost_usd_wp": 0.385,
+      "lifetime_years": 21.5,
+      "max_coverage_at_zero_initial_cost_pct": 99.45799457994579
+    },
+    {
+      "candidate": "tandem",
+      "context": "capacity",
+      "response_state": "baseline",
+      "regions": 0,
+      "coverage_pct": 0.0,
+      "initial_cost_usd_wp": 0.5963370659839999,
+      "lifetime_years": 25.0,
+      "max_coverage_at_zero_initial_cost_pct": 100.0
+    },
+    {
+      "candidate": "tandem",
+      "context": "capacity",
+      "response_state": "target",
+      "regions": 0,
+      "coverage_pct": 0.0,
+      "initial_cost_usd_wp": 0.5963370659839999,
+      "lifetime_years": 25.0,
+      "max_coverage_at_zero_initial_cost_pct": 100.0
+    },
+    {
+      "candidate": "tandem",
+      "context": "site_area",
+      "response_state": "baseline",
+      "regions": 169,
+      "coverage_pct": 45.799457994579946,
+      "initial_cost_usd_wp": 0.5963370659839999,
+      "lifetime_years": 25.0,
+      "max_coverage_at_zero_initial_cost_pct": 100.0
+    },
+    {
+      "candidate": "tandem",
+      "context": "site_area",
+      "response_state": "target",
+      "regions": 249,
+      "coverage_pct": 67.47967479674797,
+      "initial_cost_usd_wp": 0.5963370659839999,
+      "lifetime_years": 25.0,
+      "max_coverage_at_zero_initial_cost_pct": 100.0
+    }
+  ],
+  "scope": "Independent candidate path response intervention against fixed common-baseline rivals; cost/lifetime scan independent of retention."
+}

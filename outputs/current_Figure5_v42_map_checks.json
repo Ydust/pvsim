@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "original_map_renderer_preserved": true,
+  "map": {
+    "panel": "a",
+    "regions": 369,
+    "visible_region_polygons": 369,
+    "main_region_centres": 368,
+    "inset_only_region_codes": [
+      "460300"
+    ],
+    "main_extent": [
+      73,
+      135,
+      17,
+      54
+    ],
+    "main_projection": "LambertConformal 105/35; 25/47",
+    "main_projected_limits": [
+      -3459830.603756417,
+      3250793.540837769,
+      -1966393.2618681302,
+      2486823.8929423047
+    ],
+    "inset_projection": "PlateCarree",
+    "inset_extent": [
+      105,
+      125,
+      3,
+      25
+    ],
+    "inset_axes_fraction": [
+      0.785,
+      0.006,
+      0.212,
+      0.37
+    ],
+    "main_frame": false,
+    "province_overlay_layers": 0,
+    "graticule_layers": 0,
+    "river_layers": 0,
+    "coordinate_edits": false,
+    "value_edits": false,
+    "aspect": "equal",
+    "city_boundary_color": "white",
+    "city_boundary_width_pt": 0.1,
+    "inset_boundary_width_pt": 0.06,
+    "width_figure_fraction": 0.46887320525122267,
+    "quantitative_colormap_and_norm": "Five joint categorical classes and v40 palette unchanged; original baseline-policy symbols restored in v42.",
+    "palette_hex": [
+      "#1F5AA6",
+      "#E6B34A",
+      "#B46D9A",
+      "#42B3A3",
+      "#D8DDE3"
+    ],
+    "main_axes_position": [
+      0.016126794748777346,
+      0.636,
+      0.46887320525122267,
+      0.2919999999999999
+    ],
+    "policy_symbols_rendered": true
+  },
+  "joint_choice_count": 369
+}

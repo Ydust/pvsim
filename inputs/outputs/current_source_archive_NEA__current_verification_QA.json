@@ -1,0 +1,18 @@
+{
+  "checked": "2026-10-04",
+  "source_table_index_zero_based": 3,
+  "printed_table_number": 4,
+  "rows": 33,
+  "year_columns": [
+    2023,
+    2024
+  ],
+  "max_abs_transcription_error_percentage_points": 0.0,
+  "current_executable_input_CSV_all33_matches": true,
+  "regional_identity": {
+    "蒙西": 93.7,
+    "蒙东": 97.3
+  },
+  "source_DOC_and_LO_converted_DOCX_preserved": true,
+  "scope": "utilization rate, not fleet utilization hours"
+}

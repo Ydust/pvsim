@@ -1,0 +1,6 @@
+{
+  "anchors": 4,
+  "max_archive_scan_yield_error": 2.2737367544323206e-13,
+  "max_60_vs_120_gain_difference_pp": 0.0014306372639438791,
+  "no_baseline_offsets": true
+}

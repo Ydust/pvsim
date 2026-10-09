@@ -1,0 +1,3 @@
+﻿panel,yield_field,regions,excluded_regions,pearson_r,spearman_rho,x_field,scope,display_decimals,annotation_count,anchor_axes_fraction
+b,single_capacity_pct,369,0,-0.4425139175036663,-0.41211367783478065,ghi_kwh_m2,"Descriptive spatial associations, no significance test or causal attribution",3,2,"[0.975, 0.965]"
+d,tandem_area_pct,369,0,-0.3462415034305215,-0.3258717625366618,ghi_kwh_m2,"Descriptive spatial associations, no significance test or causal attribution",3,2,"[0.975, 0.965]"

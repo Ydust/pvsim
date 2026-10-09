@@ -1,0 +1,94 @@
+[
+  {
+    "number": 130,
+    "source": "Figure_S44",
+    "source_panel": "a",
+    "groups": [
+      "axes_1",
+      "axes_2"
+    ],
+    "width_in": 5.7681,
+    "height_in": 2.730548874104401,
+    "source_svg_sha256": "b2345878b9222f8b09740da523f17dcc3b139cf52ccc566a5bf4ebe1a63c8075",
+    "source_kind": "Standalone matplotlib replot from exact current numerical tables"
+  },
+  {
+    "number": 131,
+    "source": "Figure_S44",
+    "source_panel": "b",
+    "groups": [
+      "axes_3",
+      "axes_4"
+    ],
+    "width_in": 5.7681,
+    "height_in": 2.708371827411167,
+    "source_svg_sha256": "b2345878b9222f8b09740da523f17dcc3b139cf52ccc566a5bf4ebe1a63c8075",
+    "source_kind": "Standalone matplotlib replot from exact current numerical tables"
+  },
+  {
+    "number": 132,
+    "source": "Figure_S44",
+    "source_panel": "c",
+    "groups": [
+      "axes_5",
+      "axes_6"
+    ],
+    "width_in": 5.7681,
+    "height_in": 2.730548874104401,
+    "source_svg_sha256": "b2345878b9222f8b09740da523f17dcc3b139cf52ccc566a5bf4ebe1a63c8075",
+    "source_kind": "Standalone matplotlib replot from exact current numerical tables"
+  },
+  {
+    "number": 133,
+    "source": "Figure_S44",
+    "source_panel": "d",
+    "groups": [
+      "axes_7",
+      "axes_8"
+    ],
+    "width_in": 5.7681,
+    "height_in": 2.730548874104401,
+    "source_svg_sha256": "b2345878b9222f8b09740da523f17dcc3b139cf52ccc566a5bf4ebe1a63c8075",
+    "source_kind": "Standalone matplotlib replot from exact current numerical tables"
+  },
+  {
+    "number": 134,
+    "source": "Figure_S45",
+    "source_panel": "a",
+    "groups": [
+      "axes_1",
+      "axes_2"
+    ],
+    "width_in": 5.7681,
+    "height_in": 2.9522238437821167,
+    "source_svg_sha256": "32b7d4fa6d2b624c8920cd349650664c96c55440473df7d059f71bc63398e474",
+    "source_kind": "Standalone matplotlib replot from exact current numerical tables"
+  },
+  {
+    "number": 135,
+    "source": "Figure_S45",
+    "source_panel": "b",
+    "groups": [
+      "axes_3",
+      "axes_4"
+    ],
+    "width_in": 5.7681,
+    "height_in": 2.9522238437821167,
+    "source_svg_sha256": "32b7d4fa6d2b624c8920cd349650664c96c55440473df7d059f71bc63398e474",
+    "source_kind": "Standalone matplotlib replot from exact current numerical tables"
+  },
+  {
+    "number": 136,
+    "source": "Figure4_gap_cutoff_sensitivity.csv",
+    "width_in": 4.653333333333333,
+    "height_in": 2.8633333333333333,
+    "source_kind": "Standalone matplotlib replot from exact current numerical tables"
+  },
+  {
+    "number": 137,
+    "source": "Figure4_gap_cutoff_sensitivity.csv",
+    "width_in": 4.653333333333333,
+    "height_in": 2.8633333333333333,
+    "source_kind": "Standalone matplotlib replot from exact current numerical tables"
+  }
+]

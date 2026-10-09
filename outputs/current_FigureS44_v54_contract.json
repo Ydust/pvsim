@@ -1,0 +1,26 @@
+{
+  "backend": "Python",
+  "archetype": "quantitative grid",
+  "question": "How far do the operating-response endpoint thresholds shift from baseline for each constraint and candidate?",
+  "absolute_panels": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "paired_difference_panels": [
+    "e",
+    "f",
+    "g",
+    "h"
+  ],
+  "source": "Figure4_coverage_thresholds.csv",
+  "absolute_values": 656,
+  "paired_differences": 328,
+  "exclusions": 0,
+  "new_external_inputs": 0,
+  "dimensions_mm": [
+    183,
+    232
+  ]
+}

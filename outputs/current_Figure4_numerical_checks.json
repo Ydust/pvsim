@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "regions": 369,
+  "frontier_rows": 121032,
+  "coverage_grid_rows": 65928,
+  "threshold_rows": 656,
+  "paired_rows": 1476,
+  "max_inverse_NPV_residual": 1.1368683772161603e-13,
+  "max_baseline_NPV_residual": 5.684341886080802e-14,
+  "physical_sync": [
+    {
+      "technology": "csi",
+      "max_yield_error": 4.547473508864641e-13
+    },
+    {
+      "technology": "perovskite",
+      "max_yield_error": 4.547473508864641e-13
+    },
+    {
+      "technology": "tandem",
+      "max_yield_error": 4.547473508864641e-13
+    }
+  ],
+  "fixed_rivals": true,
+  "negative_thresholds_preserved": true
+}

@@ -1,0 +1,14 @@
+{
+  "weather_units": 369,
+  "weather_values_compared": 16162200,
+  "weather_max_abs_error": 0,
+  "all_offset_h": 0.5,
+  "ASTMG173_archive_matches_installed_library": true,
+  "SPECTRL2_610_table_values_match": true,
+  "source_numeric_records": 119,
+  "library_numeric_literal_records": 5473,
+  "pvlib": "0.15.2",
+  "numpy": "2.5.0",
+  "pandas": "3.0.3",
+  "scipy": "1.18.0"
+}

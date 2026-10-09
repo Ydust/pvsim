@@ -1,0 +1,77 @@
+pvlib 0.15.2
+Original file C:\new\xuni_fangzhen\.venv\Lib\site-packages\pvlib\temperature.py
+434: def faiman(poa_global, temp_air, wind_speed=1.0, u0=25.0, u1=6.84):
+435:     r'''
+436:     Calculate cell or module temperature using the Faiman model.
+437: 
+438:     The Faiman model uses an empirical heat loss factor model [1]_ and is
+439:     adopted in the IEC 61853 standards [2]_ and [3]_.
+440: 
+441:     Usage of this model in the IEC 61853 standard does not distinguish
+442:     between cell and module temperature.
+443: 
+444:     Parameters
+445:     ----------
+446:     poa_global : numeric
+447:         Total incident irradiance [W/m^2].
+448: 
+449:     temp_air : numeric
+450:         Ambient dry bulb temperature [C].
+451: 
+452:     wind_speed : numeric, default 1.0
+453:         Wind speed in m/s measured at the same height for which the wind loss
+454:         factor was determined.  The default value 1.0 m/s is the wind
+455:         speed at module height used to determine NOCT. [m/s]
+456: 
+457:     u0 : numeric, default 25.0
+458:         Combined heat loss factor coefficient. The default value is for module
+459:         temperature determined by Faiman for 7 silicon modules
+460:         in the Negev desert on an open rack at 30.9° tilt.
+461:         :math:`\left[\frac{\text{W}/{\text{m}^2}}{\text{C}}\right]`
+462: 
+463:     u1 : numeric, default 6.84
+464:         Combined heat loss factor influenced by wind. The default value is
+465:         for module temperature determined by Faiman for 7 silicon modules
+466:         in the Negev desert on an open rack at 30.9° tilt.
+467:         :math:`\left[ \frac{\text{W}/\text{m}^2}{\text{C}\ \left( \text{m/s} \right)} \right]`
+468: 
+469:     Returns
+470:     -------
+471:     numeric, values in degrees Celsius
+472: 
+473:     Notes
+474:     -----
+475:     All arguments may be scalars or vectors. If multiple arguments
+476:     are vectors they must be the same length.
+477: 
+478:     References
+479:     ----------
+480:     .. [1] Faiman, D. (2008). "Assessing the outdoor operating temperature of
+481:        photovoltaic modules." Progress in Photovoltaics 16(4): 307-315.
+482:        :doi:`10.1002/pip.813`
+483: 
+484:     .. [2] "IEC 61853-2 Photovoltaic (PV) module performance testing and energy
+485:        rating - Part 2: Spectral responsivity, incidence angle and module
+486:        operating temperature measurements". IEC, Geneva, 2018.
+487: 
+488:     .. [3] "IEC 61853-3 Photovoltaic (PV) module performance testing and energy
+489:        rating - Part 3: Energy rating of PV modules". IEC, Geneva, 2018.
+490: 
+491:     See also
+492:     --------
+493:     pvlib.temperature.faiman_rad
+494: 
+495:     '''  # noQA: E501
+496: 
+497:     # Contributed by Anton Driesse (@adriesse), PV Performance Labs. Dec., 2019
+498: 
+499:     # The following lines may seem odd since u0 & u1 are probably scalar,
+500:     # but it serves an indirect and easy way of allowing lists and
+501:     # tuples for the other function arguments.
+502:     u0 = np.asanyarray(u0)
+503:     u1 = np.asanyarray(u1)
+504: 
+505:     total_loss_factor = u0 + u1 * wind_speed
+506:     heat_input = poa_global
+507:     temp_difference = heat_input / total_loss_factor
+508:     return temp_air + temp_difference

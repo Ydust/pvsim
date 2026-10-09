@@ -1,0 +1,65 @@
+﻿context,policy,support_rate,before_choice,after_choice,regions,response_class,rendered,region_scale,source_bottom,source_top,target_bottom,target_top
+capacity,General,0.2,no_build,no_build,18,unfunded_unchanged,True,0.0018970189701897017,0.8908536585365853,0.9249999999999999,0.8533536585365853,0.8875
+capacity,General,0.2,no_build,csi,50,entry,True,0.0018970189701897017,0.7960027100271002,0.8908536585365853,0.6835027100271003,0.7783536585365853
+capacity,General,0.2,no_build,single_junction,0,empty,False,0.0018970189701897017,,,,
+capacity,General,0.2,no_build,tandem,0,empty,False,0.0018970189701897017,,,,
+capacity,General,0.2,csi,no_build,0,empty,False,0.0018970189701897017,,,,
+capacity,General,0.2,csi,csi,138,paid_unchanged,True,0.0018970189701897017,0.4592140921409214,0.7210027100271003,0.4217140921409214,0.6835027100271003
+capacity,General,0.2,csi,single_junction,0,empty,False,0.0018970189701897017,,,,
+capacity,General,0.2,csi,tandem,0,empty,False,0.0018970189701897017,,,,
+capacity,General,0.2,single_junction,no_build,0,empty,False,0.0018970189701897017,,,,
+capacity,General,0.2,single_junction,csi,163,switch,True,0.0018970189701897017,0.07500000000000001,0.3842140921409214,0.11250000000000004,0.4217140921409214
+capacity,General,0.2,single_junction,single_junction,0,empty,False,0.0018970189701897017,,,,
+capacity,General,0.2,single_junction,tandem,0,empty,False,0.0018970189701897017,,,,
+capacity,General,0.2,tandem,no_build,0,empty,False,0.0018970189701897017,,,,
+capacity,General,0.2,tandem,csi,0,empty,False,0.0018970189701897017,,,,
+capacity,General,0.2,tandem,single_junction,0,empty,False,0.0018970189701897017,,,,
+capacity,General,0.2,tandem,tandem,0,empty,False,0.0018970189701897017,,,,
+capacity,New technology,0.2,no_build,no_build,20,unfunded_unchanged,True,0.0018970189701897017,0.8870596205962059,0.9249999999999999,0.8495596205962059,0.8875
+capacity,New technology,0.2,no_build,csi,0,empty,False,0.0018970189701897017,,,,
+capacity,New technology,0.2,no_build,single_junction,48,entry,True,0.0018970189701897017,0.7960027100271002,0.8870596205962059,0.6835027100271003,0.774559620596206
+capacity,New technology,0.2,no_build,tandem,0,empty,False,0.0018970189701897017,,,,
+capacity,New technology,0.2,csi,no_build,0,empty,False,0.0018970189701897017,,,,
+capacity,New technology,0.2,csi,csi,0,empty,False,0.0018970189701897017,,,,
+capacity,New technology,0.2,csi,single_junction,138,switch,True,0.0018970189701897017,0.4592140921409214,0.7210027100271003,0.4217140921409214,0.6835027100271003
+capacity,New technology,0.2,csi,tandem,0,empty,False,0.0018970189701897017,,,,
+capacity,New technology,0.2,single_junction,no_build,0,empty,False,0.0018970189701897017,,,,
+capacity,New technology,0.2,single_junction,csi,0,empty,False,0.0018970189701897017,,,,
+capacity,New technology,0.2,single_junction,single_junction,163,paid_unchanged,True,0.0018970189701897017,0.07500000000000001,0.3842140921409214,0.11250000000000004,0.4217140921409214
+capacity,New technology,0.2,single_junction,tandem,0,empty,False,0.0018970189701897017,,,,
+capacity,New technology,0.2,tandem,no_build,0,empty,False,0.0018970189701897017,,,,
+capacity,New technology,0.2,tandem,csi,0,empty,False,0.0018970189701897017,,,,
+capacity,New technology,0.2,tandem,single_junction,0,empty,False,0.0018970189701897017,,,,
+capacity,New technology,0.2,tandem,tandem,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,no_build,no_build,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,no_build,csi,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,no_build,single_junction,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,no_build,tandem,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,csi,no_build,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,csi,csi,56,paid_unchanged,True,0.0018970189701897017,0.7812669376693766,0.8875,0.7812669376693766,0.8875
+site_area,General,0.2,csi,single_junction,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,csi,tandem,144,switch,True,0.0018970189701897017,0.5080962059620595,0.7812669376693766,0.4330962059620596,0.7062669376693766
+site_area,General,0.2,single_junction,no_build,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,single_junction,csi,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,single_junction,single_junction,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,single_junction,tandem,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,tandem,no_build,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,tandem,csi,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,tandem,single_junction,0,empty,False,0.0018970189701897017,,,,
+site_area,General,0.2,tandem,tandem,169,paid_unchanged,True,0.0018970189701897017,0.11250000000000004,0.4330962059620596,0.11250000000000004,0.4330962059620596
+site_area,New technology,0.2,no_build,no_build,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,no_build,csi,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,no_build,single_junction,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,no_build,tandem,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,csi,no_build,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,csi,csi,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,csi,single_junction,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,csi,tandem,200,switch,True,0.0018970189701897017,0.5080962059620596,0.8875,0.47059620596205964,0.85
+site_area,New technology,0.2,single_junction,no_build,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,single_junction,csi,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,single_junction,single_junction,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,single_junction,tandem,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,tandem,no_build,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,tandem,csi,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,tandem,single_junction,0,empty,False,0.0018970189701897017,,,,
+site_area,New technology,0.2,tandem,tandem,169,paid_unchanged,True,0.0018970189701897017,0.11250000000000004,0.4330962059620596,0.15000000000000008,0.47059620596205964

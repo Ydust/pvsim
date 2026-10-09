@@ -1,0 +1,64 @@
+{
+  "version": 56,
+  "backend": "Python",
+  "active_revision": "Figure4",
+  "figure4": {
+    "version": 55,
+    "backend": "Python",
+    "regions": 369,
+    "archetype": "Quantitative grid",
+    "claim": "Regional majority competitiveness and all-region competitiveness require distinct cost/lifetime conditions; baseline regional gaps quantify the remaining distance.",
+    "evidence_chain": {
+      "a": "Single junction capacity cost/lifetime majority partition and 50%/100% boundaries.",
+      "b": "Tandem site-area cost/lifetime majority partition and 50%/100% boundaries.",
+      "c": "Baseline regional cost-equivalent gaps and classifications under capacity constraints.",
+      "d": "Baseline regional cost-equivalent gaps and classifications under site-area constraints."
+    },
+    "support": {
+      "S44": "Complete baseline/target thresholds and paired differences, unchanged.",
+      "S45": "Displaced single junction site-area and tandem capacity phase diagrams, complete original baseline grids."
+    },
+    "gap": "Smaller upfront-only candidate cost cut to match max(0,both fixed rival NPVs), computed separately for both perovskites then minimized. No policy applied.",
+    "classification_threshold_pct": 5,
+    "threshold_sensitivity_pct": [
+      1,
+      5,
+      10
+    ],
+    "entry_limited_preserved": true,
+    "axis_change": "Sorted regional point ordinate changes from mid-rank percentile 100*(i+0.5)/369 to cumulative share 100*(i+1)/369; scientific inputs and gap values unchanged. Tied gaps have stacked regional points.",
+    "exclusions": "No regions excluded. Two cross-context phase panels relocate to S45 rather than being deleted.",
+    "new_external_numeric_inputs": 0,
+    "formal_documents_modified": false,
+    "preserved_figures": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "asset_adaptation": {
+      "phase": "Exact numerical cells/curves/endpoints from current Figure4; panel relocation only.",
+      "gap": "Structural adaptation of Figure6c; same 738 region-context records and cost-gap classification; revised cumulative-share ordinate."
+    },
+    "exports": {
+      "width_mm": 183,
+      "height_mm": 155,
+      "minimum_font_pt": 5,
+      "formats": [
+        "PDF",
+        "SVG",
+        "PNG300dpi",
+        "TIFF600dpi"
+      ]
+    },
+    "boundary": [
+      "Independent cost/life scans at fixed response/rivals; not a correlated engineering trajectory.",
+      "Context electricity values differ; matched-price controls remain in Figure6 sources.",
+      "Near-transition cutoff is a descriptive author scenario.",
+      "25-year endpoint is separate renewal-accounting discontinuity."
+    ]
+  },
+  "other_figures_unchanged": true,
+  "active_figure1_contract": "figure1_contract.json",
+  "current_change_scope": "Only two association markers in each of Figure1b/d; v55 Figure4 retained."
+}

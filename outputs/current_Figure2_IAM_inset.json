@@ -1,0 +1,31 @@
+{
+  "physical_dimensions_mm": [
+    19.28820000000001,
+    19.288199999999996
+  ],
+  "x_limits_pp": [
+    -0.005,
+    0.085
+  ],
+  "values": [
+    {
+      "technology": "single",
+      "mean_pp": 0.0605271587999917,
+      "p10_pp": 0.0447855057984044,
+      "p90_pp": 0.0702216610187567
+    },
+    {
+      "technology": "tandem",
+      "mean_pp": 0.0124611337096968,
+      "p10_pp": 0.0035828842841682,
+      "p90_pp": 0.0224791509187575
+    }
+  ],
+  "source": "New common-60 factorial component summaries; all eight states recomputed",
+  "data_exclusions": 0,
+  "parent_xlim": [
+    -2.5,
+    6
+  ],
+  "alignment_exemption": "Ancillary local-magnification axes, excluded from comparisons of the four main plot areas; square geometry checked separately."
+}

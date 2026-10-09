@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "regions": 369,
+  "excluded_regions": 0,
+  "new_external_numeric_inputs": 0,
+  "choice_cells": 24327432,
+  "choice_shape": [
+    2,
+    2,
+    2,
+    41,
+    201,
+    369
+  ],
+  "summary_rows": 65928,
+  "grid_checks": [
+    {
+      "candidate": "single_junction",
+      "context": "capacity",
+      "response_state": "baseline",
+      "max_baseline_npv_residual": 5.684341886080802e-14,
+      "all_8241_grid_coverages_match": true,
+      "all_15129_frontier_values_match": true
+    },
+    {
+      "candidate": "single_junction",
+      "context": "capacity",
+      "response_state": "target",
+      "max_baseline_npv_residual": 5.684341886080802e-14,
+      "all_8241_grid_coverages_match": true,
+      "all_15129_frontier_values_match": true
+    },
+    {
+      "candidate": "single_junction",
+      "context": "site_area",
+      "response_state": "baseline",
+      "max_baseline_npv_residual": 4.263256414560601e-14,
+      "all_8241_grid_coverages_match": true,
+      "all_15129_frontier_values_match": true
+    },
+    {
+      "candidate": "single_junction",
+      "context": "site_area",
+      "response_state": "target",
+      "max_baseline_npv_residual": 4.263256414560601e-14,
+      "all_8241_grid_coverages_match": true,
+      "all_15129_frontier_values_match": true
+    },
+    {
+      "candidate": "tandem",
+      "context": "capacity",
+      "response_state": "baseline",
+      "max_baseline_npv_residual": 5.684341886080802e-14,
+      "all_8241_grid_coverages_match": true,
+      "all_15129_frontier_values_match": true
+    },
+    {
+      "candidate": "tandem",
+      "context": "capacity",
+      "response_state": "target",
+      "max_baseline_npv_residual": 5.684341886080802e-14,
+      "all_8241_grid_coverages_match": true,
+      "all_15129_frontier_values_match": true
+    },
+    {
+      "candidate": "tandem",
+      "context": "site_area",
+      "response_state": "baseline",
+      "max_baseline_npv_residual": 4.263256414560601e-14,
+      "all_8241_grid_coverages_match": true,
+      "all_15129_frontier_values_match": true
+    },
+    {
+      "candidate": "tandem",
+      "context": "site_area",
+      "response_state": "target",
+      "max_baseline_npv_residual": 4.263256414560601e-14,
+      "all_8241_grid_coverages_match": true,
+      "all_15129_frontier_values_match": true
+    }
+  ],
+  "near_ties_1e_minus10": 0,
+  "tie_rule": "Existing argmax order: no_build,csi,single_junction,tandem",
+  "majority_rule": "Strictly >50%; Mixed otherwise",
+  "baseline_zone_cell_counts": [
+    {
+      "candidate": "single_junction",
+      "context": "capacity",
+      "majority_choice": "csi",
+      "cells": 77
+    },
+    {
+      "candidate": "single_junction",
+      "context": "capacity",
+      "majority_choice": "mixed",
+      "cells": 172
+    },
+    {
+      "candidate": "single_junction",
+      "context": "capacity",
+      "majority_choice": "single_junction",
+      "cells": 7992
+    },
+    {
+      "candidate": "single_junction",
+      "context": "site_area",
+      "majority_choice": "csi",
+      "cells": 1711
+    },
+    {
+      "candidate": "single_junction",
+      "context": "site_area",
+      "majority_choice": "mixed",
+      "cells": 2063
+    },
+    {
+      "candidate": "single_junction",
+      "context": "site_area",
+      "majority_choice": "single_junction",
+      "cells": 4467
+    },
+    {
+      "candidate": "tandem",
+      "context": "capacity",
+      "majority_choice": "mixed",
+      "cells": 4637
+    },
+    {
+      "candidate": "tandem",
+      "context": "capacity",
+      "majority_choice": "tandem",
+      "cells": 3604
+    },
+    {
+      "candidate": "tandem",
+      "context": "site_area",
+      "majority_choice": "csi",
+      "cells": 2635
+    },
+    {
+      "candidate": "tandem",
+      "context": "site_area",
+      "majority_choice": "tandem",
+      "cells": 5606
+    }
+  ],
+  "inputs_sha256": {
+    "inputs/Figure1_region_values.csv": "f29dd87364f984d95bf276c028091a1376295741e8799dff87b42471485f2d5e",
+    "inputs/regional_path_states.csv": "f96527e2ae4b83c2229ad6c0d3a07c8ae219a1d97a8e9276e26962c7356ac087",
+    "qa/Figure4_analysis_register.json": "35e6f17ffe25384786f022ac885ea42fa6451772973f4df6e387f03ab6cde5dd",
+    "Source_Data/Figure5_policy_baseline_all_technology_NPV.csv": "df70bf518b953ee85be9332223ed98cdff9ab6ccd788c7cd3c234473568759e6",
+    "Source_Data/Figure4_national_coverage_grid.csv": "704b9cbbefce8b87365477a612f76f0825de527bb5d1487600c07e94fc219eb5",
+    "Source_Data/Figure4_common_start_frontiers.csv": "41d4c95087fa9306426a082df8c8330892966c87b68e99387e2a64631561efa5",
+    "Source_Data/Figure4_coverage_thresholds.csv": "669773e0c77cc3462bca96b8dfb3ce989826f4012b59f004cc26eaec9417f75b",
+    "code/scripts/finance.py": "a131597ff793d16c7e0a81aac053fd3af811cb76607d223298060e0af72251fa"
+  }
+}

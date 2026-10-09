@@ -1,0 +1,14 @@
+﻿baseline_choice,target_choice,regions,candidate,context
+csi,csi,131,single_junction,capacity
+csi,single_junction,7,single_junction,capacity
+no_build,no_build,64,single_junction,capacity
+no_build,single_junction,4,single_junction,capacity
+single_junction,single_junction,163,single_junction,capacity
+csi,csi,200,single_junction,site_area
+tandem,tandem,169,single_junction,site_area
+csi,csi,138,tandem,capacity
+no_build,no_build,68,tandem,capacity
+single_junction,single_junction,163,tandem,capacity
+csi,csi,120,tandem,site_area
+csi,tandem,80,tandem,site_area
+tandem,tandem,169,tandem,site_area

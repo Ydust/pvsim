@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "rows": 1476,
+  "regions_per_group": 369,
+  "baseline_reconstruction_max_residual_per_resource": 5.684341886080802e-14,
+  "reverse_cost_max_residual_per_resource": 5.684341886080802e-14,
+  "upstream_hashes": {
+    "inputs/Figure1_region_values.csv": "f29dd87364f984d95bf276c028091a1376295741e8799dff87b42471485f2d5e",
+    "inputs/regional_path_states.csv": "f96527e2ae4b83c2229ad6c0d3a07c8ae219a1d97a8e9276e26962c7356ac087",
+    "code/scripts/finance.py": "a131597ff793d16c7e0a81aac053fd3af811cb76607d223298060e0af72251fa",
+    "code/scripts/cost_paths.py": "1fd1cec070ae5ef99593e54620b301f6328a4edfd8c89ab26b1abf78c07484de",
+    "Source_Data/Figure5_policy_baseline_all_technology_NPV.csv": "df70bf518b953ee85be9332223ed98cdff9ab6ccd788c7cd3c234473568759e6",
+    "qa/Figure4_analysis_register.json": "35e6f17ffe25384786f022ac885ea42fa6451772973f4df6e387f03ab6cde5dd"
+  },
+  "summary": [
+    {
+      "context": "capacity",
+      "candidate": "single_junction",
+      "regions": 369,
+      "at_parity": 163,
+      "small_gap": 135,
+      "remaining_gap": 71,
+      "median_cut_among_losing_pct": 3.9595245784811177,
+      "max_cut_pct": 43.3163425141796,
+      "above100_count": 0
+    },
+    {
+      "context": "capacity",
+      "candidate": "tandem",
+      "regions": 369,
+      "at_parity": 0,
+      "small_gap": 0,
+      "remaining_gap": 369,
+      "median_cut_among_losing_pct": 22.01772139300324,
+      "max_cut_pct": 49.67283143141016,
+      "above100_count": 0
+    },
+    {
+      "context": "site_area",
+      "candidate": "single_junction",
+      "regions": 369,
+      "at_parity": 0,
+      "small_gap": 0,
+      "remaining_gap": 369,
+      "median_cut_among_losing_pct": 46.18763115311986,
+      "max_cut_pct": 102.24602602066186,
+      "above100_count": 2
+    },
+    {
+      "context": "site_area",
+      "candidate": "tandem",
+      "regions": 369,
+      "at_parity": 169,
+      "small_gap": 135,
+      "remaining_gap": 65,
+      "median_cut_among_losing_pct": 3.8699309399010815,
+      "max_cut_pct": 12.861245216104052,
+      "above100_count": 0
+    }
+  ],
+  "new_external_numeric_inputs": 0,
+  "ongoing_costs_fixed": true,
+  "policy_threshold_not_equated_to_gap": true
+}

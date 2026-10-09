@@ -1,0 +1,12 @@
+{
+  "regions": 369,
+  "figure1_correlations_recomputed": true,
+  "common_start_coverage_thresholds": true,
+  "four_policy_groups_369_each_and_NPV_choice_recomputed": true,
+  "signed_generation_contributions_reconcile": true,
+  "absolute_and_paired_cost_thresholds": [
+    656,
+    328
+  ],
+  "status": "PASS"
+}

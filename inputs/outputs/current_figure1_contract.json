@@ -1,0 +1,34 @@
+{
+  "version": 56,
+  "backend": "Python",
+  "archetype": "asymmetric mixed-modality figure",
+  "scientific_question": "How do modeled regional yield gains vary geographically and associate with GHI?",
+  "figure_claim": "The two comparison contexts show distinct regional yield gains and descriptive GHI associations.",
+  "panel_roles": {
+    "a": "Single-junction equal-capacity geography",
+    "b": "Single-junction GHI association",
+    "c": "Tandem equal-aperture geography",
+    "d": "Tandem GHI association"
+  },
+  "change_scope": "Add at most two numeric metric annotations each to b and d; all source observations, fits, axes, map template and colors unchanged.",
+  "metrics": [
+    "Pearson r",
+    "Spearman rho"
+  ],
+  "regions_per_scatter": 369,
+  "excluded_regions": 0,
+  "annotation_identity": "Derived descriptive statistics from the existing model outputs; no new external numeric inputs.",
+  "inference_boundary": "Regions are spatial model outputs, not independent experimental replicates; no p values, causality or validation claims are added.",
+  "dimensions_mm": [
+    183,
+    130
+  ],
+  "exports": [
+    "PDF",
+    "SVG",
+    "PNG",
+    "600dpi TIFF"
+  ],
+  "annotation_count_per_scatter": 2,
+  "formal_documents_modified": false
+}

@@ -1,0 +1,550 @@
+﻿file,line,value,definition_line
+code/pvsim/cell.py,25,8.617333262e-05,K_EV = 8.617333262e-5  # 玻尔兹曼常数 eV/K（用于带隙指数项）
+code/pvsim/cell.py,64,1.0,"ns: int = 1,"
+code/pvsim/cell.py,133,1.0,"ns: int = 1,"
+code/pvsim/cell.py,134,400.0,"npts: int = 400,"
+code/pvsim/cell.py,56,273.15,tcell_K = tcell_C + 273.15
+code/pvsim/cell.py,71,1e-06,"geff = max(float(effective_irradiance), 1e-6)"
+code/pvsim/cell.py,72,273.15,tcell_K = tcell_C + 273.15
+code/pvsim/cell.py,83,1.0,"a_cell = thermal_voltage(tech.n_ideality, 1, tcell_C)"
+code/pvsim/cell.py,96,1.0,Gsh = 1.0 / p.Rsh
+code/pvsim/cell.py,97,1.0,A = 1.0 + p.Rs * Gsh
+code/pvsim/cell.py,114,0.0,"vv = np.linspace(0.0, 1.5 * voc_est, 600)"
+code/pvsim/cell.py,114,600.0,"vv = np.linspace(0.0, 1.5 * voc_est, 600)"
+code/pvsim/cell.py,116,0.0,sign = np.where(ii >= 0)[0]
+code/pvsim/cell.py,117,0.0,if len(sign) == 0:
+code/pvsim/cell.py,118,0.0,return 0.0
+code/pvsim/cell.py,151,0.0,"v = np.linspace(0.0, voc, npts)"
+code/pvsim/cell.py,152,0.0,"i = np.clip(i_from_v(v, p), 0.0, None)"
+code/pvsim/cell.py,156,0.0,if 0 < kmax < npts - 1:
+code/pvsim/cell.py,165,0.0,ff = pmp / (voc * isc) if voc * isc > 0 else 0.0
+code/pvsim/cell.py,167,10000.0,area_m2 = ns * tech.area_cm2 / 1e4
+code/pvsim/cell.py,168,0.0,efficiency = pmp / (area_m2 * irradiance) if irradiance > 0 else 0.0
+code/pvsim/cell.py,114,1.5,"vv = np.linspace(0.0, 1.5 * voc_est, 600)"
+code/pvsim/cell.py,119,1.0,k = sign[-1]
+code/pvsim/cell.py,120,1.0,if k + 1 >= len(vv):
+code/pvsim/cell.py,145,0.0,"isc = float(i_from_v(np.array([0.0]), p)[0])"
+code/pvsim/cell.py,147,0.0,if voc <= 0 or isc <= 0:
+code/pvsim/cell.py,147,0.0,if voc <= 0 or isc <= 0:
+code/pvsim/cell.py,148,0.0,"return OperatingPoint(0, 0, 0, 0, 0, 0, 0,"
+code/pvsim/cell.py,148,0.0,"return OperatingPoint(0, 0, 0, 0, 0, 0, 0,"
+code/pvsim/cell.py,148,0.0,"return OperatingPoint(0, 0, 0, 0, 0, 0, 0,"
+code/pvsim/cell.py,148,0.0,"return OperatingPoint(0, 0, 0, 0, 0, 0, 0,"
+code/pvsim/cell.py,148,0.0,"return OperatingPoint(0, 0, 0, 0, 0, 0, 0,"
+code/pvsim/cell.py,148,0.0,"return OperatingPoint(0, 0, 0, 0, 0, 0, 0,"
+code/pvsim/cell.py,148,0.0,"return OperatingPoint(0, 0, 0, 0, 0, 0, 0,"
+code/pvsim/cell.py,156,1.0,if 0 < kmax < npts - 1:
+code/pvsim/cell.py,163,0.0,"imp = float(i_from_v(np.array([vmp]), p)[0])"
+code/pvsim/cell.py,165,0.0,ff = pmp / (voc * isc) if voc * isc > 0 else 0.0
+code/pvsim/cell.py,168,0.0,efficiency = pmp / (area_m2 * irradiance) if irradiance > 0 else 0.0
+code/pvsim/cell.py,77,3.0,I0 = (tech.I_o_ref * (tcell_K / T_REF) ** 3
+code/pvsim/cell.py,103,700.0,"arg = c * np.exp(np.clip(d, -700, 700))"
+code/pvsim/cell.py,112,1.0,voc_est = p.nNsVth * np.log(p.IL / p.I0 + 1.0)
+code/pvsim/cell.py,116,0.0,sign = np.where(ii >= 0)[0]
+code/pvsim/cell.py,123,1.0,"v0, v1 = vv[k], vv[k + 1]"
+code/pvsim/cell.py,124,1.0,"i0, i1 = ii[k], ii[k + 1]"
+code/pvsim/cell.py,160,0.0,vmp = x1 - 0.5 * (x2 - x0) * (y2 - y0) / denom / 2 if denom != 0 else x1
+code/pvsim/cell.py,103,700.0,"arg = c * np.exp(np.clip(d, -700, 700))"
+code/pvsim/cell.py,121,1.0,return float(vv[-1])
+code/pvsim/cell.py,157,1.0,"x0, x1, x2 = v[kmax - 1], v[kmax], v[kmax + 1]"
+code/pvsim/cell.py,157,1.0,"x0, x1, x2 = v[kmax - 1], v[kmax], v[kmax + 1]"
+code/pvsim/cell.py,158,1.0,"y0, y1, y2 = pwr[kmax - 1], pwr[kmax], pwr[kmax + 1]"
+code/pvsim/cell.py,158,1.0,"y0, y1, y2 = pwr[kmax - 1], pwr[kmax], pwr[kmax + 1]"
+code/pvsim/cell.py,159,2.0,denom = (y0 - 2 * y1 + y2)
+code/pvsim/cell.py,160,2.0,vmp = x1 - 0.5 * (x2 - x0) * (y2 - y0) / denom / 2 if denom != 0 else x1
+code/pvsim/cell.py,78,1.0,* np.exp(tech.Ea_recomb / K_EV * (1.0 / T_REF - 1.0 / tcell_K)))
+code/pvsim/cell.py,78,1.0,* np.exp(tech.Ea_recomb / K_EV * (1.0 / T_REF - 1.0 / tcell_K)))
+code/pvsim/cell.py,145,0.0,"isc = float(i_from_v(np.array([0.0]), p)[0])"
+code/pvsim/cell.py,149,0.0,"v=np.array([0.0]), i=np.array([0.0]))"
+code/pvsim/cell.py,149,0.0,"v=np.array([0.0]), i=np.array([0.0]))"
+code/pvsim/cell.py,160,0.5,vmp = x1 - 0.5 * (x2 - x0) * (y2 - y0) / denom / 2 if denom != 0 else x1
+code/pvsim/city_catalog.py,11,1.0,Path(__file__).resolve().parents[1]
+code/pvsim/city_catalog.py,71,15.0,if any(not (15.0 <= anchor.lat <= 55.0 and 70.0 <= anchor.lon <= 140.0)
+code/pvsim/city_catalog.py,71,55.0,if any(not (15.0 <= anchor.lat <= 55.0 and 70.0 <= anchor.lon <= 140.0)
+code/pvsim/city_catalog.py,71,70.0,if any(not (15.0 <= anchor.lat <= 55.0 and 70.0 <= anchor.lon <= 140.0)
+code/pvsim/city_catalog.py,71,140.0,if any(not (15.0 <= anchor.lat <= 55.0 and 70.0 <= anchor.lon <= 140.0)
+code/pvsim/economic_priors.py,14,42.0,MC_RANDOM_SEED = 42
+code/pvsim/economic_priors.py,15,10000.0,MC_DRAWS = 10_000
+code/pvsim/economic_priors.py,22,0.08,"LEARNING_RATE_CLIP = (0.08, 0.45)"
+code/pvsim/economic_priors.py,22,0.45,"LEARNING_RATE_CLIP = (0.08, 0.45)"
+code/pvsim/economic_priors.py,30,2028.0,"PEROVSKITE_BREAKTHROUGH_YEAR_RANGE = (2028, 2042)"
+code/pvsim/economic_priors.py,30,2042.0,"PEROVSKITE_BREAKTHROUGH_YEAR_RANGE = (2028, 2042)"
+code/pvsim/economic_priors.py,31,18.0,"POST_BREAKTHROUGH_LIFETIME_RANGE_YR = (18.0, 25.0)"
+code/pvsim/economic_priors.py,31,25.0,"POST_BREAKTHROUGH_LIFETIME_RANGE_YR = (18.0, 25.0)"
+code/pvsim/economic_priors.py,34,0.65,"TECH_CSI: 0.65,"
+code/pvsim/economic_priors.py,35,0.95,"TECH_PEROVSKITE: 0.95,"
+code/pvsim/economic_priors.py,36,1.13,"TECH_TANDEM: 1.13,"
+code/pvsim/economic_priors.py,41,1500.0,"TECH_CSI: 1500.0,"
+code/pvsim/economic_priors.py,42,12.0,"TECH_PEROVSKITE: 12.0,"
+code/pvsim/economic_priors.py,43,4.0,"TECH_TANDEM: 4.0,"
+code/pvsim/economic_priors.py,56,2.0,sum(POST_BREAKTHROUGH_LIFETIME_RANGE_YR) / 2.0
+code/pvsim/economic_priors.py,18,0.18,"TECH_CSI: (0.18, 0.04),"
+code/pvsim/economic_priors.py,18,0.04,"TECH_CSI: (0.18, 0.04),"
+code/pvsim/economic_priors.py,19,0.27,"TECH_PEROVSKITE: (0.27, 0.04),"
+code/pvsim/economic_priors.py,19,0.04,"TECH_PEROVSKITE: (0.27, 0.04),"
+code/pvsim/economic_priors.py,20,0.3,"TECH_TANDEM: (0.30, 0.04),"
+code/pvsim/economic_priors.py,20,0.04,"TECH_TANDEM: (0.30, 0.04),"
+code/pvsim/economic_priors.py,25,0.35,"TECH_CSI: (0.35, 0.45),"
+code/pvsim/economic_priors.py,25,0.45,"TECH_CSI: (0.35, 0.45),"
+code/pvsim/economic_priors.py,26,0.32,"TECH_PEROVSKITE: (0.32, 0.45),"
+code/pvsim/economic_priors.py,26,0.45,"TECH_PEROVSKITE: (0.32, 0.45),"
+code/pvsim/economic_priors.py,27,0.42,"TECH_TANDEM: (0.42, 0.58),"
+code/pvsim/economic_priors.py,27,0.58,"TECH_TANDEM: (0.42, 0.58),"
+code/pvsim/economic_priors.py,46,0.0,"tech: prior[0] for tech, prior in LEARNING_RATE_PRIORS.items()"
+code/pvsim/economic_priors.py,49,2.0,tech: (bounds[0] + bounds[1]) / 2.0
+code/pvsim/economic_priors.py,53,2.0,sum(PEROVSKITE_BREAKTHROUGH_YEAR_RANGE) / 2.0
+code/pvsim/economic_priors.py,49,0.0,tech: (bounds[0] + bounds[1]) / 2.0
+code/pvsim/economic_priors.py,49,1.0,tech: (bounds[0] + bounds[1]) / 2.0
+code/pvsim/economics.py,10,0.05,DISCOUNT_RATE = 0.05
+code/pvsim/economics.py,11,0.015,OPEX_FRACTION_OF_CAPEX = 0.015
+code/pvsim/economics.py,13,15.0,PEROVSKITE_START_LIFETIME_YR = 15.0
+code/pvsim/economics.py,14,0.03,PEROVSKITE_START_DEGRADATION = 0.030
+code/pvsim/economics.py,15,0.1,PEROVSKITE_START_BURN_IN = 0.10
+code/pvsim/economics.py,16,25.0,PEROVSKITE_FULL_LIFETIME_YR = 25.0
+code/pvsim/economics.py,17,0.007,PEROVSKITE_FULL_DEGRADATION = 0.007
+code/pvsim/economics.py,18,0.05,PEROVSKITE_FULL_BURN_IN = 0.05
+code/pvsim/economics.py,28,25.0,"MODERN_CSI_DURABILITY = DurabilityState(25.0, 0.005, 0.01)"
+code/pvsim/economics.py,28,0.005,"MODERN_CSI_DURABILITY = DurabilityState(25.0, 0.005, 0.01)"
+code/pvsim/economics.py,28,0.01,"MODERN_CSI_DURABILITY = DurabilityState(25.0, 0.005, 0.01)"
+code/pvsim/economics.py,29,25.0,"TANDEM_DURABILITY = DurabilityState(25.0, 0.012, 0.04)"
+code/pvsim/economics.py,29,0.012,"TANDEM_DURABILITY = DurabilityState(25.0, 0.012, 0.04)"
+code/pvsim/economics.py,29,0.04,"TANDEM_DURABILITY = DurabilityState(25.0, 0.012, 0.04)"
+code/pvsim/economics.py,93,0.0,"incremental_area_cost_usd_per_m2: float = 0.0,"
+code/pvsim/economics.py,228,2025.0,"start_year: float = 2025.0,"
+code/pvsim/economics.py,36,0.0,if lifetime_years <= 0:
+code/pvsim/economics.py,39,1.0,"times = np.arange(1, full_years + 1, dtype=float)"
+code/pvsim/economics.py,42,1e-09,if fractional_year > 1e-9:
+code/pvsim/economics.py,57,0.0,if year1_yield <= 0:
+code/pvsim/economics.py,104,0.0,if capex_per_w < 0:
+code/pvsim/economics.py,106,0.0,if capacity_density_w_per_m2 <= 0:
+code/pvsim/economics.py,108,0.0,if incremental_area_cost_usd_per_m2 < 0:
+code/pvsim/economics.py,203,0.0,if capex_per_w < 0:
+code/pvsim/economics.py,205,0.0,if year1_yield_kwh_per_kwp <= 0:
+code/pvsim/economics.py,207,1000.0,capex_per_kwp = capex_per_w * 1000.0
+code/pvsim/economics.py,39,1.0,"times = np.arange(1, full_years + 1, dtype=float)"
+code/pvsim/economics.py,59,0.0,if not 0 <= degradation_rate < 1:
+code/pvsim/economics.py,59,1.0,if not 0 <= degradation_rate < 1:
+code/pvsim/economics.py,61,0.0,if not 0 <= burn_in_loss < 1:
+code/pvsim/economics.py,61,1.0,if not 0 <= burn_in_loss < 1:
+code/pvsim/economics.py,64,1.0,discount = (1.0 + discount_rate) ** (-times)
+code/pvsim/economics.py,65,1.0,retention = (1.0 - burn_in_loss) * (
+code/pvsim/economics.py,81,1.0,discount = (1.0 + discount_rate) ** (-times)
+code/pvsim/economics.py,83,1.0,1.0 + np.sum(opex_fraction_of_capex * service_weights * discount)
+code/pvsim/economics.py,184,1.0,area_slope_difference = 1.0 / candidate_energy - 1.0 / reference_energy
+code/pvsim/economics.py,184,1.0,area_slope_difference = 1.0 / candidate_energy - 1.0 / reference_energy
+code/pvsim/economics.py,254,0.0,"0.0,"
+code/pvsim/economics.py,255,1.0,"1.0,"
+code/pvsim/economics.py,66,1.0,(1.0 - degradation_rate) ** (times - 1.0)
+code/pvsim/economics.py,66,1.0,(1.0 - degradation_rate) ** (times - 1.0)
+code/pvsim/economics.py,253,1.0,"(year - start_year) / max(breakthrough_year - start_year, 1.0),"
+code/pvsim/materials.py,20,1.602176634e-19,Q = 1.602176634e-19      # 元电荷 C
+code/pvsim/materials.py,21,1.380649e-23,K_B = 1.380649e-23       # 玻尔兹曼常数 J/K
+code/pvsim/materials.py,22,298.15,T_REF = 298.15           # 参考温度 (STC) K = 25 °C
+code/pvsim/materials.py,23,1000.0,G_REF = 1000.0           # 参考辐照 (STC) W/m^2
+code/pvsim/materials.py,38,40.0,edge_width: float = 40.0   # nm，带隙截止的过渡宽度
+code/pvsim/materials.py,39,60.0,blue_rolloff: float = 60.0 # nm，短波端衰减宽度
+code/pvsim/materials.py,103,243.36,"area_cm2=243.36,            # 156.75mm 准方形电池"
+code/pvsim/materials.py,104,60.0,"cells_in_series=60,         # 典型 60 片组件"
+code/pvsim/materials.py,105,8.05,"I_L_ref=8.05,              # Jsc≈33 mA/cm^2 (早期水平, 偏低)"
+code/pvsim/materials.py,106,2.7e-09,"I_o_ref=2.7e-9,"
+code/pvsim/materials.py,107,0.0052,"R_s=0.0052,                # 单电池串联电阻 Ω → FF≈0.76"
+code/pvsim/materials.py,108,8.0,"R_sh_ref=8.0,              # 单电池并联电阻 Ω"
+code/pvsim/materials.py,109,1.1,"n_ideality=1.10,"
+code/pvsim/materials.py,111,1.121,"EgRef=1.121,               # Si 光学带隙 @25°C"
+code/pvsim/materials.py,113,1.0816,"Ea_recomb=1.0816,          # 复合激活能 (由 γ_Pmax=-0.45%/°C 标定; 接近 Eg → 带间复合主导)"
+code/pvsim/materials.py,117,45.0,"noct=45.0,"
+code/pvsim/materials.py,122,0.007,"degradation_rate=0.007,    # 0.7%/yr (早期组件略快于现代 0.5%)"
+code/pvsim/materials.py,123,0.02,"burn_in_loss=0.02,         # 首年 LID ~2%"
+code/pvsim/materials.py,124,1.0,"burn_in_years=1.0,"
+code/pvsim/materials.py,125,0.0,"hysteresis_index=0.0,      # 晶硅无 I-V 迟滞"
+code/pvsim/materials.py,126,0.0,"bifaciality=0.0,           # 早期为单面 Al-BSF"
+code/pvsim/materials.py,127,1.0,"capex_per_wp=1.0,          # 归一参考值 ($/Wp)，可按需调整"
+code/pvsim/materials.py,128,25.0,"lifetime_years=25.0,"
+code/pvsim/materials.py,144,243.36,"area_cm2=243.36,           # 归一到与晶硅相同面积, 便于公平对比"
+code/pvsim/materials.py,145,60.0,"cells_in_series=60,"
+code/pvsim/materials.py,146,5.48,"I_L_ref=5.48,             # Jsc≈22.5 mA/cm^2 (带隙宽→吃不到近红外, 电流低)"
+code/pvsim/materials.py,147,9.5e-12,"I_o_ref=9.5e-12,          # 高 Voc → 极小 I0"
+code/pvsim/materials.py,148,0.016,"R_s=0.016,                # 单电池串联电阻 Ω → FF≈0.78"
+code/pvsim/materials.py,149,30.0,"R_sh_ref=30.0,            # 高并联电阻 → 弱光性能好"
+code/pvsim/materials.py,150,1.6,"n_ideality=1.60,          # 钙钛矿理想因子偏高"
+code/pvsim/materials.py,152,1.55,"EgRef=1.55,               # 钙钛矿光学带隙 (可调, 取~1.55)"
+code/pvsim/materials.py,154,0.8258,"Ea_recomb=0.8258,         # 复合激活能 (由 γ_Pmax=-0.15%/°C 标定; <Eg → 陷阱/界面"
+code/pvsim/materials.py,159,44.0,"noct=44.0,"
+code/pvsim/materials.py,164,0.03,"degradation_rate=0.030,    # 3%/yr (代表性, 远快于晶硅; 见情景设置)"
+code/pvsim/materials.py,165,0.1,"burn_in_loss=0.10,         # 初期 burn-in 较大 (~10%)"
+code/pvsim/materials.py,166,1.0,"burn_in_years=1.0,"
+code/pvsim/materials.py,167,0.04,"hysteresis_index=0.04,     # 正反扫描功率差 ~4% (代表性)"
+code/pvsim/materials.py,168,0.0,"bifaciality=0.0,           # 单结不透明假设为单面"
+code/pvsim/materials.py,169,0.8,"capex_per_wp=0.8,          # 潜在更低材料/工艺成本 (示意值)"
+code/pvsim/materials.py,170,15.0,"lifetime_years=15.0,       # 设计寿命短于晶硅"
+code/pvsim/materials.py,187,243.36,"area_cm2=243.36,            # 与 c-Si/钙钛矿同面积, 公平对比"
+code/pvsim/materials.py,188,60.0,"cells_in_series=60,"
+code/pvsim/materials.py,189,4.62,"I_L_ref=4.62,              # j_matched ~19 mA/cm² × 243 cm² (current-matched)"
+code/pvsim/materials.py,190,1.3e-15,"I_o_ref=1.3e-15,           # 极小, 对应 Voc/cell ~1.84V"
+code/pvsim/materials.py,191,0.025,"R_s=0.025,                 # 略高 (两个 junction 串联界面)"
+code/pvsim/materials.py,192,50.0,"R_sh_ref=50.0,             # 高分流电阻"
+code/pvsim/materials.py,193,2.0,"n_ideality=2.0,            # 两个二极管串联的有效理想因子"
+code/pvsim/materials.py,195,1.68,"EgRef=1.68,                # 顶电池(钙钛矿宽带隙)"
+code/pvsim/materials.py,197,1.5087,"Ea_recomb=1.5087,          # 标定到作者选定目标 γ_Pmax = -0.30%/°C。"
+code/pvsim/materials.py,203,45.0,"noct=45.0,"
+code/pvsim/materials.py,208,0.012,"degradation_rate=0.012,    # 1.2%/yr, 介于 c-Si(0.7) 和 perov(3) 之间"
+code/pvsim/materials.py,209,0.04,"burn_in_loss=0.04,         # 适中 burn-in"
+code/pvsim/materials.py,210,1.0,"burn_in_years=1.0,"
+code/pvsim/materials.py,211,0.01,"hysteresis_index=0.01,     # 钙钛矿层小残留滞回"
+code/pvsim/materials.py,212,0.0,"bifaciality=0.0,           # 2T 单面 (背接触不透光)"
+code/pvsim/materials.py,213,1.13,"capex_per_wp=1.13,         # Scenario system cost: Cordell MODULE MSP $0.428/WDC"
+code/pvsim/materials.py,217,25.0,"lifetime_years=25.0,"
+code/pvsim/materials.py,231,243.36,"area_cm2=243.36,"
+code/pvsim/materials.py,232,60.0,"cells_in_series=60,"
+code/pvsim/materials.py,233,11.0962,"I_L_ref=11.0962,           # Jsc ~40 mA/cm² (现代水平, 高于早期 33)"
+code/pvsim/materials.py,234,4e-10,"I_o_ref=4.0e-10,           # 更高 Voc (更好钝化)"
+code/pvsim/materials.py,235,0.004,"R_s=0.0040,"
+code/pvsim/materials.py,236,15.0,"R_sh_ref=15.0,"
+code/pvsim/materials.py,237,1.02,"n_ideality=1.02,"
+code/pvsim/materials.py,239,1.121,"EgRef=1.121,"
+code/pvsim/materials.py,241,0.9957,"Ea_recomb=0.9957,          # 标定到 γ_Pmax = -0.32 %/°C (TOPCon/PERC)"
+code/pvsim/materials.py,245,44.0,"noct=44.0,"
+code/pvsim/materials.py,250,0.005,"degradation_rate=0.005,    # 现代组件 0.5%/yr"
+code/pvsim/materials.py,251,0.01,"burn_in_loss=0.01,"
+code/pvsim/materials.py,252,1.0,"burn_in_years=1.0,"
+code/pvsim/materials.py,253,0.0,"hysteresis_index=0.0,"
+code/pvsim/materials.py,254,0.0,"bifaciality=0.0,"
+code/pvsim/materials.py,255,1.0,"capex_per_wp=1.0,"
+code/pvsim/materials.py,256,25.0,"lifetime_years=25.0,"
+code/pvsim/materials.py,110,8.05,"alpha_sc=8.05 * 0.0005,    # +0.05 %/°C × Isc"
+code/pvsim/materials.py,110,0.0005,"alpha_sc=8.05 * 0.0005,    # +0.05 %/°C × Isc"
+code/pvsim/materials.py,112,0.0002677,"dEgdT=-0.0002677,          # Si 带隙随温升下降 (De Soto)"
+code/pvsim/materials.py,114,0.45,"gamma_pmax_lit=-0.45,"
+code/pvsim/materials.py,115,0.33,"beta_voc_lit=-0.33,"
+code/pvsim/materials.py,116,0.05,"alpha_isc_lit=+0.05,"
+code/pvsim/materials.py,151,5.48,"alpha_sc=5.48 * 0.0002,   # +0.02 %/°C"
+code/pvsim/materials.py,151,0.0002,"alpha_sc=5.48 * 0.0002,   # +0.02 %/°C"
+code/pvsim/materials.py,153,0.0003,"dEgdT=+0.0003,            # 带隙随温升**上升** (与晶硅相反, 部分抵消温度损失)"
+code/pvsim/materials.py,156,0.15,"gamma_pmax_lit=-0.15,"
+code/pvsim/materials.py,157,0.15,"beta_voc_lit=-0.15,"
+code/pvsim/materials.py,158,0.02,"alpha_isc_lit=+0.02,"
+code/pvsim/materials.py,194,4.62,"alpha_sc=4.62 * 0.00025,   # +0.025%/°C, 受电流匹配限制"
+code/pvsim/materials.py,194,0.00025,"alpha_sc=4.62 * 0.00025,   # +0.025%/°C, 受电流匹配限制"
+code/pvsim/materials.py,196,0.0001,"dEgdT=+0.0001,             # 介于 perov (+) 和 c-Si (-) 之间"
+code/pvsim/materials.py,200,0.3,"gamma_pmax_lit=-0.30,      # 作者选定校核目标；不表示引文直接报告此值。"
+code/pvsim/materials.py,201,0.24,"beta_voc_lit=-0.24,"
+code/pvsim/materials.py,202,0.025,"alpha_isc_lit=+0.025,"
+code/pvsim/materials.py,238,11.0962,"alpha_sc=11.0962 * 0.000363,"
+code/pvsim/materials.py,238,0.000363,"alpha_sc=11.0962 * 0.000363,"
+code/pvsim/materials.py,240,0.0002677,"dEgdT=-0.0002677,"
+code/pvsim/materials.py,242,0.32,"gamma_pmax_lit=-0.32,"
+code/pvsim/materials.py,243,0.27,"beta_voc_lit=-0.27,"
+code/pvsim/materials.py,244,0.04,"alpha_isc_lit=+0.04,"
+code/pvsim/materials.py,119,350.0,"lambda_min=350.0, lambda_gap=1110.0, eqe_peak=0.92,"
+code/pvsim/materials.py,119,1110.0,"lambda_min=350.0, lambda_gap=1110.0, eqe_peak=0.92,"
+code/pvsim/materials.py,119,0.92,"lambda_min=350.0, lambda_gap=1110.0, eqe_peak=0.92,"
+code/pvsim/materials.py,120,50.0,"edge_width=50.0, blue_rolloff=80.0,"
+code/pvsim/materials.py,120,80.0,"edge_width=50.0, blue_rolloff=80.0,"
+code/pvsim/materials.py,161,350.0,"lambda_min=350.0, lambda_gap=800.0, eqe_peak=0.90,"
+code/pvsim/materials.py,161,800.0,"lambda_min=350.0, lambda_gap=800.0, eqe_peak=0.90,"
+code/pvsim/materials.py,161,0.9,"lambda_min=350.0, lambda_gap=800.0, eqe_peak=0.90,"
+code/pvsim/materials.py,162,25.0,"edge_width=25.0, blue_rolloff=60.0,   # ~800nm 锐截止, 蓝光响应好"
+code/pvsim/materials.py,162,60.0,"edge_width=25.0, blue_rolloff=60.0,   # ~800nm 锐截止, 蓝光响应好"
+code/pvsim/materials.py,205,350.0,"lambda_min=350.0, lambda_gap=1110.0, eqe_peak=0.85,"
+code/pvsim/materials.py,205,1110.0,"lambda_min=350.0, lambda_gap=1110.0, eqe_peak=0.85,"
+code/pvsim/materials.py,205,0.85,"lambda_min=350.0, lambda_gap=1110.0, eqe_peak=0.85,"
+code/pvsim/materials.py,206,50.0,"edge_width=50.0, blue_rolloff=70.0,"
+code/pvsim/materials.py,206,70.0,"edge_width=50.0, blue_rolloff=70.0,"
+code/pvsim/materials.py,247,350.0,"lambda_min=350.0, lambda_gap=1110.0, eqe_peak=0.95,"
+code/pvsim/materials.py,247,1110.0,"lambda_min=350.0, lambda_gap=1110.0, eqe_peak=0.95,"
+code/pvsim/materials.py,247,0.95,"lambda_min=350.0, lambda_gap=1110.0, eqe_peak=0.95,"
+code/pvsim/materials.py,248,50.0,"edge_width=50.0, blue_rolloff=70.0,"
+code/pvsim/materials.py,248,70.0,"edge_width=50.0, blue_rolloff=70.0,"
+code/pvsim/module.py,16,200.0,"effective_irradiance: float | None = None, npts: int = 200) -> float:"
+code/pvsim/module.py,30,1.0,"n_modules: int = 1, effective_irradiance=None,"
+code/pvsim/module.py,31,0.02,"mismatch_loss: float = 0.02, npts: int = 150):"
+code/pvsim/module.py,31,150.0,"mismatch_loss: float = 0.02, npts: int = 150):"
+code/pvsim/module.py,26,1000.0,"return module_pmp(tech, 1000.0, 25.0, npts=400)"
+code/pvsim/module.py,26,25.0,"return module_pmp(tech, 1000.0, 25.0, npts=400)"
+code/pvsim/module.py,26,400.0,"return module_pmp(tech, 1000.0, 25.0, npts=400)"
+code/pvsim/module.py,47,1.0,if irradiance.flat[k] <= 1.0:
+code/pvsim/module.py,48,0.0,pmp.flat[k] = 0.0
+code/pvsim/module.py,53,1.0,dc = n_modules * pmp * (1.0 - mismatch_loss)
+code/pvsim/module.py,54,1.0,return dc if dc.size > 1 else float(dc[0])
+code/pvsim/module.py,54,0.0,return dc if dc.size > 1 else float(dc[0])
+code/pvsim/optics.py,37,0.95,iam_d = 0.95  # 散射光等效 IAM (近似常数)
+code/pvsim/optics.py,41,0.2,"def rear_irradiance(ghi, albedo: float = 0.2, rear_view_factor: float = 0.4):"
+code/pvsim/optics.py,41,0.4,"def rear_irradiance(ghi, albedo: float = 0.2, rear_view_factor: float = 0.4):"
+code/pvsim/optics.py,52,0.2,"albedo: float = 0.2,"
+code/pvsim/optics.py,53,0.4,rear_view_factor: float = 0.4) -> np.ndarray:
+code/pvsim/spectral.py,32,1239.841984,HC_EV_NM = 1239.841984
+code/pvsim/spectral.py,33,1.68,TANDEM_TOP_EG_REF = 1.68
+code/pvsim/spectral.py,34,0.0003,TANDEM_TOP_DEG_DT = 0.0003
+code/pvsim/spectral.py,35,1.121,TANDEM_BOTTOM_EG_REF = 1.121
+code/pvsim/spectral.py,129,25.0,"wl_nm: np.ndarray, E: np.ndarray, tcell_C: float = 25.0"
+code/pvsim/spectral.py,143,25.0,"wl_nm: np.ndarray, E: np.ndarray, tcell_C: float = 25.0,"
+code/pvsim/spectral.py,187,0.0,"def generate_spectrum(apparent_zenith: float, surface_tilt: float = 0.0,"
+code/pvsim/spectral.py,188,0.2,"ground_albedo: float = 0.2, pressure: float = 101325.0,"
+code/pvsim/spectral.py,188,101325.0,"ground_albedo: float = 0.2, pressure: float = 101325.0,"
+code/pvsim/spectral.py,189,1.4,"precipitable_water: float = 1.4, ozone: float = 0.3,"
+code/pvsim/spectral.py,189,0.3,"precipitable_water: float = 1.4, ozone: float = 0.3,"
+code/pvsim/spectral.py,190,0.1,"aod500: float = 0.1, dayofyear: int = 172):"
+code/pvsim/spectral.py,190,172.0,"aod500: float = 0.1, dayofyear: int = 172):"
+code/pvsim/spectral.py,218,20.0,"""正午(高太阳)"": 20.0,"
+code/pvsim/spectral.py,219,60.0,"""上午/下午"": 60.0,"
+code/pvsim/spectral.py,220,78.0,"""清晨/傍晚(低太阳)"": 78.0,"
+code/pvsim/spectral.py,234,13.0,"def _sf_table(tech_name: str, n: int = 13):"
+code/pvsim/spectral.py,248,13.0,"n_zenith: int = 13, n_temperature: int = 10"
+code/pvsim/spectral.py,248,10.0,"n_zenith: int = 13, n_temperature: int = 10"
+code/pvsim/spectral.py,290,19.0,"n_temperature: int = 19,"
+code/pvsim/spectral.py,36,0.0002677,TANDEM_BOTTOM_DEG_DT = -0.0002677 * TANDEM_BOTTOM_EG_REF  # eV/K from relative coefficient in 1/K
+code/pvsim/spectral.py,48,1.0,blue = 1.0 / (
+code/pvsim/spectral.py,51,1.0,red = 1.0 / (
+code/pvsim/spectral.py,89,25.0,delta_t = float(tcell_C) - 25.0
+code/pvsim/spectral.py,96,350.0,"wl_nm, 350.0, lambda_top, 0.90, 25.0, 60.0"
+code/pvsim/spectral.py,96,0.9,"wl_nm, 350.0, lambda_top, 0.90, 25.0, 60.0"
+code/pvsim/spectral.py,96,25.0,"wl_nm, 350.0, lambda_top, 0.90, 25.0, 60.0"
+code/pvsim/spectral.py,96,60.0,"wl_nm, 350.0, lambda_top, 0.90, 25.0, 60.0"
+code/pvsim/spectral.py,99,330.0,"wl_nm, 330.0, lambda_top, 0.97, 20.0, 50.0"
+code/pvsim/spectral.py,99,0.97,"wl_nm, 330.0, lambda_top, 0.97, 20.0, 50.0"
+code/pvsim/spectral.py,99,20.0,"wl_nm, 330.0, lambda_top, 0.97, 20.0, 50.0"
+code/pvsim/spectral.py,99,50.0,"wl_nm, 330.0, lambda_top, 0.97, 20.0, 50.0"
+code/pvsim/spectral.py,102,350.0,"wl_nm, 350.0, lambda_bottom, 0.95, 50.0, 70.0"
+code/pvsim/spectral.py,102,0.95,"wl_nm, 350.0, lambda_bottom, 0.95, 50.0, 70.0"
+code/pvsim/spectral.py,102,50.0,"wl_nm, 350.0, lambda_bottom, 0.95, 50.0, 70.0"
+code/pvsim/spectral.py,102,70.0,"wl_nm, 350.0, lambda_bottom, 0.95, 50.0, 70.0"
+code/pvsim/spectral.py,111,1.0,@lru_cache(maxsize=1)
+code/pvsim/spectral.py,124,25.0,"top, bottom = _tandem_subcell_weights(wl, E, 25.0)"
+code/pvsim/spectral.py,120,1.0,@lru_cache(maxsize=1)
+code/pvsim/spectral.py,135,0.0,if broadband <= 0:
+code/pvsim/spectral.py,178,0.0,ratio_spec = jph / g if g > 0 else 0.0
+code/pvsim/spectral.py,184,1.0,return ratio_spec / ratio_ref if ratio_ref > 0 else 1.0
+code/pvsim/spectral.py,197,40.0,am = 40.0
+code/pvsim/spectral.py,238,0.0,"zeniths = np.linspace(0.0, 88.0, n)"
+code/pvsim/spectral.py,238,88.0,"zeniths = np.linspace(0.0, 88.0, n)"
+code/pvsim/spectral.py,233,8.0,@lru_cache(maxsize=8)
+code/pvsim/spectral.py,250,0.0,"zeniths = np.linspace(0.0, 88.0, n_zenith)"
+code/pvsim/spectral.py,250,88.0,"zeniths = np.linspace(0.0, 88.0, n_zenith)"
+code/pvsim/spectral.py,251,80.0,"temperatures = np.linspace(-10.0, 80.0, n_temperature)"
+code/pvsim/spectral.py,246,1.0,@lru_cache(maxsize=1)
+code/pvsim/spectral.py,272,0.0,"xi = np.clip(np.searchsorted(x_grid, x_clip, side=""right"") - 1, 0, len(x_grid) - 2)"
+code/pvsim/spectral.py,273,0.0,"yi = np.clip(np.searchsorted(y_grid, y_clip, side=""right"") - 1, 0, len(y_grid) - 2)"
+code/pvsim/spectral.py,292,80.0,"temperatures = np.linspace(-10.0, 80.0, n_temperature)"
+code/pvsim/spectral.py,288,1.0,@lru_cache(maxsize=1)
+code/pvsim/spectral.py,49,1.0,1.0 + np.exp(-(wl - lambda_min) / (blue_rolloff / 4.0))
+code/pvsim/spectral.py,52,1.0,1.0 + np.exp((wl - lambda_gap) / (edge_width / 4.0))
+code/pvsim/spectral.py,104,0.0,"bottom_collection = silicon_collection * np.clip(1.0 - top_absorption, 0.0, 1.0)"
+code/pvsim/spectral.py,104,1.0,"bottom_collection = silicon_collection * np.clip(1.0 - top_absorption, 0.0, 1.0)"
+code/pvsim/spectral.py,136,0.0,"return 0.0, 0.0"
+code/pvsim/spectral.py,136,0.0,"return 0.0, 0.0"
+code/pvsim/spectral.py,157,0.0,if broadband <= 0:
+code/pvsim/spectral.py,158,0.0,return 0.0
+code/pvsim/spectral.py,171,25.0,"return tandem_current_matching_factor(wl_nm, E, 25.0)"
+code/pvsim/spectral.py,178,0.0,ratio_spec = jph / g if g > 0 else 0.0
+code/pvsim/spectral.py,184,0.0,return ratio_spec / ratio_ref if ratio_ref > 0 else 1.0
+code/pvsim/spectral.py,198,0.0,aoi = apparent_zenith if surface_tilt == 0.0 else abs(apparent_zenith - surface_tilt)
+code/pvsim/spectral.py,251,10.0,"temperatures = np.linspace(-10.0, 80.0, n_temperature)"
+code/pvsim/spectral.py,270,0.0,"x_clip = np.clip(x_arr, x_grid[0], x_grid[-1])"
+code/pvsim/spectral.py,271,0.0,"y_clip = np.clip(y_arr, y_grid[0], y_grid[-1])"
+code/pvsim/spectral.py,272,1.0,"xi = np.clip(np.searchsorted(x_grid, x_clip, side=""right"") - 1, 0, len(x_grid) - 2)"
+code/pvsim/spectral.py,272,2.0,"xi = np.clip(np.searchsorted(x_grid, x_clip, side=""right"") - 1, 0, len(x_grid) - 2)"
+code/pvsim/spectral.py,273,1.0,"yi = np.clip(np.searchsorted(y_grid, y_clip, side=""right"") - 1, 0, len(y_grid) - 2)"
+code/pvsim/spectral.py,273,2.0,"yi = np.clip(np.searchsorted(y_grid, y_clip, side=""right"") - 1, 0, len(y_grid) - 2)"
+code/pvsim/spectral.py,292,10.0,"temperatures = np.linspace(-10.0, 80.0, n_temperature)"
+code/pvsim/spectral.py,319,25.0,temperature = 25.0 if tcell_C is None else tcell_C
+code/pvsim/spectral.py,323,0.0,"sf = np.interp(np.clip(zen, 0.0, 88.0), zt, sft)"
+code/pvsim/spectral.py,323,88.0,"sf = np.interp(np.clip(zen, 0.0, 88.0), zt, sft)"
+code/pvsim/spectral.py,104,1.0,"bottom_collection = silicon_collection * np.clip(1.0 - top_absorption, 0.0, 1.0)"
+code/pvsim/spectral.py,270,1.0,"x_clip = np.clip(x_arr, x_grid[0], x_grid[-1])"
+code/pvsim/spectral.py,271,1.0,"y_clip = np.clip(y_arr, y_grid[0], y_grid[-1])"
+code/pvsim/spectral.py,277,1.0,"v10 = values[yi, xi + 1]"
+code/pvsim/spectral.py,278,1.0,"v01 = values[yi + 1, xi]"
+code/pvsim/spectral.py,279,1.0,"v11 = values[yi + 1, xi + 1]"
+code/pvsim/spectral.py,279,1.0,"v11 = values[yi + 1, xi + 1]"
+code/pvsim/spectral.py,307,0.0,"np.clip(np.asarray(tcell_C, float), temperatures[0], temperatures[-1]),"
+code/pvsim/spectral.py,274,1.0,xf = (x_clip - x_grid[xi]) / (x_grid[xi + 1] - x_grid[xi])
+code/pvsim/spectral.py,275,1.0,yf = (y_clip - y_grid[yi]) / (y_grid[yi + 1] - y_grid[yi])
+code/pvsim/spectral.py,307,1.0,"np.clip(np.asarray(tcell_C, float), temperatures[0], temperatures[-1]),"
+code/pvsim/spectral.py,49,4.0,1.0 + np.exp(-(wl - lambda_min) / (blue_rolloff / 4.0))
+code/pvsim/spectral.py,52,4.0,1.0 + np.exp((wl - lambda_gap) / (edge_width / 4.0))
+code/pvsim/spectral.py,281,1.0,v00 * (1.0 - xf) * (1.0 - yf)
+code/pvsim/spectral.py,282,1.0,+ v10 * xf * (1.0 - yf)
+code/pvsim/spectral.py,283,1.0,+ v01 * (1.0 - xf) * yf
+code/pvsim/spectral.py,281,1.0,v00 * (1.0 - xf) * (1.0 - yf)
+code/pvsim/system.py,28,20.0,n_modules: int = 20              # 组件数
+code/pvsim/system.py,29,1.2,dc_ac_ratio: float = 1.2         # 直流/交流容量比 (逆变器相对偏小→高辐照时削顶)
+code/pvsim/system.py,30,0.96,inverter_eta_nom: float = 0.96   # 逆变器标称效率
+code/pvsim/system.py,31,0.05,"dc_loss: float = 0.05            # 直流侧损失(污渍/线损/灰尘), 不含失配"
+code/pvsim/system.py,32,0.02,mismatch_loss: float = 0.02      # 组件间失配损失
+code/pvsim/system.py,38,0.2,"albedo: float = 0.2              # 地面反照率 (沙漠/雪地高, 湿润区低)"
+code/pvsim/system.py,39,0.4,rear_view_factor: float = 0.4    # 双面背面视角因子
+code/pvsim/system.py,40,25.0,thermal_u0: float = 25.0         # Faiman 散热系数 u0 (开放支架)
+code/pvsim/system.py,41,6.84,thermal_u1: float = 6.84         # Faiman 散热系数 u1
+code/pvsim/system.py,45,0.96,"def inverter_ac(dc_power, pdc0, eta_nom=0.96):"
+code/pvsim/system.py,57,120.0,npts: int = 120) -> dict:
+code/pvsim/system.py,161,0.0,total_kwp = 0.0
+code/pvsim/system.py,53,1000.0,return cfg.n_modules * module_stc_power(tech) / 1000.0
+code/pvsim/system.py,117,1.0,dt_h = 1.0
+code/pvsim/system.py,123,0.0,specific_yield = energy_ac_kwh / kwp if kwp > 0 else 0.0   # kWh/kWp
+code/pvsim/system.py,125,1.0,ref_yield = poa_insol_kwh_m2 / 1.0     # kWh/kWp 等效 (G_STC=1kW/m^2)
+code/pvsim/system.py,126,0.0,pr = specific_yield / ref_yield if ref_yield > 0 else 0.0
+code/pvsim/system.py,173,3600.0,dt_h = (total_ac.index[1] - total_ac.index[0]).total_seconds() / 3600.0
+code/pvsim/system.py,174,1000.0,energy = float(total_ac.sum()) * dt_h / 1000.0
+code/pvsim/system.py,77,0.0,if cfg.apply_bifacial and bifac > 0:
+code/pvsim/system.py,88,25.0,"tcell = np.full_like(poa_global, 25.0)"
+code/pvsim/system.py,105,1.0,dc = np.atleast_1d(dc) * (1.0 - cfg.dc_loss)
+code/pvsim/system.py,109,1000.0,pdc0 = kwp * 1000.0 / cfg.dc_ac_ratio          # 逆变器直流额定
+code/pvsim/system.py,114,1.0,"if isinstance(idx, pd.DatetimeIndex) and len(idx) > 1:"
+code/pvsim/system.py,115,3600.0,dt_h = (idx[1] - idx[0]).total_seconds() / 3600.0
+code/pvsim/system.py,119,1000.0,energy_dc_kwh = float(np.sum(dc) * dt_h / 1000.0)
+code/pvsim/system.py,120,1000.0,energy_ac_kwh = float(np.sum(ac) * dt_h / 1000.0)
+code/pvsim/system.py,121,1000.0,poa_insol_kwh_m2 = float(np.sum(poa_global) * dt_h / 1000.0)
+code/pvsim/system.py,123,0.0,specific_yield = energy_ac_kwh / kwp if kwp > 0 else 0.0   # kWh/kWp
+code/pvsim/system.py,126,0.0,pr = specific_yield / ref_yield if ref_yield > 0 else 0.0
+code/pvsim/system.py,145,0.0,"""clipping_kwh"": max(0.0, energy_dc_kwh * cfg.inverter_eta_nom - energy_ac_kwh),"
+code/pvsim/system.py,177,0.0,"""specific_yield"": energy / total_kwp if total_kwp > 0 else 0.0}"
+code/pvsim/system.py,168,80.0,"r = simulate(tech, w, replace(cfg, n_modules=nmod), npts=80)"
+code/pvsim/system.py,177,0.0,"""specific_yield"": energy / total_kwp if total_kwp > 0 else 0.0}"
+code/pvsim/system.py,173,1.0,dt_h = (total_ac.index[1] - total_ac.index[0]).total_seconds() / 3600.0
+code/pvsim/system.py,173,0.0,dt_h = (total_ac.index[1] - total_ac.index[0]).total_seconds() / 3600.0
+code/pvsim/system.py,115,1.0,dt_h = (idx[1] - idx[0]).total_seconds() / 3600.0
+code/pvsim/system.py,115,0.0,dt_h = (idx[1] - idx[0]).total_seconds() / 3600.0
+code/pvsim/temperature.py,16,1.0,"def faiman(poa_global, temp_air, wind_speed=1.0, u0=25.0, u1=6.84):"
+code/pvsim/temperature.py,16,25.0,"def faiman(poa_global, temp_air, wind_speed=1.0, u0=25.0, u1=6.84):"
+code/pvsim/temperature.py,16,6.84,"def faiman(poa_global, temp_air, wind_speed=1.0, u0=25.0, u1=6.84):"
+code/pvsim/temperature.py,28,45.0,"def noct_cell_temp(poa_global, temp_air, noct=45.0):"
+code/pvsim/temperature.py,35,1.0,"def cell_temperature(poa_global, temp_air, wind_speed=1.0, model=""faiman"","
+code/pvsim/temperature.py,36,45.0,"noct=45.0, u0=25.0, u1=6.84):"
+code/pvsim/temperature.py,36,25.0,"noct=45.0, u0=25.0, u1=6.84):"
+code/pvsim/temperature.py,36,6.84,"noct=45.0, u0=25.0, u1=6.84):"
+code/pvsim/temperature.py,32,800.0,return temp_air + (noct - 20.0) / 800.0 * poa_global
+code/pvsim/temperature.py,32,20.0,return temp_air + (noct - 20.0) / 800.0 * poa_global
+code/pvsim/weather.py,22,31.23,"def get_location(latitude=31.23, longitude=121.47, tz=""Asia/Shanghai"","
+code/pvsim/weather.py,22,121.47,"def get_location(latitude=31.23, longitude=121.47, tz=""Asia/Shanghai"","
+code/pvsim/weather.py,23,10.0,"altitude=10.0, name=""上海"") -> Location:"
+code/pvsim/weather.py,30,180.0,"surface_azimuth=180.0, irradiance_time_offset_h=0.0) -> pd.DataFrame:"
+code/pvsim/weather.py,30,0.0,"surface_azimuth=180.0, irradiance_time_offset_h=0.0) -> pd.DataFrame:"
+code/pvsim/weather.py,72,20.0,"def _synthetic_temp(times, tmean=20.0, diurnal=8.0, seasonal=12.0):"
+code/pvsim/weather.py,72,8.0,"def _synthetic_temp(times, tmean=20.0, diurnal=8.0, seasonal=12.0):"
+code/pvsim/weather.py,72,12.0,"def _synthetic_temp(times, tmean=20.0, diurnal=8.0, seasonal=12.0):"
+code/pvsim/weather.py,83,1.0,"cloud_factor=1.0, tmean=25.0, wind=1.5) -> pd.DataFrame:"
+code/pvsim/weather.py,83,25.0,"cloud_factor=1.0, tmean=25.0, wind=1.5) -> pd.DataFrame:"
+code/pvsim/weather.py,83,1.5,"cloud_factor=1.0, tmean=25.0, wind=1.5) -> pd.DataFrame:"
+code/pvsim/weather.py,94,2023.0,"def clear_sky_year(year=2023, location: Location | None = None,"
+code/pvsim/weather.py,95,16.0,"surface_tilt=None, freq=""1h"", tmean=16.0) -> pd.DataFrame:"
+code/pvsim/weather.py,107,2023.0,"def synthetic_tmy_year(year=2023, location: Location | None = None,"
+code/pvsim/weather.py,108,16.0,"surface_tilt=None, freq=""1h"", tmean=16.0,"
+code/pvsim/weather.py,109,0.0,seed=0) -> pd.DataFrame:
+code/pvsim/weather.py,145,0.0,"def from_pvgis_tmy(latitude, longitude, altitude=0.0, tz=""Asia/Shanghai"","
+code/pvsim/weather.py,148,60.0,timeout=60) -> pd.DataFrame:
+code/pvsim/weather.py,68,0.0,"df[[""poa_global"", ""poa_direct"", ""poa_diffuse""]].clip(lower=0.0).fillna(0.0)"
+code/pvsim/weather.py,102,1.5,"wind_arr = np.full(len(times), 1.5)"
+code/pvsim/weather.py,118,0.35,"daily = 0.35 + 0.65 * rng.beta(5, 2, size=ndays)"
+code/pvsim/weather.py,128,1.8,"wind_arr = np.full(len(times), 1.8)"
+code/pvsim/weather.py,74,60.0,hours = times.hour + times.minute / 60.0
+code/pvsim/weather.py,89,8.0,"temp = _synthetic_temp(times, tmean=tmean, diurnal=8.0, seasonal=0.0)"
+code/pvsim/weather.py,89,0.0,"temp = _synthetic_temp(times, tmean=tmean, diurnal=8.0, seasonal=0.0)"
+code/pvsim/weather.py,101,8.0,"temp = _synthetic_temp(times, tmean=tmean, diurnal=8.0, seasonal=12.0)"
+code/pvsim/weather.py,101,12.0,"temp = _synthetic_temp(times, tmean=tmean, diurnal=8.0, seasonal=12.0)"
+code/pvsim/weather.py,118,0.65,"daily = 0.35 + 0.65 * rng.beta(5, 2, size=ndays)"
+code/pvsim/weather.py,125,0.0,"dni = (cs[""dni""] * kt).clip(lower=0)"
+code/pvsim/weather.py,126,0.0,dhi = dhi.clip(lower=0)
+code/pvsim/weather.py,127,8.0,"temp = _synthetic_temp(times, tmean=tmean, diurnal=8.0, seasonal=12.0)"
+code/pvsim/weather.py,127,12.0,"temp = _synthetic_temp(times, tmean=tmean, diurnal=8.0, seasonal=12.0)"
+code/pvsim/weather.py,139,1.5,"wind = data.get(""wind_speed"", pd.Series(1.5, index=times))"
+code/pvsim/weather.py,140,20.0,"temp = data.get(""temp_air"", pd.Series(20.0, index=times))"
+code/pvsim/weather.py,183,0.0,df = res[0]
+code/pvsim/weather.py,203,1.5,"wind = df[""wind_speed""] if ""wind_speed"" in df.columns else pd.Series(1.5, index=times)"
+code/pvsim/weather.py,219,2023.0,"data, meta = pvlib.iotools.read_epw(path, coerce_year=2023)"
+code/pvsim/weather.py,76,24.0,diur = diurnal * np.sin(2 * np.pi * (hours - 9.0) / 24.0)
+code/pvsim/weather.py,77,365.0,seas = seasonal * np.sin(2 * np.pi * (doy - 110) / 365.0)
+code/pvsim/weather.py,118,5.0,"daily = 0.35 + 0.65 * rng.beta(5, 2, size=ndays)"
+code/pvsim/weather.py,118,2.0,"daily = 0.35 + 0.65 * rng.beta(5, 2, size=ndays)"
+code/pvsim/weather.py,119,0.0,day_index = (times.normalize() - times.normalize()[0]).days
+code/pvsim/weather.py,123,0.25,"dhi = cs[""dhi""] * kt + cs[""dni""] * (1 - kt) * 0.25 * np.cos(np.radians("
+code/pvsim/weather.py,176,0.0,"df = pd.read_csv(path, index_col=0, parse_dates=True)"
+code/pvsim/weather.py,184,1.0,"raw_meta = res[1] if len(res) > 1 and isinstance(res[1], dict) else {}"
+code/pvsim/weather.py,201,0.0,"altitude = float(cache_meta.get(""elevation_m"", 0.0))"
+code/pvsim/weather.py,68,0.0,"df[[""poa_global"", ""poa_direct"", ""poa_diffuse""]].clip(lower=0.0).fillna(0.0)"
+code/pvsim/weather.py,137,0.0,"altitude=meta.get(""altitude"", 0))"
+code/pvsim/weather.py,165,1e-06,abs(float(cached_latitude) - float(latitude)) > 1e-6
+code/pvsim/weather.py,166,1e-06,or abs(float(cached_longitude) - float(longitude)) > 1e-6
+code/pvsim/weather.py,184,1.0,"raw_meta = res[1] if len(res) > 1 and isinstance(res[1], dict) else {}"
+code/pvsim/weather.py,190,0.0,"""elevation_m"": float(location_meta.get(""elevation"", 0.0)),"
+code/pvsim/weather.py,194,2.0,"json.dump(cache_meta, f, ensure_ascii=False, indent=2)"
+code/pvsim/weather.py,221,0.0,"altitude=meta.get(""altitude"", 0))"
+code/pvsim/weather.py,76,2.0,diur = diurnal * np.sin(2 * np.pi * (hours - 9.0) / 24.0)
+code/pvsim/weather.py,76,9.0,diur = diurnal * np.sin(2 * np.pi * (hours - 9.0) / 24.0)
+code/pvsim/weather.py,77,2.0,seas = seasonal * np.sin(2 * np.pi * (doy - 110) / 365.0)
+code/pvsim/weather.py,77,110.0,seas = seasonal * np.sin(2 * np.pi * (doy - 110) / 365.0)
+code/pvsim/weather.py,123,1.0,"dhi = cs[""dhi""] * kt + cs[""dni""] * (1 - kt) * 0.25 * np.cos(np.radians("
+code/pvsim/weather.py,184,1.0,"raw_meta = res[1] if len(res) > 1 and isinstance(res[1], dict) else {}"
+code/pvsim/weather.py,124,89.0,"loc.get_solarposition(times)[""apparent_zenith""].clip(upper=89)))"
+code/scripts/device_scenarios.py,7,15.0,"temps = np.arange(15.0, 66.0, 5.0)"
+code/scripts/device_scenarios.py,7,66.0,"temps = np.arange(15.0, 66.0, 5.0)"
+code/scripts/device_scenarios.py,7,5.0,"temps = np.arange(15.0, 66.0, 5.0)"
+code/scripts/device_scenarios.py,27,0.3,"low, high = .3, 2.2"
+code/scripts/device_scenarios.py,27,2.2,"low, high = .3, 2.2"
+code/scripts/device_scenarios.py,28,50.0,for _ in range(50):
+code/scripts/device_scenarios.py,34,0.0001,assert abs(_gamma_pmax(result)-gamma)<1e-4
+code/scripts/device_scenarios.py,15,1000.0,"tech, 1000.0, 25.0, ns=tech.cells_in_series,"
+code/scripts/device_scenarios.py,15,25.0,"tech, 1000.0, 25.0, ns=tech.cells_in_series,"
+code/scripts/device_scenarios.py,18,2.0,slope /= np.sum((temps - temps.mean()) ** 2)
+code/scripts/device_scenarios.py,19,100.0,return float(slope / p25 * 100.0)
+code/scripts/device_scenarios.py,29,2.0,mid=(low+high)/2
+code/scripts/device_scenarios.py,25,0.15,"if gamma == (-.15 if name == ""single"" else -.30):"
+code/scripts/device_scenarios.py,25,0.3,"if gamma == (-.15 if name == ""single"" else -.30):"
+code/scripts/device_scenarios.py,33,2.0,"result=replace(tech,Ea_recomb=(low+high)/2)"
+code/scripts/device_scenarios.py,10,1000.0,"tech, 1000.0, float(temp), ns=tech.cells_in_series,"
+code/scripts/exact_vector.py,47,1.0,"def array_dc_power(tech,irradiance,tcell_C,n_modules=1,effective_irradiance=None,mismatch_loss=.02,npts=150):"
+code/scripts/exact_vector.py,47,0.02,"def array_dc_power(tech,irradiance,tcell_C,n_modules=1,effective_irradiance=None,mismatch_loss=.02,npts=150):"
+code/scripts/exact_vector.py,47,150.0,"def array_dc_power(tech,irradiance,tcell_C,n_modules=1,effective_irradiance=None,mismatch_loss=.02,npts=150):"
+code/scripts/exact_vector.py,13,1.0,mask=G>1;ids=np.flatnonzero(mask)
+code/scripts/exact_vector.py,14,0.0,"for st in range(0,len(ids),1024):"
+code/scripts/exact_vector.py,14,1024.0,"for st in range(0,len(ids),1024):"
+code/scripts/exact_vector.py,15,273.15,"ix=ids[st:st+1024];tk=T[ix]+273.15;ge=np.maximum(E[ix],1e-6)"
+code/scripts/exact_vector.py,15,1e-06,"ix=ids[st:st+1024];tk=T[ix]+273.15;ge=np.maximum(E[ix],1e-6)"
+code/scripts/exact_vector.py,19,1.0,a=tech.n_ideality*1*K_B*tk/Q*ns;A=1+Rs/Rsh
+code/scripts/exact_vector.py,27,599.0,est=a*np.log(IL/I0+1);step=1.5*est/599
+code/scripts/exact_vector.py,28,599.0,"low=np.zeros(len(ix),dtype=int);high=np.full(len(ix),599,dtype=int)"
+code/scripts/exact_vector.py,29,10.0,for _ in range(10):
+code/scripts/exact_vector.py,38,0.0,"left=np.maximum(km-1,0);right=np.minimum(km+1,npts-1)"
+code/scripts/exact_vector.py,41,2.0,"delta=np.divide(.5*(x2-x0)*(y2-y0),den,out=np.zeros_like(den),where=den!=0)/2"
+code/scripts/exact_vector.py,43,0.0,"p=vmp*current(vmp);p=np.where((voc>0)&(current(np.zeros_like(voc))>0),p,0)"
+code/scripts/exact_vector.py,49,1.0,"p=power(tech,G,tcell_C,E,tech.cells_in_series,npts)*n_modules*(1-mismatch_loss)"
+code/scripts/exact_vector.py,50,1.0,return p if p.size>1 else float(p[0])
+code/scripts/exact_vector.py,21,1.0,dims=v.ndim-1
+code/scripts/exact_vector.py,27,1.5,est=a*np.log(IL/I0+1);step=1.5*est/599
+code/scripts/exact_vector.py,30,2.0,mid=(low+high+1)//2;positive=current(step*mid)>=0
+code/scripts/exact_vector.py,30,0.0,mid=(low+high+1)//2;positive=current(step*mid)>=0
+code/scripts/exact_vector.py,32,599.0,"k=low;v0=step*k;v1=step*np.minimum(k+1,599)"
+code/scripts/exact_vector.py,35,599.0,"voc=v0-voc;voc=np.where(k==599,v0,voc)"
+code/scripts/exact_vector.py,37,0.0,"pp=v*np.clip(current(v),0,None);km=np.argmax(pp,axis=1);ar=np.arange(len(ix))"
+code/scripts/exact_vector.py,37,1.0,"pp=v*np.clip(current(v),0,None);km=np.argmax(pp,axis=1);ar=np.arange(len(ix))"
+code/scripts/exact_vector.py,38,1.0,"left=np.maximum(km-1,0);right=np.minimum(km+1,npts-1)"
+code/scripts/exact_vector.py,38,1.0,"left=np.maximum(km-1,0);right=np.minimum(km+1,npts-1)"
+code/scripts/exact_vector.py,38,1.0,"left=np.maximum(km-1,0);right=np.minimum(km+1,npts-1)"
+code/scripts/exact_vector.py,50,0.0,return p if p.size>1 else float(p[0])
+code/scripts/exact_vector.py,15,1024.0,"ix=ids[st:st+1024];tk=T[ix]+273.15;ge=np.maximum(E[ix],1e-6)"
+code/scripts/exact_vector.py,17,3.0,I0=tech.I_o_ref*(tk/T_REF)**3*np.exp(tech.Ea_recomb/K_EV*(1/T_REF-1/tk))
+code/scripts/exact_vector.py,27,1.0,est=a*np.log(IL/I0+1);step=1.5*est/599
+code/scripts/exact_vector.py,30,1.0,mid=(low+high+1)//2;positive=current(step*mid)>=0
+code/scripts/exact_vector.py,31,1.0,"low=np.where(positive,mid,low);high=np.where(positive,high,mid-1)"
+code/scripts/exact_vector.py,32,1.0,"k=low;v0=step*k;v1=step*np.minimum(k+1,599)"
+code/scripts/exact_vector.py,36,0.0,"v=voc[:,None]*np.linspace(0,1,npts)[None,:]"
+code/scripts/exact_vector.py,36,1.0,"v=voc[:,None]*np.linspace(0,1,npts)[None,:]"
+code/scripts/exact_vector.py,40,2.0,"y0=pp[ar,left];y1=pp[ar,km];y2=pp[ar,right];den=y0-2*y1+y2"
+code/scripts/exact_vector.py,42,0.0,"vmp=np.where((km>0)&(km<npts-1),x1-delta,x1)"
+code/scripts/exact_vector.py,43,0.0,"p=vmp*current(vmp);p=np.where((voc>0)&(current(np.zeros_like(voc))>0),p,0)"
+code/scripts/exact_vector.py,43,0.0,"p=vmp*current(vmp);p=np.where((voc>0)&(current(np.zeros_like(voc))>0),p,0)"
+code/scripts/exact_vector.py,41,0.5,"delta=np.divide(.5*(x2-x0)*(y2-y0),den,out=np.zeros_like(den),where=den!=0)/2"
+code/scripts/exact_vector.py,41,0.0,"delta=np.divide(.5*(x2-x0)*(y2-y0),den,out=np.zeros_like(den),where=den!=0)/2"
+code/scripts/exact_vector.py,42,1.0,"vmp=np.where((km>0)&(km<npts-1),x1-delta,x1)"
+code/scripts/exact_vector.py,17,1.0,I0=tech.I_o_ref*(tk/T_REF)**3*np.exp(tech.Ea_recomb/K_EV*(1/T_REF-1/tk))
+code/scripts/exact_vector.py,17,1.0,I0=tech.I_o_ref*(tk/T_REF)**3*np.exp(tech.Ea_recomb/K_EV*(1/T_REF-1/tk))
+code/scripts/exact_vector.py,19,1.0,a=tech.n_ideality*1*K_B*tk/Q*ns;A=1+Rs/Rsh
+code/scripts/exact_vector.py,22,1.0,"aa=a.reshape((-1,)+(1,)*dims);AA=A.reshape((-1,)+(1,)*dims)"
+code/scripts/exact_vector.py,22,1.0,"aa=a.reshape((-1,)+(1,)*dims);AA=A.reshape((-1,)+(1,)*dims)"
+code/scripts/exact_vector.py,22,1.0,"aa=a.reshape((-1,)+(1,)*dims);AA=A.reshape((-1,)+(1,)*dims)"
+code/scripts/exact_vector.py,22,1.0,"aa=a.reshape((-1,)+(1,)*dims);AA=A.reshape((-1,)+(1,)*dims)"
+code/scripts/exact_vector.py,23,1.0,"il=IL.reshape((-1,)+(1,)*dims);i0=I0.reshape((-1,)+(1,)*dims)"
+code/scripts/exact_vector.py,23,1.0,"il=IL.reshape((-1,)+(1,)*dims);i0=I0.reshape((-1,)+(1,)*dims)"
+code/scripts/exact_vector.py,23,1.0,"il=IL.reshape((-1,)+(1,)*dims);i0=I0.reshape((-1,)+(1,)*dims)"
+code/scripts/exact_vector.py,23,1.0,"il=IL.reshape((-1,)+(1,)*dims);i0=I0.reshape((-1,)+(1,)*dims)"
+code/scripts/exact_vector.py,25,700.0,"ww=np.real(lambertw(c*np.exp(np.clip(dd,-700,700))))"
+code/scripts/exact_vector.py,25,700.0,"ww=np.real(lambertw(c*np.exp(np.clip(dd,-700,700))))"

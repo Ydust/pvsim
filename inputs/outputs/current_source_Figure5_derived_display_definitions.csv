@@ -1,0 +1,6 @@
+﻿parameter,definition,unit,identity
+baseline/target margin,"candidate NPV-max(other2 fixed baseline NPVs,0)",USD/kWp or USD/m2 site,derived model value
+normalized margin,100*margin/(baseline system CAPEX per comparison unit); excludes the common site charge from denominator,percent of initial system expenditure,author display normalization; not a yield gain
+baseline rank,"ascending baseline normalized margin, stable adcode tie-break; target retains the identical district rank",1..369,deterministic paired display order
+parity,same Figure4 parity flags; independent NPV tolerance1e-9USD matches all flags,boolean,"same economic parity, including ties"
+main cases,SJ/capacity and tandem/site; all4 cases and all369 regions retained in source,case,resource-constrained pathway roles predetermined by research question

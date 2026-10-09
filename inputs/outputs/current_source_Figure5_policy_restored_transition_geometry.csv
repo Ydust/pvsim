@@ -1,0 +1,65 @@
+﻿context,policy,before_choice,after_choice,regions,response_class,plot_x,plot_y,marker_area_pt2,zero_symbol
+capacity,General,csi,csi,138,paid_unchanged,-0.23,-0.23,103.5,False
+capacity,General,csi,single_junction,0,empty,0.77,-0.23,16.0,True
+capacity,General,csi,tandem,0,empty,1.77,-0.23,16.0,True
+capacity,General,csi,no_build,0,empty,2.77,-0.23,16.0,True
+capacity,General,single_junction,csi,163,switch,-0.23,0.77,122.25,False
+capacity,General,single_junction,single_junction,0,empty,0.77,0.77,16.0,True
+capacity,General,single_junction,tandem,0,empty,1.77,0.77,16.0,True
+capacity,General,single_junction,no_build,0,empty,2.77,0.77,16.0,True
+capacity,General,tandem,csi,0,empty,-0.23,1.77,16.0,True
+capacity,General,tandem,single_junction,0,empty,0.77,1.77,16.0,True
+capacity,General,tandem,tandem,0,empty,1.77,1.77,16.0,True
+capacity,General,tandem,no_build,0,empty,2.77,1.77,16.0,True
+capacity,General,no_build,csi,50,entry,-0.23,2.77,37.5,False
+capacity,General,no_build,single_junction,0,empty,0.77,2.77,16.0,True
+capacity,General,no_build,tandem,0,empty,1.77,2.77,16.0,True
+capacity,General,no_build,no_build,18,unfunded_unchanged,2.77,2.77,13.5,False
+site_area,General,csi,csi,56,paid_unchanged,0.23,-0.23,42.0,False
+site_area,General,csi,single_junction,0,empty,1.23,-0.23,16.0,True
+site_area,General,csi,tandem,144,switch,2.23,-0.23,108.0,False
+site_area,General,csi,no_build,0,empty,3.23,-0.23,16.0,True
+site_area,General,single_junction,csi,0,empty,0.23,0.77,16.0,True
+site_area,General,single_junction,single_junction,0,empty,1.23,0.77,16.0,True
+site_area,General,single_junction,tandem,0,empty,2.23,0.77,16.0,True
+site_area,General,single_junction,no_build,0,empty,3.23,0.77,16.0,True
+site_area,General,tandem,csi,0,empty,0.23,1.77,16.0,True
+site_area,General,tandem,single_junction,0,empty,1.23,1.77,16.0,True
+site_area,General,tandem,tandem,169,paid_unchanged,2.23,1.77,126.75,False
+site_area,General,tandem,no_build,0,empty,3.23,1.77,16.0,True
+site_area,General,no_build,csi,0,empty,0.23,2.77,16.0,True
+site_area,General,no_build,single_junction,0,empty,1.23,2.77,16.0,True
+site_area,General,no_build,tandem,0,empty,2.23,2.77,16.0,True
+site_area,General,no_build,no_build,0,empty,3.23,2.77,16.0,True
+capacity,New technology,csi,csi,0,empty,-0.23,0.23,16.0,True
+capacity,New technology,csi,single_junction,138,switch,0.77,0.23,103.5,False
+capacity,New technology,csi,tandem,0,empty,1.77,0.23,16.0,True
+capacity,New technology,csi,no_build,0,empty,2.77,0.23,16.0,True
+capacity,New technology,single_junction,csi,0,empty,-0.23,1.23,16.0,True
+capacity,New technology,single_junction,single_junction,163,paid_unchanged,0.77,1.23,122.25,False
+capacity,New technology,single_junction,tandem,0,empty,1.77,1.23,16.0,True
+capacity,New technology,single_junction,no_build,0,empty,2.77,1.23,16.0,True
+capacity,New technology,tandem,csi,0,empty,-0.23,2.23,16.0,True
+capacity,New technology,tandem,single_junction,0,empty,0.77,2.23,16.0,True
+capacity,New technology,tandem,tandem,0,empty,1.77,2.23,16.0,True
+capacity,New technology,tandem,no_build,0,empty,2.77,2.23,16.0,True
+capacity,New technology,no_build,csi,0,empty,-0.23,3.23,16.0,True
+capacity,New technology,no_build,single_junction,48,entry,0.77,3.23,36.0,False
+capacity,New technology,no_build,tandem,0,empty,1.77,3.23,16.0,True
+capacity,New technology,no_build,no_build,20,unfunded_unchanged,2.77,3.23,15.0,False
+site_area,New technology,csi,csi,0,empty,0.23,0.23,16.0,True
+site_area,New technology,csi,single_junction,0,empty,1.23,0.23,16.0,True
+site_area,New technology,csi,tandem,200,switch,2.23,0.23,150.0,False
+site_area,New technology,csi,no_build,0,empty,3.23,0.23,16.0,True
+site_area,New technology,single_junction,csi,0,empty,0.23,1.23,16.0,True
+site_area,New technology,single_junction,single_junction,0,empty,1.23,1.23,16.0,True
+site_area,New technology,single_junction,tandem,0,empty,2.23,1.23,16.0,True
+site_area,New technology,single_junction,no_build,0,empty,3.23,1.23,16.0,True
+site_area,New technology,tandem,csi,0,empty,0.23,2.23,16.0,True
+site_area,New technology,tandem,single_junction,0,empty,1.23,2.23,16.0,True
+site_area,New technology,tandem,tandem,169,paid_unchanged,2.23,2.23,126.75,False
+site_area,New technology,tandem,no_build,0,empty,3.23,2.23,16.0,True
+site_area,New technology,no_build,csi,0,empty,0.23,3.23,16.0,True
+site_area,New technology,no_build,single_junction,0,empty,1.23,3.23,16.0,True
+site_area,New technology,no_build,tandem,0,empty,2.23,3.23,16.0,True
+site_area,New technology,no_build,no_build,0,empty,3.23,3.23,16.0,True

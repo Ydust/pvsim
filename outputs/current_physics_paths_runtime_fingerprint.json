@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a1dcd1e307062f62d5b27554de2c845552c69b2a1ac8be270d1c68fe8ec90091",
+  "files": {
+    "code/pvsim/__init__.py": "3e678197f1e7704acfe6acb79d71c71286517565c29ca9a31839b5107271f1a9",
+    "code/pvsim/cell.py": "4ebbcd1e9dc29bc2c86dab8e255bb441626994684f64b41a7c89389a173f5c77",
+    "code/pvsim/city_catalog.py": "f0483d56e7043758e7f966b1e8e6e781b635f60116fd55f45578ddcdd880811c",
+    "code/pvsim/economic_priors.py": "ce9809931ce3beaaaa60758e0970100a036b2bb08582b89790b8af471e75cdd5",
+    "code/pvsim/economics.py": "fd8dcd10a59ed2d9bf381bd9320b152fedf6e99ee06c3667b3b58e359be2369d",
+    "code/pvsim/materials.py": "f9cb074dbdfdab364fdcc6c2a2b17d495402d3f4fe2653563c22f40fe3d32d1a",
+    "code/pvsim/module.py": "09d5de3bf1c2ab9caf188af258334d606ffba17e51425625be0df8629eacbc80",
+    "code/pvsim/optics.py": "acca022b2562aae658333dc5927671a7f6548d30fe502705714cc94fb842d22e",
+    "code/pvsim/spectral.py": "86c94e6d060978b3320a849d7af650dda3a982a481856fb5eb8d41b304cb90a9",
+    "code/pvsim/system.py": "4d3098b62a430623f132d32cbaeb1c9cd91bad09e0c80632bb6894676804cb62",
+    "code/pvsim/temperature.py": "b670d4b6b7185c9d3042c10e1d96c41a91e199492f4f5ccd4945333cbd0082bd",
+    "code/pvsim/weather.py": "0e1c2035741448d5d48e7f176a08930d3d4a3783c47c6122c4bb09df1b9d5bf5",
+    "code/run_paths.py": "7be77e61b2bfe5a06640d299974b18e238ffb5fa870c99ad2fffcb437b577e49",
+    "code/scripts/device_scenarios.py": "a5b0ebd3026cfc1a0e9ca1e78626a4078cbacf05065546e19b294de43a6f7a91",
+    "code/scripts/exact_vector.py": "ec28a9d44e46fb93db5b2f38f6e40ed5cf780f92527688c24ec4fc33aeb6e7d8",
+    "inputs/path_states.csv": "bf0394742b4b061f789bd81837d5df61d0ccb400d691858dadfc063dcac1368a",
+    "inputs/tandem_spectral_tables.npz": "100853fa7caa71844042cc2a4c83346a9c5b9974caf3dfe404359ab7031feda1",
+    "inputs/upstream_manifest.json": "257afcce66f388f24c885209cce992368efdd2b8d23a19ec6b43be8da0c363fe"
+  }
+}

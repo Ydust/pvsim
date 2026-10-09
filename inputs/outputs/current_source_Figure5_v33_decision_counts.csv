@@ -1,0 +1,17 @@
+﻿candidate,context,response_class,regions
+single_junction,capacity,entry,4
+single_junction,capacity,switch,7
+single_junction,capacity,unchanged,358
+single_junction,capacity,exit,0
+single_junction,site_area,entry,0
+single_junction,site_area,switch,0
+single_junction,site_area,unchanged,369
+single_junction,site_area,exit,0
+tandem,capacity,entry,0
+tandem,capacity,switch,0
+tandem,capacity,unchanged,369
+tandem,capacity,exit,0
+tandem,site_area,entry,0
+tandem,site_area,switch,80
+tandem,site_area,unchanged,289
+tandem,site_area,exit,0

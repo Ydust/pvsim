@@ -1,0 +1,4 @@
+﻿parameter,value,unit,identity,numeric_locator
+descriptive_near_threshold,5,percent of initial system CAPEX,Author descriptive classification; not external empirical input,figure5_contract.json:gap_definition; compute_regional_gaps.py: cls; threshold sensitivity 1/5/10
+gap_denominator,candidate initial system CAPEX,USD per standardized opportunity,Derived from current common financial baseline,"qa/Figure4_analysis_register.json:capex2035_usd_kwp,density_W_m2,packing; code/scripts/finance.py:evaluate"
+gap_target,"max(0,NPV_other1,NPV_other2)",USD per standardized opportunity,Decision definition,Source_Data/Figure5_policy_baseline_all_technology_NPV.csv; compute_regional_gaps.py:target

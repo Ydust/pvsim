@@ -1,0 +1,13 @@
+﻿context,candidate,descriptive_threshold_pct,at_parity,small_gap,remaining_gap
+capacity,single_junction,1.0,163,18,188
+capacity,single_junction,5.0,163,135,71
+capacity,single_junction,10.0,163,167,39
+capacity,tandem,1.0,0,0,369
+capacity,tandem,5.0,0,0,369
+capacity,tandem,10.0,0,0,369
+site_area,single_junction,1.0,0,0,369
+site_area,single_junction,5.0,0,0,369
+site_area,single_junction,10.0,0,2,367
+site_area,tandem,1.0,169,26,174
+site_area,tandem,5.0,169,135,65
+site_area,tandem,10.0,169,191,9

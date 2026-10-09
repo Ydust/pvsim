@@ -1,33 +1,28 @@
 cff-version: 1.2.0
-title: "Perovskite field advantage and deployment geography in China"
-message: "If you use this manuscript workflow or data package, please cite it as below."
+title: "Translating regional yield advantages into perovskite photovoltaic competitiveness"
+message: "Please cite this code and data release when using the regional photovoltaic modelling workflow."
 type: software
 authors:
-  - family-names: "<Lead Author>"
-    given-names: "<Given>"
-    orcid: "https://orcid.org/<placeholder>"
-repository-code: "https://github.com/<your-org>/pvsim"
-url: "https://github.com/<your-org>/pvsim"
+  - family-names: "Huo"
+    given-names: "Mingchao"
+  - family-names: "Yuan"
+    given-names: "Qingbin"
+  - family-names: "Zhai"
+    given-names: "Mengyu"
+  - family-names: "Wu"
+    given-names: "Yufeng"
+repository-code: "https://github.com/Ydust/pvsim"
+url: "https://github.com/Ydust/pvsim"
 license: MIT
-version: "1.0.0"
-date-released: "2026-06-01"
+version: "2026.10.09"
+date-released: "2026-10-09"
 keywords:
   - photovoltaics
   - single-diode model
   - perovskite
   - crystalline silicon
   - tandem
-  - LCOE
-  - digital twin
+  - regional deployment
+  - discounted cash flow
   - China
-  - geographic inversion
   - source provenance
-preferred-citation:
-  type: article
-  title: "Perovskite field advantage and deployment geography in China"
-  authors:
-    - family-names: "<Lead Author>"
-      given-names: "<Given>"
-  journal: "SoftwareX"
-  year: 2026
-  doi: "10.1016/j.softx.2026.<placeholder>"

@@ -1,0 +1,31 @@
+﻿parameter,value,unit,identity,numeric_locator,code_sha256,external_observation_claim
+discount,0.05,fraction,Author scenario,code/scripts/finance.py:7; def lifecycle,a131597ff793d16c7e0a81aac053fd3af811cb76607d223298060e0af72251fa,False
+O&M,0.015,baseline CAPEX/year,Author scenario,code/scripts/finance.py:27; om_factor=,a131597ff793d16c7e0a81aac053fd3af811cb76607d223298060e0af72251fa,False
+horizon,25,years,Author scenario,code/scripts/finance.py:7; def lifecycle,a131597ff793d16c7e0a81aac053fd3af811cb76607d223298060e0af72251fa,False
+capacity_price,0.04,USD/kWh,Author scenario,code/scripts/finance.py:35; def evaluate,a131597ff793d16c7e0a81aac053fd3af811cb76607d223298060e0af72251fa,False
+site_price,0.08,USD/kWh,Author scenario,code/scripts/finance.py:35; def evaluate,a131597ff793d16c7e0a81aac053fd3af811cb76607d223298060e0af72251fa,False
+site_charge,25.0,USD/m2 site,Author scenario,code/scripts/finance.py:35; def evaluate,a131597ff793d16c7e0a81aac053fd3af811cb76607d223298060e0af72251fa,False
+packing,0.65,aperture/site area,Author scenario,code/scripts/finance.py:35; def evaluate,a131597ff793d16c7e0a81aac053fd3af811cb76607d223298060e0af72251fa,False
+csi_durability,"[25.0, 0.005, 0.01]",years;degradation;burn-in,Author scenario,code/pvsim/economics.py:28; MODERN_CSI_DURABILITY =,fd8dcd10a59ed2d9bf381bd9320b152fedf6e99ee06c3667b3b58e359be2369d,False
+tandem_durability,"[25.0, 0.012, 0.04]",years;degradation;burn-in,Author scenario,code/pvsim/economics.py:29; TANDEM_DURABILITY =,fd8dcd10a59ed2d9bf381bd9320b152fedf6e99ee06c3667b3b58e359be2369d,False
+SJ_life_endpoint,21.5,years,Derived author midpoint of18 and25,code/pvsim/economic_priors.py:31; POST_BREAKTHROUGH_LIFETIME_RANGE_YR =,ce9809931ce3beaaaa60758e0970100a036b2bb08582b89790b8af471e75cdd5,False
+SJ_interpolation_endpoints,"[15.0, 25.0, 0.03, 0.007, 0.1, 0.05]",years;fractions,Author interpolation definition,"code/pvsim/economics.py:13,14,15,16,17,18,239,240,243,244,246,247,249,250,259,260,263,264,267,268; PEROVSKITE_",fd8dcd10a59ed2d9bf381bd9320b152fedf6e99ee06c3667b3b58e359be2369d,False
+SJ_retention,"[0.01505, 0.0675]",fractions,"Derived at21.5yr, not external observations",code/pvsim/economics.py:242; endpoint_fraction =,fd8dcd10a59ed2d9bf381bd9320b152fedf6e99ee06c3667b3b58e359be2369d,False
+initial_CAPEX_seeds,"[0.65, 0.95, 1.13]",USD/Wp,Author scenario,code/pvsim/economic_priors.py:33; INITIAL_SYSTEM_CAPEX_USD_W =,ce9809931ce3beaaaa60758e0970100a036b2bb08582b89790b8af471e75cdd5,False
+effective_learning_seeds,"[1500.0, 12.0, 4.0]",GW,"Author effective seeds, not observed installations",code/pvsim/economic_priors.py:38; INITIAL_GLOBAL_DEPLOYMENT_GW =,ce9809931ce3beaaaa60758e0970100a036b2bb08582b89790b8af471e75cdd5,False
+learning_rates,"[0.18, 0.27, 0.3]",fraction/doubling,Author scenario,code/pvsim/economic_priors.py:17; LEARNING_RATE_PRIORS =,ce9809931ce3beaaaa60758e0970100a036b2bb08582b89790b8af471e75cdd5,False
+CAPEX_floor_bounds,"[[0.35, 0.45], [0.32, 0.45], [0.42, 0.58]]",USD/Wp,Author scenario; central values are midpoints,code/pvsim/economic_priors.py:24; CAPEX_FLOOR_PRIORS_USD_W =,ce9809931ce3beaaaa60758e0970100a036b2bb08582b89790b8af471e75cdd5,False
+cost_annual_lower_bound,0.88,remaining fraction,Author regularization,code/scripts/cost_paths.py:39; cap[k]*0.88,1fd1cec070ae5ef99593e54620b301f6328a4edfd8c89ab26b1abf78c07484de,False
+rest_of_world_multiplier,1.4,factor,Author scenario,code/scripts/cost_paths.py:10; ROW=0.4,1fd1cec070ae5ef99593e54620b301f6328a4edfd8c89ab26b1abf78c07484de,False
+cost_time_grid,"[2025, 2050, 1]",years,Author time grid,code/scripts/cost_paths.py:5; YEARS=np.arange,1fd1cec070ae5ef99593e54620b301f6328a4edfd8c89ab26b1abf78c07484de,False
+deployment_schedule,"""cSi:linspace80to30+linspace0to20;SJ:min(4a+5,100);T:max(0,min(3a-12,80))""",GW/year,Author exogenous schedule,code/scripts/cost_paths.py:12; def global_new_schedule,1fd1cec070ae5ef99593e54620b301f6328a4edfd8c89ab26b1abf78c07484de,False
+derived2035_CAPEX,"[558.7380237506496, 385.0, 596.337065984]",USD/kWp,Recomputed model output,code/scripts/cost_paths.py:18; def capex_and_lcoe,1fd1cec070ae5ef99593e54620b301f6328a4edfd8c89ab26b1abf78c07484de,False
+scan_lifetime,"[15.0, 25.0, 0.25]",years:min/max/step,Author scan,code/compute_figure4.py:32; lives=np.arange,45de913c803e88deb1ea2678420f46bb4899cbe39b515b67f0eba000de4ef9d9,False
+scan_cost_reduction,"[0.0, 100.0, 0.5]",percent:min/max/step,Author scan,code/compute_figure4.py:32; cuts=np.arange,45de913c803e88deb1ea2678420f46bb4899cbe39b515b67f0eba000de4ef9d9,False
+candidate_path_states,"[0.0, 1.0, 0.1]",progress:min/max/step,Inherited Figure3 author parameter scenario,code/compute_figure4.py:75; range(11),45de913c803e88deb1ea2678420f46bb4899cbe39b515b67f0eba000de4ef9d9,False
+parity_tolerance,1e-12,USD/Wp,Numerical tolerance,code/compute_figure4.py:45; def count,45de913c803e88deb1ea2678420f46bb4899cbe39b515b67f0eba000de4ef9d9,False
+replacement_factor,1.0,baseline system expenditure,Author full replacement rule,code/scripts/finance.py:7; replace_factor=1.,a131597ff793d16c7e0a81aac053fd3af811cb76607d223298060e0af72251fa,False
+salvage,false,boolean,Author no salvage rule,"code/scripts/finance.py:7,35; salvage=False",a131597ff793d16c7e0a81aac053fd3af811cb76607d223298060e0af72251fa,False
+replacement_sensitivity,"[0.5, 1.0]",factor,Author robustness scenario,code/compute_figure4.py:67; Half replacement,45de913c803e88deb1ea2678420f46bb4899cbe39b515b67f0eba000de4ef9d9,False
+matched_prices,"[0.04, 0.08]",USD/kWh,Author matched controls,code/compute_figure4.py:63; for p0 in,45de913c803e88deb1ea2678420f46bb4899cbe39b515b67f0eba000de4ef9d9,False
+matched_site_charges,"[0.0, 25.0]",USD/m2 site,Author matched controls,code/compute_figure4.py:64; for fee0 in,45de913c803e88deb1ea2678420f46bb4899cbe39b515b67f0eba000de4ef9d9,False

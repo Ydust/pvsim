@@ -1,0 +1,14 @@
+﻿context,policy,before_choice,after_choice,response_class,regions,ribbon_height_axes,count_scale
+capacity,General,no_build,no_build,unfunded_unchanged,18,0.042195121951219515,0.0023441734417344175
+capacity,General,no_build,csi,entry,50,0.11720867208672087,0.0023441734417344175
+capacity,General,csi,csi,paid_unchanged,138,0.3234959349593496,0.0023441734417344175
+capacity,General,single_junction,csi,switch,163,0.38210027100271005,0.0023441734417344175
+capacity,New technology,no_build,no_build,unfunded_unchanged,20,0.04688346883468835,0.0023441734417344175
+capacity,New technology,no_build,single_junction,entry,48,0.11252032520325203,0.0023441734417344175
+capacity,New technology,csi,single_junction,switch,138,0.3234959349593496,0.0023441734417344175
+capacity,New technology,single_junction,single_junction,paid_unchanged,163,0.38210027100271005,0.0023441734417344175
+site_area,General,csi,csi,paid_unchanged,56,0.13127371273712737,0.0023441734417344175
+site_area,General,csi,tandem,switch,144,0.3375609756097561,0.0023441734417344175
+site_area,General,tandem,tandem,paid_unchanged,169,0.3961653116531165,0.0023441734417344175
+site_area,New technology,csi,tandem,switch,200,0.46883468834688347,0.0023441734417344175
+site_area,New technology,tandem,tandem,paid_unchanged,169,0.3961653116531165,0.0023441734417344175

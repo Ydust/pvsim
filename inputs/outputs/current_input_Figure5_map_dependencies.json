@@ -1,0 +1,5 @@
+{
+  "inputs/geography/map_context.geojson": "3b1a0462deba0fbfcbe4708af9a91b50ed807429b49320b7d8a37640f9543c94",
+  "inputs/geography/prefecture_boundaries.geojson": "e5959d6c4091889a0169b5c69c01144521b8c070a9bb69d3ba4b4fd4deb55951",
+  "code/map_template.py": "6ba2b310d48250fe5bb84ddb05f47e8829f8d1ea103acd3600ab965d56e1835f"
+}

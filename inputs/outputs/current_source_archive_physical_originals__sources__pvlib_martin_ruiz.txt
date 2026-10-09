@@ -1,0 +1,80 @@
+pvlib 0.15.2
+Original file C:\new\xuni_fangzhen\.venv\Lib\site-packages\pvlib\iam.py
+235: def martin_ruiz(aoi, a_r=0.16):
+236:     r'''
+237:     Determine the incidence angle modifier (IAM) using the Martin
+238:     and Ruiz incident angle model.
+239: 
+240:     Parameters
+241:     ----------
+242:     aoi : numeric, degrees
+243:         The angle of incidence between the module normal vector and the
+244:         sun-beam vector in degrees.
+245: 
+246:     a_r : numeric
+247:         The angular losses coefficient described in equation 3 of [1]_.
+248:         This is an empirical dimensionless parameter. Values of ``a_r`` are
+249:         generally on the order of 0.08 to 0.25 for flat-plate PV modules.
+250: 
+251:     Returns
+252:     -------
+253:     iam : numeric
+254:         The incident angle modifier(s)
+255: 
+256:     Notes
+257:     -----
+258:     `martin_ruiz` calculates the incidence angle modifier (IAM) as described in
+259:     [1]_. The information required is the incident angle (AOI) and the angular
+260:     losses coefficient (a_r). Note that [1]_ has a corrigendum [2]_ which
+261:     clarifies a mix-up of 'alpha's and 'a's in the former.
+262: 
+263:     The incident angle modifier is defined as
+264: 
+265:     .. math::
+266: 
+267:        IAM = \frac{1 - \exp(-\frac{\cos(aoi)}{a_r})}
+268:        {1 - \exp(\frac{-1}{a_r})}
+269: 
+270:     which is presented as :math:`AL(\alpha) = 1 - IAM` in equation 4 of [1]_,
+271:     with :math:`\alpha` representing the angle of incidence AOI. Thus IAM = 1
+272:     at AOI = 0°, and IAM = 0 at AOI = 90°.  This equation is only valid for
+273:     0° <= aoi <= 90°, therefore `iam` is constrained to 0.0 outside this
+274:     interval.
+275: 
+276:     References
+277:     ----------
+278:     .. [1] N. Martin and J. M. Ruiz, "Calculation of the PV modules angular
+279:        losses under field conditions by means of an analytical model", Solar
+280:        Energy Materials & Solar Cells, vol. 70, pp. 25-38, 2001.
+281: 
+282:     .. [2] N. Martin and J. M. Ruiz, "Corrigendum to 'Calculation of the PV
+283:        modules angular losses under field conditions by means of an
+284:        analytical model'", Solar Energy Materials & Solar Cells, vol. 110,
+285:        pp. 154, 2013.
+286: 
+287:     See Also
+288:     --------
+289:     pvlib.iam.martin_ruiz_diffuse
+290:     pvlib.iam.physical
+291:     pvlib.iam.ashrae
+292:     pvlib.iam.interp
+293:     pvlib.iam.sapm
+294:     '''
+295:     # Contributed by Anton Driesse (@adriesse), PV Performance Labs. July, 2019
+296: 
+297:     aoi_input = aoi
+298: 
+299:     aoi = np.asanyarray(aoi)
+300:     a_r = np.asanyarray(a_r)
+301: 
+302:     if np.any(np.less_equal(a_r, 0)):
+303:         raise ValueError("The parameter 'a_r' cannot be zero or negative.")
+304: 
+305:     with np.errstate(invalid='ignore'):
+306:         iam = (1 - np.exp(-cosd(aoi) / a_r)) / (1 - np.exp(-1 / a_r))
+307:         iam = np.where(np.abs(aoi) >= 90.0, 0.0, iam)
+308: 
+309:     if isinstance(aoi_input, pd.Series):
+310:         iam = pd.Series(iam, index=aoi_input.index)
+311: 
+312:     return iam
