@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-09-current369",
+  "version": "2026-10-10-current369",
   "base_commit": "2a873822b76efa38192509847f474054ef77da58",
   "entries": [
     {
@@ -655,7 +655,7 @@
     {
       "source": "inputs/outputs/current_caption_registry.json",
       "runtime": "caption_registry.json",
-      "sha256": "bb8a666e7840f6982e0198fdcda2d8f3a8371bbec4651c987665023b1c011f38"
+      "sha256": "bef4f197657079b592357bd39aef599cee9d6ae099a3232a8a72105024068899"
     },
     {
       "source": "code/scripts/current_dependency_check_figure5a_195.py",
@@ -838,8 +838,8 @@
       "sha256": "d113001c37aa00eb955b710759e956fb27fa9b780af8b48fbdf237753532e397"
     },
     {
-      "source": "inputs/outputs/current_source_archive_physical_provenance__PVGIS_369\u57ce\u5e02_\u6570\u503c\u4e0e\u5143\u6570\u636e\u7cbe\u786e\u51fa\u5904.csv",
-      "runtime": "sources/physical_provenance/PVGIS_369\u57ce\u5e02_\u6570\u503c\u4e0e\u5143\u6570\u636e\u7cbe\u786e\u51fa\u5904.csv",
+      "source": "inputs/outputs/current_source_archive_physical_provenance__PVGIS_369城市_数值与元数据精确出处.csv",
+      "runtime": "sources/physical_provenance/PVGIS_369城市_数值与元数据精确出处.csv",
       "sha256": "94d1afb26e3c5f975c4a26c77387ccc0acf044429d93fe78f265bd0492dcc18b"
     },
     {
@@ -1090,7 +1090,7 @@
     {
       "source": "inputs/outputs/current_figure4_contract.json",
       "runtime": "figure4_contract.json",
-      "sha256": "dc11a23dbe2c9291828b370f1c9e818f00a45023e893b7c7c1b08385acb7cb20"
+      "sha256": "90239a9fcb5f411afd3283675139f980a0256170cd32a8a90db053f6770b470a"
     },
     {
       "source": "inputs/outputs/current_figure5_contract.json",

@@ -11,8 +11,10 @@
     "d": "Baseline regional cost-equivalent gaps and classifications under site-area constraints."
   },
   "support": {
-    "S44": "Complete baseline/target thresholds and paired differences, unchanged.",
-    "S45": "Displaced single junction site-area and tandem capacity phase diagrams, complete original baseline grids."
+    "S122–S125": "Paired target-minus-baseline differences.",
+    "S130–S133": "Complete baseline/target thresholds in all four candidate/constraint combinations.",
+    "S134–S135": "Omitted cross-context choice fields.",
+    "S136–S137": "Near-transition cutoff sensitivity."
   },
   "gap": "Smaller upfront-only candidate cost cut to match max(0,both fixed rival NPVs), computed separately for both perovskites then minimized. No policy applied.",
   "classification_threshold_pct": 5,

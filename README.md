@@ -1,6 +1,6 @@
 # Photovoltaic simulation
 
-Current manuscript revision: 9 October 2026, 369 Chinese modelling regions.
+Current manuscript revision: 10 October 2026, 369 Chinese modelling regions.
 
 | Directory | Contents |
 |---|---|
@@ -31,3 +31,5 @@ The first command freshly checks four anchors and reconstructs all 369 regions f
 `run.ps1 --archived` and the later notebook cells retain the earlier release. They are distinct from the current 369-region manuscript. Current perovskite response paths are prescribed model scenarios, not measured device-development trajectories. Cost, lifetime and the 1/5/10% classification cutoffs have their declared scenario identities. Metadata and numeric source locators are included in the input manifests.
 
 Dependency versions: `environment/requirements.txt`, `environment/PACKAGE_VERSIONS.md` and `environment/verified_environment.json`. Current source mappings: `environment/current_figures_manifest.json` and `environment/current_physics_manifest.json`. Original directory structure is preserved.
+
+The 10 October delivery integrates the final standalone SI numbering and manuscript captions. Figures 1–5, all numerical data, model equations and calculation/plotting code are unchanged. The final delivery also contains numbered Figure 6, the Methods module diagram. Runtime composite Figure S44 maps to final SI Figures S130–S133; paired differences are S122–S125, cross-context fields S134–S135 and cutoff sensitivity S136–S137.

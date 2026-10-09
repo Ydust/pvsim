@@ -14,8 +14,8 @@ authors:
 repository-code: "https://github.com/Ydust/pvsim"
 url: "https://github.com/Ydust/pvsim"
 license: MIT
-version: "2026.10.09"
-date-released: "2026-10-09"
+version: "2026.10.10"
+date-released: "2026-10-10"
 keywords:
   - photovoltaics
   - single-diode model
